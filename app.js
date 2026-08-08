@@ -18,6 +18,8 @@ function sumField(rows,names){return rows.reduce((sum,r)=>sum+(num(firstField(r,
 function setMetric(id,v,fallback='—'){$(id).textContent=v===null||v===undefined||v===''?fallback:v}
 function dateList(rows){return rows.map(r=>dateKey(r['日期']||r.Date)).filter(Boolean)}
 function formatLongDate(date){return new Intl.DateTimeFormat('zh-TW',{timeZone:'UTC',month:'long',day:'numeric',weekday:'long'}).format(new Date(`${date}T00:00:00Z`))}
+function hasFormulaField(r,name){const key=Object.keys(r||{}).find(x=>x.includes(name));return Boolean(key&&norm(r[key]).startsWith('='))}
+function hasMeaningfulCheckData(r){return Boolean(r&&Object.entries(r).some(([k,v])=>!k.includes('日期')&&displayValue(v)!==''))}
 
 function renderMeals(rows){
   const box=$('meals');box.innerHTML='';
@@ -35,12 +37,20 @@ function renderMeals(rows){
   $('mealCount').textContent=`${rows.length} 筆`;
 }
 
-function renderChecks(r){
+function renderChecks(r,workouts){
   const box=$('checks');box.innerHTML='';
   if(!r){box.innerHTML='<div class="row"><div class="left"><b>沒有每日檢核</b><p>這一天尚未填寫。</p></div></div>';$('checkState').textContent='待補';return}
   const items=[['零下注',['零下注']],['查看盤口',['查看盤口']],['衝動分數',['衝動 0–10','衝動分數','衝動']],['完成重訓',['完成重訓']],['散步分鐘',['散步分鐘']],['睡眠小時',['睡眠小時']]];
   let filled=0;
-  items.forEach(([label,names])=>{const v=firstField(r,names);if(v!=='')filled++;box.insertAdjacentHTML('beforeend',`<div class="check"><span>${label}</span><b>${esc(v||'—')}</b></div>`)});
+  items.forEach(([label,names])=>{
+    let v=firstField(r,names);
+    if(label==='完成重訓'&&v===''){
+      if(workouts.length)v='是';
+      else if(hasFormulaField(r,'完成重訓')&&firstField(r,['零下注'])!=='')v='否';
+    }
+    if(v!=='')filled++;
+    box.insertAdjacentHTML('beforeend',`<div class="check"><span>${label}</span><b>${esc(v||'—')}</b></div>`);
+  });
   $('checkState').textContent=`${filled}/${items.length}`;
 }
 
@@ -90,7 +100,7 @@ function render(date){
   setMetric('zeroBet',check?firstField(check,['零下注']):'');
   setMetric('urge',check?firstField(check,['衝動 0–10','衝動分數','衝動']):'');
 
-  renderMeals(meals);renderChecks(check);renderWorkouts(workouts);renderTrend(date);
+  renderMeals(meals);renderChecks(check,workouts);renderWorkouts(workouts);renderTrend(date);
 
   const day=Math.max(1,Math.min(30,Math.floor((Date.parse(`${date}T00:00:00Z`)-Date.parse(`${state.startDate}T00:00:00Z`))/86400000)+1));
   const pct=Math.round(day/30*100);
@@ -98,7 +108,7 @@ function render(date){
   $('progressPct').textContent=`${pct}%`;
   $('progressBar').style.width=`${pct}%`;
 
-  const hasData=meals.length||workouts.length||(check&&Object.values(check).some(v=>displayValue(v)!==''));
+  const hasData=meals.length||workouts.length||hasMeaningfulCheckData(check);
   $('statusBanner').textContent=hasData?'這一天的資料已載入。':'這一天目前沒有已填寫的紀錄。';
   $('statusBanner').classList.remove('bad');
   $('prevDay').disabled=date<=state.minDate;
