@@ -12,9 +12,14 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   apply:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,13 +37,22 @@ jobs:
       - name: Commit workbook and dashboard update
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain)" ]; then
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add "30天重建追蹤.xlsx" pending_updates.json tracker_update_result.json dashboard-data.json
+            git commit -m "Apply tracker updates"
+            git pull --rebase origin main
+            git push
+          else
             echo "No tracker changes to commit."
-            exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "30天重建追蹤.xlsx" pending_updates.json tracker_update_result.json dashboard-data.json
-          git commit -m "Apply tracker updates"
-          git pull --rebase origin main
-          git push
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload dashboard artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
