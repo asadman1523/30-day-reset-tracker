@@ -22,9 +22,7 @@
         <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
       </div>
     </header>
-
     <section id="statusBanner" class="banner">正在讀取 Excel…</section>
-
     <section class="grid metrics">
       <article class="card"><span>今日蛋白質</span><strong id="protein">—</strong><small>g</small></article>
       <article class="card"><span>今日熱量</span><strong id="calories">—</strong><small>kcal</small></article>
@@ -33,32 +31,17 @@
       <article class="card accent"><span>零下注</span><strong id="zeroBet">—</strong><small>今天</small></article>
       <article class="card"><span>衝動分數</span><strong id="urge">—</strong><small>/ 10</small></article>
     </section>
-
     <section class="two-col">
-      <article class="panel">
-        <div class="panel-head"><h2>今日飲食</h2><span id="mealCount" class="pill">—</span></div>
-        <div id="meals" class="stack"></div>
-      </article>
-      <article class="panel">
-        <div class="panel-head"><h2>今日檢核</h2><span id="checkState" class="pill">—</span></div>
-        <div id="checks" class="check-grid"></div>
-      </article>
+      <article class="panel"><div class="panel-head"><h2>今日飲食</h2><span id="mealCount" class="pill">—</span></div><div id="meals" class="stack"></div></article>
+      <article class="panel"><div class="panel-head"><h2>今日檢核</h2><span id="checkState" class="pill">—</span></div><div id="checks" class="check-grid"></div></article>
     </section>
-
     <section class="two-col">
-      <article class="panel">
-        <div class="panel-head"><h2>今日重訓</h2><span id="workoutState" class="pill">—</span></div>
-        <div id="workouts" class="stack"></div>
-      </article>
-      <article class="panel chart-panel">
-        <div class="panel-head"><h2>最近 7 天</h2><span class="pill">蛋白質 / 熱量</span></div>
-        <canvas id="trendChart" height="210"></canvas>
-      </article>
+      <article class="panel"><div class="panel-head"><h2>今日重訓</h2><span id="workoutState" class="pill">—</span></div><div id="workouts" class="stack"></div></article>
+      <article class="panel chart-panel"><div class="panel-head"><h2>最近 7 天</h2><span class="pill">蛋白質 / 熱量</span></div><canvas id="trendChart" height="210"></canvas></article>
     </section>
-
     <section class="panel">
       <div class="panel-head"><h2>資料來源</h2><span id="updatedAt" class="pill">—</span></div>
-      <p class="muted">直接讀取 <code>outputs/30-day-reset-2026-08-04/30天重建追蹤.xlsx</code>。Excel 更新後，重新整理此頁即可看到最新資料。</p>
+      <p class="muted">直接讀取根目錄 <code>30天重建追蹤.xlsx</code>。Excel 更新後，重新整理此頁即可看到最新資料。</p>
     </section>
   </main>
   <script src="./app.js"></script>
