@@ -3,45 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#f3efe6" />
   <title>30 天重建</title>
   <link rel="stylesheet" href="./styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <main class="shell">
     <header class="hero">
-      <div>
+      <div class="title-block">
         <p class="eyebrow">30 DAY RESET</p>
         <h1>30 天重建</h1>
-        <p id="todayLabel" class="muted">讀取資料中…</p>
+        <p id="selectedDateLabel" class="date-label">讀取資料中…</p>
       </div>
-      <div class="progress-card">
-        <div class="progress-row"><span id="dayLabel">Day — / 30</span><strong id="progressPct">—%</strong></div>
-        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+
+      <div class="hero-tools">
+        <div class="date-nav" aria-label="切換日期">
+          <button id="prevDay" class="icon-btn" type="button" aria-label="上一天">←</button>
+          <input id="datePicker" type="date" aria-label="選擇日期" />
+          <button id="nextDay" class="icon-btn" type="button" aria-label="下一天">→</button>
+          <button id="todayBtn" class="text-btn" type="button">今天</button>
+        </div>
+        <div class="progress-card">
+          <div class="progress-row"><span id="dayLabel">Day — / 30</span><strong id="progressPct">—%</strong></div>
+          <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+        </div>
       </div>
     </header>
+
     <section id="statusBanner" class="banner">正在讀取資料…</section>
+
     <section class="grid metrics">
-      <article class="card"><span>今日蛋白質</span><strong id="protein">—</strong><small>g</small></article>
-      <article class="card"><span>今日熱量</span><strong id="calories">—</strong><small>kcal</small></article>
+      <article class="card"><span>蛋白質</span><strong id="protein">—</strong><small>g</small></article>
+      <article class="card"><span>熱量</span><strong id="calories">—</strong><small>kcal</small></article>
       <article class="card"><span>睡眠</span><strong id="sleep">—</strong><small>hr</small></article>
       <article class="card"><span>散步</span><strong id="walk">—</strong><small>min</small></article>
-      <article class="card accent"><span>零下注</span><strong id="zeroBet">—</strong><small>今天</small></article>
+      <article class="card key-card"><span>零下注</span><strong id="zeroBet">—</strong><small>當日</small></article>
       <article class="card"><span>衝動分數</span><strong id="urge">—</strong><small>/ 10</small></article>
     </section>
+
     <section class="two-col">
-      <article class="panel"><div class="panel-head"><h2>今日飲食</h2><span id="mealCount" class="pill">—</span></div><div id="meals" class="stack"></div></article>
-      <article class="panel"><div class="panel-head"><h2>今日檢核</h2><span id="checkState" class="pill">—</span></div><div id="checks" class="check-grid"></div></article>
+      <article class="panel">
+        <div class="panel-head"><h2>飲食</h2><span id="mealCount" class="pill">—</span></div>
+        <div id="meals" class="stack"></div>
+      </article>
+      <article class="panel">
+        <div class="panel-head"><h2>每日檢核</h2><span id="checkState" class="pill">—</span></div>
+        <div id="checks" class="check-grid"></div>
+      </article>
     </section>
+
     <section class="two-col">
-      <article class="panel"><div class="panel-head"><h2>今日重訓</h2><span id="workoutState" class="pill">—</span></div><div id="workouts" class="stack"></div></article>
-      <article class="panel chart-panel"><div class="panel-head"><h2>最近 7 天</h2><span class="pill">蛋白質 / 熱量</span></div><canvas id="trendChart" height="210"></canvas></article>
+      <article class="panel">
+        <div class="panel-head"><h2>重訓</h2><span id="workoutState" class="pill">—</span></div>
+        <div id="workouts" class="stack"></div>
+      </article>
+      <article class="panel trend-panel">
+        <div class="panel-head">
+          <h2>截至這天的 7 日趨勢</h2>
+          <div class="trend-legend"><span><i class="dot protein-dot"></i>蛋白質</span><span><i class="dot calorie-dot"></i>熱量</span></div>
+        </div>
+        <div id="trendBars" class="trend-bars" aria-label="最近七天趨勢"></div>
+      </article>
     </section>
-    <section class="panel">
-      <div class="panel-head"><h2>資料來源</h2><span id="updatedAt" class="pill">—</span></div>
-      <p class="muted"><code>30天重建追蹤.xlsx</code> 是唯一主資料；GitHub Action 會產生 <code>dashboard-data.json</code> 給此頁顯示。</p>
-    </section>
+
+    <footer class="footer-line">
+      <span>資料來源：30天重建追蹤.xlsx</span>
+      <span id="updatedAt">—</span>
+    </footer>
   </main>
   <script src="./app.js"></script>
 </body>
