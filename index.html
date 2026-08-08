@@ -6,7 +6,6 @@
   <meta name="theme-color" content="#0b1020" />
   <title>30 天重建</title>
   <link rel="stylesheet" href="./styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 </head>
 <body>
@@ -22,7 +21,7 @@
         <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
       </div>
     </header>
-    <section id="statusBanner" class="banner">正在讀取 Excel…</section>
+    <section id="statusBanner" class="banner">正在讀取資料…</section>
     <section class="grid metrics">
       <article class="card"><span>今日蛋白質</span><strong id="protein">—</strong><small>g</small></article>
       <article class="card"><span>今日熱量</span><strong id="calories">—</strong><small>kcal</small></article>
@@ -41,7 +40,7 @@
     </section>
     <section class="panel">
       <div class="panel-head"><h2>資料來源</h2><span id="updatedAt" class="pill">—</span></div>
-      <p class="muted">直接讀取根目錄 <code>30天重建追蹤.xlsx</code>。Excel 更新後，重新整理此頁即可看到最新資料。</p>
+      <p class="muted"><code>30天重建追蹤.xlsx</code> 是唯一主資料；GitHub Action 會產生 <code>dashboard-data.json</code> 給此頁顯示。</p>
     </section>
   </main>
   <script src="./app.js"></script>
