@@ -9,6 +9,7 @@ from openpyxl import load_workbook
 ROOT = Path(__file__).resolve().parents[1]
 WORKBOOK = ROOT / "30天重建追蹤.xlsx"
 OUTPUT = ROOT / "dashboard-data.json"
+TARGET_SHEETS = ("每日檢核", "飲食紀錄", "重訓紀錄")
 
 
 def serialize(value):
@@ -57,13 +58,17 @@ def export_sheet(ws):
 
 def main():
     wb = load_workbook(WORKBOOK, data_only=False)
+    sheets = {name: export_sheet(wb[name]) for name in TARGET_SHEETS if name in wb.sheetnames}
     payload = {
         "generated_at": datetime.now().astimezone().isoformat(),
         "workbook": WORKBOOK.name,
-        "sheets": {name: export_sheet(wb[name]) for name in wb.sheetnames},
+        "sheets": sheets,
     }
-    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {OUTPUT}")
+    OUTPUT.write_text(
+        json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
+    print(f"Wrote {OUTPUT} with {', '.join(sheets)}")
 
 
 if __name__ == "__main__":
