@@ -1,23 +1,24 @@
 {
   "migration": {
     "carbs_column_added": false,
-    "carbs_column": 8,
-    "backfilled_rows": []
+    "carbs_column": 8
   },
   "results": [
     {
-      "status": "written",
+      "status": "updated",
       "row": 107,
+      "fields": [
+        "protein",
+        "note_append"
+      ],
       "item": {
         "type": "food",
         "date": "2026-08-09",
         "meal": "晚餐",
         "food": "雞排 + 鰻魚 + 豆干 + 空心菜 + 豆腐 + 滷蛋 1 顆 + 素肚",
-        "source": "",
-        "protein": 105,
-        "carbs": 55,
-        "calories": 1250,
-        "note": "依照片估算：一份炸雞排、鰻魚、豆干、空心菜、豆腐、滷蛋與素肚；實際份量、醬汁與用油未提供，營養數值為整盤估算。"
+        "update_existing": true,
+        "protein": 95,
+        "note_append": "蛋白質依使用者確認改採較保守估算 95 g。"
       }
     }
   ],
@@ -27,7 +28,8 @@
       "row": 107,
       "date": "2026-08-09",
       "meal": "晚餐",
-      "food": "雞排 + 鰻魚 + 豆干 + 空心菜 + 豆腐 + 滷蛋 1 顆 + 素肚"
+      "food": "雞排 + 鰻魚 + 豆干 + 空心菜 + 豆腐 + 滷蛋 1 顆 + 素肚",
+      "status": "updated"
     }
   ]
 }
