@@ -24,6 +24,19 @@ HEADER_ALIASES = {
     "note": ["備註"],
 }
 
+DAILY_ALIASES = {
+    "date": ["日期", "date"],
+    "zero_bet": ["零下注"],
+    "viewed_odds": ["查看盤口"],
+    "urge": ["衝動 0–10", "衝動0–10", "衝動分數"],
+    "trigger": ["觸發原因"],
+    "alternative": ["替代行動"],
+    "workout_done": ["完成重訓"],
+    "walk_minutes": ["散步分鐘"],
+    "sleep_hours": ["睡眠小時"],
+    "zero_bet_streak": ["連續零下注"],
+}
+
 
 def norm(value):
     return str(value or "").strip().lower()
@@ -48,6 +61,20 @@ def locate_headers(ws):
         if len(mapping) >= 3 and "date" in mapping:
             return row, mapping
     raise RuntimeError(f"無法辨識工作表 {ws.title} 的欄位標題")
+
+
+def locate_daily_headers(ws):
+    for row in range(1, min(ws.max_row, 12) + 1):
+        values = {col: norm(ws.cell(row, col).value) for col in range(1, ws.max_column + 1)}
+        mapping = {}
+        for field, aliases in DAILY_ALIASES.items():
+            for col, value in values.items():
+                if any(alias.lower() == value or alias.lower() in value for alias in aliases):
+                    mapping[field] = col
+                    break
+        if "date" in mapping and len(mapping) >= 6:
+            return row, mapping
+    raise RuntimeError(f"無法辨識工作表 {ws.title} 的每日檢核欄位")
 
 
 def date_key(value):
@@ -155,6 +182,39 @@ def apply_food(ws, item):
     return {"status": "written", "row": row, "item": item}
 
 
+def find_daily_row(ws, header_row, mapping, target_date):
+    for row in range(header_row + 1, ws.max_row + 1):
+        if date_key(ws.cell(row, mapping["date"]).value) == target_date:
+            return row
+    return None
+
+
+def apply_daily_checkin(ws, item):
+    header_row, mapping = locate_daily_headers(ws)
+    row = find_daily_row(ws, header_row, mapping, item["date"])
+    if not row:
+        raise RuntimeError(f"每日檢核找不到日期 {item['date']}")
+
+    changed_fields = []
+    for field in ("zero_bet", "viewed_odds", "urge", "trigger", "alternative", "workout_done", "walk_minutes", "sleep_hours"):
+        if field not in item:
+            continue
+        col = mapping.get(field)
+        if not col:
+            raise RuntimeError(f"每日檢核找不到欄位 {field}")
+        expected = item[field]
+        if ws.cell(row, col).value != expected:
+            ws.cell(row, col).value = expected
+            changed_fields.append(field)
+
+    return {
+        "status": "updated" if changed_fields else "already_present",
+        "row": row,
+        "fields": changed_fields,
+        "item": item,
+    }
+
+
 def verify_food(ws, result):
     item = result["item"]
     header_row, mapping = locate_headers(ws)
@@ -162,8 +222,7 @@ def verify_food(ws, result):
     if not row:
         raise RuntimeError(f"驗證失敗：找不到餐點 {item}")
 
-    fields_to_check = ("protein", "carbs", "calories")
-    for field in fields_to_check:
+    for field in ("protein", "carbs", "calories"):
         if field not in item or not mapping.get(field):
             continue
         expected = item[field]
@@ -178,14 +237,31 @@ def verify_food(ws, result):
         if item["note_append"] not in actual_note:
             raise RuntimeError("驗證失敗：備註修正未寫入")
 
-    return {
-        "verified": True,
-        "row": row,
-        "date": item["date"],
-        "meal": item.get("meal"),
-        "food": item.get("food"),
-        "status": result.get("status"),
-    }
+    return {"verified": True, "row": row, "date": item["date"], "meal": item.get("meal"), "food": item.get("food"), "status": result.get("status")}
+
+
+def verify_daily_checkin(ws, result):
+    item = result["item"]
+    header_row, mapping = locate_daily_headers(ws)
+    row = find_daily_row(ws, header_row, mapping, item["date"])
+    if not row:
+        raise RuntimeError(f"驗證失敗：找不到每日檢核日期 {item['date']}")
+
+    for field in ("zero_bet", "viewed_odds", "urge", "trigger", "alternative", "workout_done", "walk_minutes", "sleep_hours"):
+        if field not in item:
+            continue
+        expected = item[field]
+        actual = ws.cell(row, mapping[field]).value
+        if str(actual) != str(expected):
+            raise RuntimeError(f"驗證失敗：{field} 預期 {expected}，實際 {actual}")
+
+    streak_col = mapping.get("zero_bet_streak")
+    if streak_col:
+        streak_formula = ws.cell(row, streak_col).value
+        if not isinstance(streak_formula, str) or not streak_formula.startswith("="):
+            raise RuntimeError("驗證失敗：連續零下注公式遺失")
+
+    return {"verified": True, "row": row, "date": item["date"], "status": result.get("status")}
 
 
 def main():
@@ -194,12 +270,15 @@ def main():
 
     wb = load_workbook(WORKBOOK)
     food_ws = find_sheet(wb, "飲食")
+    daily_ws = find_sheet(wb, "每日檢核")
     added_column, carbs_col = ensure_carbs_column(food_ws)
 
     results = []
     for item in updates:
         if item.get("type") == "food":
             results.append(apply_food(food_ws, item))
+        elif item.get("type") == "daily_checkin":
+            results.append(apply_daily_checkin(daily_ws, item))
         else:
             raise RuntimeError(f"尚未支援的 update type: {item.get('type')}")
 
@@ -209,16 +288,23 @@ def main():
 
     verify_wb = load_workbook(WORKBOOK, data_only=False)
     verify_food_ws = find_sheet(verify_wb, "飲食")
+    verify_daily_ws = find_sheet(verify_wb, "每日檢核")
     _, verify_mapping = locate_headers(verify_food_ws)
     if "carbs" not in verify_mapping:
         raise RuntimeError("驗證失敗：飲食紀錄沒有碳水欄位")
 
-    verifications = [verify_food(verify_food_ws, result) for result in results]
-    migration = {
-        "carbs_column_added": added_column,
-        "carbs_column": carbs_col,
+    verifications = []
+    for result in results:
+        if result["item"].get("type") == "food":
+            verifications.append(verify_food(verify_food_ws, result))
+        else:
+            verifications.append(verify_daily_checkin(verify_daily_ws, result))
+
+    output = {
+        "migration": {"carbs_column_added": added_column, "carbs_column": carbs_col},
+        "results": results,
+        "verification": verifications,
     }
-    output = {"migration": migration, "results": results, "verification": verifications}
     RESULT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if updates:
         PENDING.write_text(json.dumps({"updates": []}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
