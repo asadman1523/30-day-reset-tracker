@@ -24,83 +24,6 @@ HEADER_ALIASES = {
     "note": ["備註"],
 }
 
-# 既有飲食列建立時尚未有碳水欄位。以下數值沿用各列既有份量與備註假設，
-# 只補空白欄位，不覆蓋後續人工修正值。
-LEGACY_NUTRITION = {
-    ("2026-08-03", "早餐", "培根蛋吐司、雞塊"): {
-        "carbs": 65,
-        "note": "碳水估算：吐司與雞塊裹粉合計約 65 g。",
-    },
-    ("2026-08-03", "午餐", "未進食"): {"carbs": 0},
-    ("2026-08-03", "晚餐", "牛排、雞排、酥皮濃湯"): {
-        "carbs": 45,
-        "note": "碳水估算：主要來自酥皮濃湯，未另計醬料。",
-    },
-    ("2026-08-04", "早餐", "地瓜、海鹽水煮蛋、雞胸肉"): {
-        "carbs": 35,
-        "note": "碳水估算：主要來自地瓜。",
-    },
-    ("2026-08-04", "午餐", "大麥克、無糖可樂、小杯玉米湯、中薯"): {
-        "carbs": 120,
-        "note": "碳水估算：大麥克、中薯與小杯玉米湯合計約 120 g。",
-    },
-    ("2026-08-04", "晚餐", "雙倍雞肉飯，飯一半"): {
-        "carbs": 55,
-        "note": "碳水估算：主要來自半份白飯。",
-    },
-    ("2026-08-05", "早餐", "御選肉鬆飯糰、雙蔬鮪魚飯糰"): {
-        "carbs": 90,
-        "note": "碳水估算：兩顆飯糰合計約 90 g。",
-    },
-    ("2026-08-05", "午餐", "未進食"): {"carbs": 0},
-    ("2026-08-05", "晚餐", "松阪豬、嫩煎豆腐、豆芽菜、高麗菜、豆漿"): {
-        "carbs": 28,
-        "note": "碳水估算：主要來自豆漿與蔬菜，未另計醬汁。",
-    },
-    ("2026-08-06", "早餐", "豆漿、地瓜、雞胸肉"): {
-        "carbs": 48,
-        "note": "碳水估算：地瓜約 35 g、豆漿約 13 g。",
-    },
-    ("2026-08-06", "午餐", "乳清蛋白粉 40g"): {
-        "carbs": 4,
-        "note": "碳水估算：未提供品牌，按一般乳清粉估算。",
-    },
-    ("2026-08-06", "晚餐", "炸雞排、炸杏鮑菇、炸魷魚"): {
-        "carbs": 70,
-        "note": "碳水估算：主要來自裹粉。",
-    },
-    ("2026-08-07", "早餐", "地瓜、雞胸肉"): {
-        "carbs": 35,
-        "note": "碳水估算：主要來自地瓜。",
-    },
-    ("2026-08-07", "午餐", "乳清蛋白粉 40g"): {
-        "carbs": 4,
-        "note": "碳水估算：未提供品牌，按一般乳清粉估算。",
-    },
-    ("2026-08-07", "晚餐", "肉片約 15 片、蔬菜"): {
-        "carbs": 15,
-        "note": "碳水估算：主要來自蔬菜與湯底，未另計醬料。",
-    },
-    ("2026-08-08", "早餐", "地瓜、雞胸肉"): {
-        "carbs": 35,
-        "note": "碳水估算：主要來自地瓜。",
-    },
-    ("2026-08-08", "午餐", "乳清蛋白粉 60g、豆漿"): {
-        "carbs": 19,
-        "note": "碳水估算：乳清約 6 g、豆漿約 13 g。",
-    },
-    ("2026-08-08", "晚餐", "昆布鍋、12 盎司增肌減脂肉片、活鮑魚 3 個、白飯 1 碗"): {
-        "carbs": 70,
-        "note": "碳水估算：白飯約 60 g，加菜盤與湯底約 10 g。",
-    },
-    ("2026-08-08", "晚餐", "40g 乳清 + 1 杯豆漿"): {
-        "protein": 43,
-        "calories": 304,
-        "carbs": 17,
-        "note": "估算：沿用既有假設，40 g 乳清約蛋白質 30 g、160 kcal、碳水 4 g；豆漿約蛋白質 13 g、144 kcal、碳水 13 g。",
-    },
-}
-
 
 def norm(value):
     return str(value or "").strip().lower()
@@ -180,38 +103,6 @@ def append_note(existing, extra):
     return f"{existing_text} {extra_text}".strip()
 
 
-def backfill_legacy_nutrition(ws):
-    header_row, mapping = locate_headers(ws)
-    changed_rows = []
-    for row in range(header_row + 1, ws.max_row + 1):
-        key = (
-            date_key(ws.cell(row, mapping["date"]).value),
-            str(ws.cell(row, mapping["meal"]).value or "").strip(),
-            str(ws.cell(row, mapping["food"]).value or "").strip(),
-        )
-        values = LEGACY_NUTRITION.get(key)
-        if not values:
-            continue
-
-        changed_fields = []
-        for field in ("protein", "calories", "carbs"):
-            col = mapping.get(field)
-            if not col or field not in values:
-                continue
-            cell = ws.cell(row, col)
-            if cell.value in (None, ""):
-                cell.value = values[field]
-                changed_fields.append(field)
-
-        if changed_fields and mapping.get("note") and values.get("note"):
-            note_cell = ws.cell(row, mapping["note"])
-            note_cell.value = append_note(note_cell.value, values["note"])
-
-        if changed_fields:
-            changed_rows.append({"row": row, "key": key, "fields": changed_fields})
-    return changed_rows
-
-
 def food_exists(ws, header_row, mapping, item):
     target_date = item["date"]
     target_meal = norm(item.get("meal"))
@@ -228,6 +119,20 @@ def food_exists(ws, header_row, mapping, item):
 def apply_food(ws, item):
     header_row, mapping = locate_headers(ws)
     existing = food_exists(ws, header_row, mapping, item)
+
+    if existing and item.get("update_existing"):
+        changed_fields = []
+        for field in ("source", "protein", "carbs", "calories", "note"):
+            if field not in item or not mapping.get(field):
+                continue
+            ws.cell(existing, mapping[field]).value = item[field]
+            changed_fields.append(field)
+        if item.get("note_append") and mapping.get("note"):
+            cell = ws.cell(existing, mapping["note"])
+            cell.value = append_note(cell.value, item["note_append"])
+            changed_fields.append("note_append")
+        return {"status": "updated", "row": existing, "fields": changed_fields, "item": item}
+
     if existing:
         return {"status": "already_present", "row": existing, "item": item}
 
@@ -255,15 +160,23 @@ def verify_food(ws, result):
     header_row, mapping = locate_headers(ws)
     row = food_exists(ws, header_row, mapping, item)
     if not row:
-        raise RuntimeError(f"驗證失敗：找不到已寫入餐點 {item}")
+        raise RuntimeError(f"驗證失敗：找不到餐點 {item}")
 
-    for field in ("protein", "carbs", "calories"):
-        expected = item.get(field, "")
-        if expected in (None, "") or not mapping.get(field):
+    fields_to_check = ("protein", "carbs", "calories")
+    for field in fields_to_check:
+        if field not in item or not mapping.get(field):
+            continue
+        expected = item[field]
+        if expected in (None, ""):
             continue
         actual = ws.cell(row, mapping[field]).value
         if str(actual) != str(expected):
             raise RuntimeError(f"驗證失敗：{field} 預期 {expected}，實際 {actual}")
+
+    if item.get("note_append") and mapping.get("note"):
+        actual_note = str(ws.cell(row, mapping["note"]).value or "")
+        if item["note_append"] not in actual_note:
+            raise RuntimeError("驗證失敗：備註修正未寫入")
 
     return {
         "verified": True,
@@ -271,6 +184,7 @@ def verify_food(ws, result):
         "date": item["date"],
         "meal": item.get("meal"),
         "food": item.get("food"),
+        "status": result.get("status"),
     }
 
 
@@ -281,7 +195,6 @@ def main():
     wb = load_workbook(WORKBOOK)
     food_ws = find_sheet(wb, "飲食")
     added_column, carbs_col = ensure_carbs_column(food_ws)
-    backfilled = backfill_legacy_nutrition(food_ws)
 
     results = []
     for item in updates:
@@ -290,7 +203,7 @@ def main():
         else:
             raise RuntimeError(f"尚未支援的 update type: {item.get('type')}")
 
-    changed = added_column or bool(backfilled) or bool(results)
+    changed = added_column or any(r.get("status") in {"written", "updated"} for r in results)
     if changed:
         wb.save(WORKBOOK)
 
@@ -300,15 +213,10 @@ def main():
     if "carbs" not in verify_mapping:
         raise RuntimeError("驗證失敗：飲食紀錄沒有碳水欄位")
 
-    verifications = []
-    for result in results:
-        if result["item"].get("type") == "food":
-            verifications.append(verify_food(verify_food_ws, result))
-
+    verifications = [verify_food(verify_food_ws, result) for result in results]
     migration = {
         "carbs_column_added": added_column,
         "carbs_column": carbs_col,
-        "backfilled_rows": backfilled,
     }
     output = {"migration": migration, "results": results, "verification": verifications}
     RESULT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
