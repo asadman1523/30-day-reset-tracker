@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-08-09",
+      "meal": "早餐",
+      "food": "地瓜 + 7-ELEVEN 溏心蛋 2 顆 + 雞胸肉",
+      "source": "7-ELEVEN（溏心蛋）",
+      "protein": 42.8,
+      "carbs": 37.8,
+      "calories": 391,
+      "note": "估算：地瓜與雞胸肉沿用 2026-08-08 早餐設定（蛋白質 32 g、熱量 285 kcal、碳水 35 g）；7-ELEVEN 溏心蛋每顆以蛋白質 5.4 g、熱量 53 kcal、碳水 1.4 g 估算。"
+    }
+  ]
 }
