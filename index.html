@@ -96,11 +96,20 @@
         const table = document.querySelector('#meals .food-table');
         if (!table) return;
 
+        const headerRow = table.querySelector('thead tr');
+        if (headerRow) headerRow.insertAdjacentHTML('beforeend', '<th>熱量</th>');
+
+        table.querySelectorAll('tbody tr').forEach((tr, index) => {
+          const calories = firstField(rows[index], ['熱量', '卡路里']);
+          tr.insertAdjacentHTML('beforeend', `<td>${calories !== '' ? `${esc(calories)} kcal` : '—'}</td>`);
+        });
+
         const proteinTotal = sumField(rows, ['蛋白質']);
         const carbsTotal = sumField(rows, ['碳水化合物', '碳水']);
+        const calorieTotal = sumField(rows, ['熱量', '卡路里']);
         const footer = table.createTFoot();
         const totalRow = footer.insertRow();
-        totalRow.innerHTML = `<td>合計</td><td>${formatTotal(proteinTotal)} g</td><td>${formatTotal(carbsTotal)} g</td>`;
+        totalRow.innerHTML = `<td>合計</td><td>${formatTotal(proteinTotal)} g</td><td>${formatTotal(carbsTotal)} g</td><td>${formatTotal(calorieTotal)} kcal</td>`;
       };
     })();
   </script>
