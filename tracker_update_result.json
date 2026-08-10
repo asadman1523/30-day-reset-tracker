@@ -5,46 +5,29 @@
   },
   "results": [
     {
-      "status": "deleted",
+      "status": "written",
       "row": 111,
       "item": {
-        "type": "delete_food",
+        "type": "food",
         "date": "2026-08-10",
         "meal": "晚餐",
-        "food": "牛肉飯特大碗（飯未吃到一半）",
-        "protein": 35,
-        "carbs": 50,
-        "calories": 750
-      }
-    },
-    {
-      "status": "deleted",
-      "row": 111,
-      "item": {
-        "type": "delete_food",
-        "date": "2026-08-10",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 60g",
-        "protein": 45,
-        "carbs": 6,
-        "calories": 240
+        "food": "牛肉飯 特大碗（飯一半） + 乳清蛋白粉 60g + 豆漿",
+        "source": "",
+        "protein": 93,
+        "carbs": 79,
+        "calories": 1184,
+        "note": "估算：牛肉飯為特大碗但白飯實際吃約一半，先估蛋白質 35 g、碳水 60 g、800 kcal；乳清 60 g + 豆漿沿用既有設定，約蛋白質 58 g、碳水 19 g、384 kcal。合計約蛋白質 93 g、碳水 79 g、1184 kcal；店家、實際牛肉量與乳清/豆漿品牌未提供。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
+      "row": 111,
       "date": "2026-08-10",
       "meal": "晚餐",
-      "food": "牛肉飯特大碗（飯未吃到一半）",
-      "status": "deleted"
-    },
-    {
-      "verified": true,
-      "date": "2026-08-10",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 60g",
-      "status": "deleted"
+      "food": "牛肉飯 特大碗（飯一半） + 乳清蛋白粉 60g + 豆漿",
+      "status": "written"
     }
   ]
 }
