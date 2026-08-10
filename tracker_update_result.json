@@ -3,6 +3,48 @@
     "carbs_column_added": false,
     "carbs_column": 8
   },
-  "results": [],
-  "verification": []
+  "results": [
+    {
+      "status": "deleted",
+      "row": 113,
+      "item": {
+        "type": "delete_food",
+        "date": "2026-08-10",
+        "meal": "晚餐",
+        "food": "牛肉飯 特大碗（飯吃不到一半）",
+        "protein": 38,
+        "carbs": 55,
+        "calories": 700
+      }
+    },
+    {
+      "status": "deleted",
+      "row": 113,
+      "item": {
+        "type": "delete_food",
+        "date": "2026-08-10",
+        "meal": "晚餐",
+        "food": "乳清蛋白粉 60g + 豆漿",
+        "protein": 58,
+        "carbs": 19,
+        "calories": 384
+      }
+    }
+  ],
+  "verification": [
+    {
+      "verified": true,
+      "date": "2026-08-10",
+      "meal": "晚餐",
+      "food": "牛肉飯 特大碗（飯吃不到一半）",
+      "status": "deleted"
+    },
+    {
+      "verified": true,
+      "date": "2026-08-10",
+      "meal": "晚餐",
+      "food": "乳清蛋白粉 60g + 豆漿",
+      "status": "deleted"
+    }
+  ]
 }
