@@ -42,6 +42,12 @@ def norm(value):
     return str(value or "").strip().lower()
 
 
+def scalar_equal(actual, expected):
+    if isinstance(actual, (int, float)) and isinstance(expected, (int, float)):
+        return abs(float(actual) - float(expected)) < 1e-9
+    return str(actual) == str(expected)
+
+
 def find_sheet(wb, keyword: str):
     for name in wb.sheetnames:
         if keyword in name:
@@ -143,6 +149,28 @@ def food_exists(ws, header_row, mapping, item):
     return None
 
 
+def food_matches_exact(ws, row, mapping, item):
+    if date_key(ws.cell(row, mapping["date"]).value) != item["date"]:
+        return False
+    if mapping.get("meal") and norm(ws.cell(row, mapping["meal"]).value) != norm(item.get("meal")):
+        return False
+    if mapping.get("food") and norm(ws.cell(row, mapping["food"]).value) != norm(item.get("food")):
+        return False
+    for field in ("protein", "carbs", "calories", "source"):
+        if field not in item or not mapping.get(field):
+            continue
+        if not scalar_equal(ws.cell(row, mapping[field]).value, item[field]):
+            return False
+    return True
+
+
+def find_food_row_exact(ws, header_row, mapping, item):
+    for row in range(header_row + 1, ws.max_row + 1):
+        if food_matches_exact(ws, row, mapping, item):
+            return row
+    return None
+
+
 def apply_food(ws, item):
     header_row, mapping = locate_headers(ws)
     existing = food_exists(ws, header_row, mapping, item)
@@ -180,6 +208,15 @@ def apply_food(ws, item):
         if col:
             ws.cell(row, col).value = value
     return {"status": "written", "row": row, "item": item}
+
+
+def apply_delete_food(ws, item):
+    header_row, mapping = locate_headers(ws)
+    row = find_food_row_exact(ws, header_row, mapping, item)
+    if not row:
+        return {"status": "already_absent", "row": None, "item": item}
+    ws.delete_rows(row, 1)
+    return {"status": "deleted", "row": row, "item": item}
 
 
 def find_daily_row(ws, header_row, mapping, target_date):
@@ -229,7 +266,7 @@ def verify_food(ws, result):
         if expected in (None, ""):
             continue
         actual = ws.cell(row, mapping[field]).value
-        if str(actual) != str(expected):
+        if not scalar_equal(actual, expected):
             raise RuntimeError(f"驗證失敗：{field} 預期 {expected}，實際 {actual}")
 
     if item.get("note_append") and mapping.get("note"):
@@ -238,6 +275,15 @@ def verify_food(ws, result):
             raise RuntimeError("驗證失敗：備註修正未寫入")
 
     return {"verified": True, "row": row, "date": item["date"], "meal": item.get("meal"), "food": item.get("food"), "status": result.get("status")}
+
+
+def verify_delete_food(ws, result):
+    item = result["item"]
+    header_row, mapping = locate_headers(ws)
+    row = find_food_row_exact(ws, header_row, mapping, item)
+    if row:
+        raise RuntimeError(f"驗證失敗：欲刪除餐點仍存在於第 {row} 列：{item}")
+    return {"verified": True, "date": item["date"], "meal": item.get("meal"), "food": item.get("food"), "status": result.get("status")}
 
 
 def verify_daily_checkin(ws, result):
@@ -277,12 +323,14 @@ def main():
     for item in updates:
         if item.get("type") == "food":
             results.append(apply_food(food_ws, item))
+        elif item.get("type") == "delete_food":
+            results.append(apply_delete_food(food_ws, item))
         elif item.get("type") == "daily_checkin":
             results.append(apply_daily_checkin(daily_ws, item))
         else:
             raise RuntimeError(f"尚未支援的 update type: {item.get('type')}")
 
-    changed = added_column or any(r.get("status") in {"written", "updated"} for r in results)
+    changed = added_column or any(r.get("status") in {"written", "updated", "deleted"} for r in results)
     if changed:
         wb.save(WORKBOOK)
 
@@ -295,8 +343,11 @@ def main():
 
     verifications = []
     for result in results:
-        if result["item"].get("type") == "food":
+        item_type = result["item"].get("type")
+        if item_type == "food":
             verifications.append(verify_food(verify_food_ws, result))
+        elif item_type == "delete_food":
+            verifications.append(verify_delete_food(verify_food_ws, result))
         else:
             verifications.append(verify_daily_checkin(verify_daily_ws, result))
 
