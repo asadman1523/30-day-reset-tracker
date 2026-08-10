@@ -6,53 +6,51 @@
   "results": [
     {
       "status": "written",
-      "row": 108,
+      "row": 109,
       "item": {
         "type": "food",
-        "date": "2026-08-09",
-        "meal": "午餐",
-        "food": "未進食",
-        "source": "使用者回報",
-        "note": "使用者明確回報午餐未進食。"
+        "date": "2026-08-10",
+        "meal": "早餐",
+        "food": "地瓜",
+        "source": "",
+        "protein": 2,
+        "carbs": 35,
+        "calories": 125,
+        "note": "估算：沿用先前地瓜固定設定，約蛋白質 2 g、碳水 35 g、125 kcal。"
       }
     },
     {
-      "status": "updated",
-      "row": 10,
-      "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "workout_done",
-        "walk_minutes",
-        "sleep_hours"
-      ],
+      "status": "written",
+      "row": 110,
       "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-09",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "workout_done": "否",
-        "walk_minutes": 15,
-        "sleep_hours": 9
+        "type": "food",
+        "date": "2026-08-10",
+        "meal": "午餐",
+        "food": "豆漿 + 乳清蛋白粉 60g",
+        "source": "",
+        "protein": 58,
+        "carbs": 19,
+        "calories": 384,
+        "note": "估算：沿用 2026-08-08 相同組合設定；乳清 60 g 約蛋白質 45 g、240 kcal、碳水 6 g；豆漿約蛋白質 13 g、144 kcal、碳水 13 g。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 108,
-      "date": "2026-08-09",
-      "meal": "午餐",
-      "food": "未進食",
+      "row": 109,
+      "date": "2026-08-10",
+      "meal": "早餐",
+      "food": "地瓜",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 10,
-      "date": "2026-08-09",
-      "status": "updated"
+      "row": 110,
+      "date": "2026-08-10",
+      "meal": "午餐",
+      "food": "豆漿 + 乳清蛋白粉 60g",
+      "status": "written"
     }
   ]
 }

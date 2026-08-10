@@ -1,26 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "date": "2026-08-10",
-      "meal": "早餐",
-      "food": "地瓜",
-      "source": "",
-      "protein": 2,
-      "carbs": 35,
-      "calories": 125,
-      "note": "估算：沿用先前地瓜固定設定，約蛋白質 2 g、碳水 35 g、125 kcal。"
-    },
-    {
-      "type": "food",
-      "date": "2026-08-10",
-      "meal": "午餐",
-      "food": "豆漿 + 乳清蛋白粉 60g",
-      "source": "",
-      "protein": 58,
-      "carbs": 19,
-      "calories": 384,
-      "note": "估算：沿用 2026-08-08 相同組合設定；乳清 60 g 約蛋白質 45 g、240 kcal、碳水 6 g；豆漿約蛋白質 13 g、144 kcal、碳水 13 g。"
-    }
-  ]
+  "updates": []
 }
