@@ -1,3 +1,22 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "delete_food",
+      "date": "2026-08-10",
+      "meal": "晚餐",
+      "food": "牛肉飯特大碗（飯未吃到一半）",
+      "protein": 35,
+      "carbs": 50,
+      "calories": 750
+    },
+    {
+      "type": "delete_food",
+      "date": "2026-08-10",
+      "meal": "晚餐",
+      "food": "乳清蛋白粉 60g",
+      "protein": 45,
+      "carbs": 6,
+      "calories": 240
+    }
+  ]
 }
