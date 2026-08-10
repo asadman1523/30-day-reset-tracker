@@ -6,28 +6,28 @@
   "results": [
     {
       "status": "deleted",
-      "row": 113,
+      "row": 111,
       "item": {
         "type": "delete_food",
         "date": "2026-08-10",
         "meal": "晚餐",
-        "food": "牛肉飯 特大碗（飯吃不到一半）",
-        "protein": 38,
-        "carbs": 55,
-        "calories": 700
+        "food": "牛肉飯特大碗（飯未吃到一半）",
+        "protein": 35,
+        "carbs": 50,
+        "calories": 750
       }
     },
     {
       "status": "deleted",
-      "row": 113,
+      "row": 111,
       "item": {
         "type": "delete_food",
         "date": "2026-08-10",
         "meal": "晚餐",
-        "food": "乳清蛋白粉 60g + 豆漿",
-        "protein": 58,
-        "carbs": 19,
-        "calories": 384
+        "food": "乳清蛋白粉 60g",
+        "protein": 45,
+        "carbs": 6,
+        "calories": 240
       }
     }
   ],
@@ -36,14 +36,14 @@
       "verified": true,
       "date": "2026-08-10",
       "meal": "晚餐",
-      "food": "牛肉飯 特大碗（飯吃不到一半）",
+      "food": "牛肉飯特大碗（飯未吃到一半）",
       "status": "deleted"
     },
     {
       "verified": true,
       "date": "2026-08-10",
       "meal": "晚餐",
-      "food": "乳清蛋白粉 60g + 豆漿",
+      "food": "乳清蛋白粉 60g",
       "status": "deleted"
     }
   ]
