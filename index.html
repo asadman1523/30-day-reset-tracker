@@ -7,109 +7,37 @@
   <title>30 天重建</title>
   <link rel="stylesheet" href="./styles.css" />
   <style>
-    .food-table tfoot td {
-      border-top: 2px solid var(--line);
-      background: var(--surface-2);
-      font-weight: 750;
-    }
-    .food-table tfoot td:not(:first-child) {
-      font-variant-numeric: tabular-nums;
-    }
+    .food-table tfoot td { border-top: 2px solid var(--line); background: var(--surface-2); font-weight: 750; }
+    .food-table tfoot td:not(:first-child) { font-variant-numeric: tabular-nums; }
   </style>
 </head>
 <body>
   <main class="shell">
-    <header class="hero">
-      <div class="title-block">
-        <p class="eyebrow">30 DAY RESET</p>
-        <h1>30 天重建</h1>
-        <p id="selectedDateLabel" class="date-label">讀取資料中…</p>
-      </div>
-
-      <div class="hero-tools">
-        <div class="date-nav" aria-label="切換日期">
-          <button id="prevDay" class="icon-btn" type="button" aria-label="上一天">←</button>
-          <input id="datePicker" type="date" aria-label="選擇日期" />
-          <button id="nextDay" class="icon-btn" type="button" aria-label="下一天">→</button>
-          <button id="todayBtn" class="text-btn" type="button">今天</button>
-        </div>
-        <div class="progress-card">
-          <div class="progress-row"><span id="dayLabel">Day — / 30</span><strong id="progressPct">—%</strong></div>
-          <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
-        </div>
-      </div>
-    </header>
-
+    <header class="hero"><div class="title-block"><p class="eyebrow">30 DAY RESET</p><h1>30 天重建</h1><p id="selectedDateLabel" class="date-label">讀取資料中…</p></div><div class="hero-tools"><div class="date-nav" aria-label="切換日期"><button id="prevDay" class="icon-btn" type="button" aria-label="上一天">←</button><input id="datePicker" type="date" aria-label="選擇日期" /><button id="nextDay" class="icon-btn" type="button" aria-label="下一天">→</button><button id="todayBtn" class="text-btn" type="button">今天</button></div><div class="progress-card"><div class="progress-row"><span id="dayLabel">Day — / 30</span><strong id="progressPct">—%</strong></div><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div></div></div></header>
     <section id="statusBanner" class="banner">正在讀取資料…</section>
-
-    <section class="grid metrics">
-      <article class="card"><span>蛋白質</span><strong id="protein">—</strong><small>g</small></article>
-      <article class="card"><span>熱量</span><strong id="calories">—</strong><small>kcal</small></article>
-      <article class="card"><span>睡眠</span><strong id="sleep">—</strong><small>hr</small></article>
-      <article class="card"><span>散步</span><strong id="walk">—</strong><small>min</small></article>
-      <article class="card key-card"><span>零下注</span><strong id="zeroBet">—</strong><small>當日</small></article>
-      <article class="card"><span>衝動分數</span><strong id="urge">—</strong><small>/ 10</small></article>
-    </section>
-
-    <section class="two-col">
-      <article class="panel">
-        <div class="panel-head"><h2>飲食</h2><span id="mealCount" class="pill">—</span></div>
-        <div id="meals" class="stack"></div>
-      </article>
-      <article class="panel">
-        <div class="panel-head"><h2>每日檢核</h2><span id="checkState" class="pill">—</span></div>
-        <div id="checks" class="check-grid"></div>
-      </article>
-    </section>
-
-    <section class="two-col">
-      <article class="panel">
-        <div class="panel-head"><h2>重訓</h2><span id="workoutState" class="pill">—</span></div>
-        <div id="workouts" class="stack"></div>
-      </article>
-      <article class="panel trend-panel">
-        <div class="panel-head">
-          <h2>截至這天的 7 日趨勢</h2>
-          <div class="trend-legend"><span><i class="dot protein-dot"></i>蛋白質</span><span><i class="dot calorie-dot"></i>熱量</span></div>
-        </div>
-        <div id="trendBars" class="trend-bars" aria-label="最近七天趨勢"></div>
-      </article>
-    </section>
-
-    <footer class="footer-line">
-      <span>資料來源：30天重建追蹤.xlsx</span>
-      <span id="updatedAt">—</span>
-    </footer>
+    <section class="grid metrics"><article class="card"><span>蛋白質</span><strong id="protein">—</strong><small>g</small></article><article class="card"><span>熱量</span><strong id="calories">—</strong><small>kcal</small></article><article class="card"><span>睡眠</span><strong id="sleep">—</strong><small>hr</small></article><article class="card"><span>散步</span><strong id="walk">—</strong><small>min</small></article><article class="card key-card"><span>零下注</span><strong id="zeroBet">—</strong><small>當日</small></article><article class="card"><span>衝動分數</span><strong id="urge">—</strong><small>/ 10</small></article></section>
+    <section class="two-col"><article class="panel"><div class="panel-head"><h2>飲食</h2><span id="mealCount" class="pill">—</span></div><div id="meals" class="stack"></div></article><article class="panel"><div class="panel-head"><h2>每日檢核</h2><span id="checkState" class="pill">—</span></div><div id="checks" class="check-grid"></div></article></section>
+    <section class="two-col"><article class="panel"><div class="panel-head"><h2>重訓</h2><span id="workoutState" class="pill">—</span></div><div id="workouts" class="stack"></div></article><article class="panel trend-panel"><div class="panel-head"><h2>截至這天的 7 日趨勢</h2><div class="trend-legend"><span><i class="dot protein-dot"></i>蛋白質</span><span><i class="dot calorie-dot"></i>熱量</span></div></div><div id="trendBars" class="trend-bars" aria-label="最近七天趨勢"></div></article></section>
+    <footer class="footer-line"><span>資料來源：30天重建追蹤.xlsx</span><span id="updatedAt">—</span></footer>
   </main>
   <script src="./app.js"></script>
   <script>
     (() => {
       const baseRenderMeals = renderMeals;
-      const formatTotal = value => new Intl.NumberFormat('zh-TW', {
-        maximumFractionDigits: 1,
-      }).format(value);
-
+      const baseRenderWorkouts = renderWorkouts;
+      const formatTotal = value => new Intl.NumberFormat('zh-TW', { maximumFractionDigits: 1 }).format(value);
       renderMeals = rows => {
-        baseRenderMeals(rows);
-        if (!rows.length) return;
-
-        const table = document.querySelector('#meals .food-table');
-        if (!table) return;
-
-        const headerRow = table.querySelector('thead tr');
-        if (headerRow) headerRow.insertAdjacentHTML('beforeend', '<th>熱量</th>');
-
-        table.querySelectorAll('tbody tr').forEach((tr, index) => {
-          const calories = firstField(rows[index], ['熱量', '卡路里']);
-          tr.insertAdjacentHTML('beforeend', `<td>${calories !== '' ? `${esc(calories)} kcal` : '—'}</td>`);
-        });
-
-        const proteinTotal = sumField(rows, ['蛋白質']);
-        const carbsTotal = sumField(rows, ['碳水化合物', '碳水']);
-        const calorieTotal = sumField(rows, ['熱量', '卡路里']);
-        const footer = table.createTFoot();
-        const totalRow = footer.insertRow();
-        totalRow.innerHTML = `<td>合計</td><td>${formatTotal(proteinTotal)} g</td><td>${formatTotal(carbsTotal)} g</td><td>${formatTotal(calorieTotal)} kcal</td>`;
+        baseRenderMeals(rows); if (!rows.length) return;
+        const table = document.querySelector('#meals .food-table'); if (!table) return;
+        const headerRow = table.querySelector('thead tr'); if (headerRow) headerRow.insertAdjacentHTML('beforeend', '<th>熱量</th>');
+        table.querySelectorAll('tbody tr').forEach((tr,index)=>{const calories=firstField(rows[index],['熱量','卡路里']);tr.insertAdjacentHTML('beforeend',`<td>${calories!==''?`${esc(calories)} kcal`:'—'}</td>`);});
+        const footer=table.createTFoot(), totalRow=footer.insertRow(); totalRow.innerHTML=`<td>合計</td><td>${formatTotal(sumField(rows,['蛋白質']))} g</td><td>${formatTotal(sumField(rows,['碳水化合物','碳水']))} g</td><td>${formatTotal(sumField(rows,['熱量','卡路里']))} kcal</td>`;
+      };
+      renderWorkouts = rows => {
+        baseRenderWorkouts(rows); if (!rows.length) return;
+        const table=document.querySelector('#workouts .workout-table'); if(!table) return;
+        const th=table.querySelector('thead tr th:last-child'); if(th) th.textContent='DBR';
+        table.querySelectorAll('tbody tr').forEach((tr,index)=>{const note=firstField(rows[index],['備註']);const direct=firstField(rows[index],['DBR']);const match=note.match(/\bDBR\s*([0-9]+(?:\.[0-9]+)?)/i);const dbr=direct||(match?match[1]:'');const td=tr.querySelector('td:last-child');if(td)td.textContent=dbr||'—';});
       };
     })();
   </script>
