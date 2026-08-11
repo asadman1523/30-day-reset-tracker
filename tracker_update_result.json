@@ -3,31 +3,6 @@
     "carbs_column_added": false,
     "carbs_column": 8
   },
-  "results": [
-    {
-      "status": "written",
-      "row": 112,
-      "item": {
-        "type": "food",
-        "date": "2026-08-11",
-        "meal": "早餐",
-        "food": "豆漿 + 乳清蛋白粉 40g + 地瓜",
-        "source": "",
-        "protein": 45,
-        "carbs": 52,
-        "calories": 429,
-        "note": "估算：沿用既有設定；乳清蛋白粉 40 g 約蛋白質 30 g、碳水 4 g、160 kcal；豆漿約蛋白質 13 g、碳水 13 g、144 kcal；地瓜約蛋白質 2 g、碳水 35 g、125 kcal。合計約蛋白質 45 g、碳水 52 g、429 kcal；品牌與實際份量未提供。"
-      }
-    }
-  ],
-  "verification": [
-    {
-      "verified": true,
-      "row": 112,
-      "date": "2026-08-11",
-      "meal": "早餐",
-      "food": "豆漿 + 乳清蛋白粉 40g + 地瓜",
-      "status": "written"
-    }
-  ]
+  "results": [],
+  "verification": []
 }
