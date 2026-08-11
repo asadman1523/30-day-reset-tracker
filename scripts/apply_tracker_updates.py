@@ -37,6 +37,18 @@ DAILY_ALIASES = {
     "zero_bet_streak": ["連續零下注"],
 }
 
+WORKOUT_ALIASES = {
+    "date": ["日期", "date"],
+    "workout_name": ["訓練名稱"],
+    "exercise": ["動作"],
+    "set": ["組次", "組數"],
+    "weight": ["重量"],
+    "reps": ["次數"],
+    "rpe": ["rpe"],
+    "volume": ["訓練量"],
+    "note": ["備註"],
+}
+
 
 def norm(value):
     return str(value or "").strip().lower()
@@ -81,6 +93,21 @@ def locate_daily_headers(ws):
         if "date" in mapping and len(mapping) >= 6:
             return row, mapping
     raise RuntimeError(f"無法辨識工作表 {ws.title} 的每日檢核欄位")
+
+
+def locate_workout_headers(ws):
+    for row in range(1, min(ws.max_row, 12) + 1):
+        values = {col: norm(ws.cell(row, col).value) for col in range(1, ws.max_column + 1)}
+        mapping = {}
+        for field, aliases in WORKOUT_ALIASES.items():
+            for col, value in values.items():
+                if any(alias.lower() == value or alias.lower() in value for alias in aliases):
+                    mapping[field] = col
+                    break
+        required = {"date", "exercise", "set", "weight", "reps", "rpe", "volume"}
+        if required.issubset(mapping):
+            return row, mapping
+    raise RuntimeError(f"無法辨識工作表 {ws.title} 的重訓欄位")
 
 
 def date_key(value):
@@ -252,6 +279,66 @@ def apply_daily_checkin(ws, item):
     }
 
 
+def workout_exists(ws, header_row, mapping, item):
+    target_date = item["date"]
+    target_exercise = norm(item.get("exercise"))
+    target_set = item.get("set")
+    for row in range(header_row + 1, ws.max_row + 1):
+        if date_key(ws.cell(row, mapping["date"]).value) != target_date:
+            continue
+        if norm(ws.cell(row, mapping["exercise"]).value) != target_exercise:
+            continue
+        if not scalar_equal(ws.cell(row, mapping["set"]).value, target_set):
+            continue
+        return row
+    return None
+
+
+def find_next_workout_row(ws, header_row, mapping):
+    for row in range(header_row + 1, ws.max_row + 1):
+        date_value = ws.cell(row, mapping["date"]).value
+        exercise_value = ws.cell(row, mapping["exercise"]).value
+        if date_value in (None, "") and exercise_value in (None, ""):
+            return row
+    row = ws.max_row + 1
+    copy_row_style(ws, max(header_row + 1, ws.max_row), row)
+    return row
+
+
+def set_volume_formula(ws, row, mapping):
+    weight_col = get_column_letter(mapping["weight"])
+    reps_col = get_column_letter(mapping["reps"])
+    ws.cell(row, mapping["volume"]).value = (
+        f'=IF(OR({weight_col}{row}="",{reps_col}{row}=""),"",{weight_col}{row}*{reps_col}{row})'
+    )
+
+
+def apply_workout_set(ws, item):
+    header_row, mapping = locate_workout_headers(ws)
+    existing = workout_exists(ws, header_row, mapping, item)
+
+    if existing:
+        return {"status": "already_present", "row": existing, "item": item}
+
+    row = find_next_workout_row(ws, header_row, mapping)
+    values = {
+        "date": datetime.strptime(item["date"], "%Y-%m-%d").date(),
+        "workout_name": item.get("workout_name", "重訓"),
+        "exercise": item.get("exercise", ""),
+        "set": item.get("set", ""),
+        "weight": item.get("weight", ""),
+        "reps": item.get("reps", ""),
+        "rpe": item.get("rpe", ""),
+        "note": item.get("note", ""),
+    }
+    for field, value in values.items():
+        col = mapping.get(field)
+        if col:
+            ws.cell(row, col).value = value
+    set_volume_formula(ws, row, mapping)
+    return {"status": "written", "row": row, "item": item}
+
+
 def verify_food(ws, result):
     item = result["item"]
     header_row, mapping = locate_headers(ws)
@@ -310,6 +397,43 @@ def verify_daily_checkin(ws, result):
     return {"verified": True, "row": row, "date": item["date"], "status": result.get("status")}
 
 
+def verify_workout_set(ws, result):
+    item = result["item"]
+    header_row, mapping = locate_workout_headers(ws)
+    row = workout_exists(ws, header_row, mapping, item)
+    if not row:
+        raise RuntimeError(f"驗證失敗：找不到重訓組 {item}")
+
+    for field in ("weight", "reps", "rpe"):
+        if field not in item or not mapping.get(field):
+            continue
+        expected = item[field]
+        actual = ws.cell(row, mapping[field]).value
+        if expected in (None, ""):
+            if actual not in (None, ""):
+                raise RuntimeError(f"驗證失敗：{field} 應為空白，實際 {actual}")
+        elif not scalar_equal(actual, expected):
+            raise RuntimeError(f"驗證失敗：{field} 預期 {expected}，實際 {actual}")
+
+    if mapping.get("note") and "note" in item:
+        actual_note = str(ws.cell(row, mapping["note"]).value or "")
+        if str(item["note"]) != actual_note:
+            raise RuntimeError(f"驗證失敗：備註預期 {item['note']}，實際 {actual_note}")
+
+    volume_formula = ws.cell(row, mapping["volume"]).value
+    if not isinstance(volume_formula, str) or not volume_formula.startswith("="):
+        raise RuntimeError("驗證失敗：訓練量公式遺失")
+
+    return {
+        "verified": True,
+        "row": row,
+        "date": item["date"],
+        "exercise": item.get("exercise"),
+        "set": item.get("set"),
+        "status": result.get("status"),
+    }
+
+
 def main():
     payload = json.loads(PENDING.read_text(encoding="utf-8"))
     updates = payload.get("updates", [])
@@ -317,6 +441,7 @@ def main():
     wb = load_workbook(WORKBOOK)
     food_ws = find_sheet(wb, "飲食")
     daily_ws = find_sheet(wb, "每日檢核")
+    workout_ws = find_sheet(wb, "重訓")
     added_column, carbs_col = ensure_carbs_column(food_ws)
 
     results = []
@@ -327,6 +452,8 @@ def main():
             results.append(apply_delete_food(food_ws, item))
         elif item.get("type") == "daily_checkin":
             results.append(apply_daily_checkin(daily_ws, item))
+        elif item.get("type") == "workout_set":
+            results.append(apply_workout_set(workout_ws, item))
         else:
             raise RuntimeError(f"尚未支援的 update type: {item.get('type')}")
 
@@ -337,6 +464,7 @@ def main():
     verify_wb = load_workbook(WORKBOOK, data_only=False)
     verify_food_ws = find_sheet(verify_wb, "飲食")
     verify_daily_ws = find_sheet(verify_wb, "每日檢核")
+    verify_workout_ws = find_sheet(verify_wb, "重訓")
     _, verify_mapping = locate_headers(verify_food_ws)
     if "carbs" not in verify_mapping:
         raise RuntimeError("驗證失敗：飲食紀錄沒有碳水欄位")
@@ -348,6 +476,8 @@ def main():
             verifications.append(verify_food(verify_food_ws, result))
         elif item_type == "delete_food":
             verifications.append(verify_delete_food(verify_food_ws, result))
+        elif item_type == "workout_set":
+            verifications.append(verify_workout_set(verify_workout_ws, result))
         else:
             verifications.append(verify_daily_checkin(verify_daily_ws, result))
 
