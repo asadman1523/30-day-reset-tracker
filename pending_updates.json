@@ -1,3 +1,8 @@
 {
-  "updates": []
+  "updates": [
+    {"type":"workout_set","date":"2026-08-11","workout_name":"重訓","exercise":"臀推機","set":1,"weight":20,"reps":15,"rpe":"","note":"DBR 5"},
+    {"type":"workout_set","date":"2026-08-11","workout_name":"重訓","exercise":"臀推機","set":2,"weight":20,"reps":20,"rpe":"","note":"DBR 3"},
+    {"type":"workout_set","date":"2026-08-11","workout_name":"重訓","exercise":"臀推機","set":3,"weight":20,"reps":16,"rpe":"","note":"DBR 2"},
+    {"type":"workout_set","date":"2026-08-11","workout_name":"重訓","exercise":"臀推機","set":4,"weight":20,"reps":15,"rpe":"","note":"DBR 1"}
+  ]
 }
