@@ -6,96 +6,27 @@
   "results": [
     {
       "status": "written",
-      "row": 51,
+      "row": 114,
       "item": {
-        "type": "workout_set",
+        "type": "food",
         "date": "2026-08-11",
-        "workout_name": "重訓",
-        "exercise": "啞鈴側平舉",
-        "set": 1,
-        "weight": 10,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 3"
-      }
-    },
-    {
-      "status": "written",
-      "row": 52,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-11",
-        "workout_name": "重訓",
-        "exercise": "啞鈴側平舉",
-        "set": 2,
-        "weight": 10,
-        "reps": 17,
-        "rpe": "",
-        "note": "DBR 1"
-      }
-    },
-    {
-      "status": "written",
-      "row": 53,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-11",
-        "workout_name": "重訓",
-        "exercise": "啞鈴側平舉",
-        "set": 3,
-        "weight": 10,
-        "reps": 14,
-        "rpe": "",
-        "note": "DBR 0"
-      }
-    },
-    {
-      "status": "written",
-      "row": 54,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-11",
-        "workout_name": "重訓",
-        "exercise": "啞鈴側平舉",
-        "set": 4,
-        "weight": 10,
-        "reps": 14,
-        "rpe": "",
-        "note": "DBR 0"
+        "meal": "晚餐",
+        "food": "雙倍雞肉飯",
+        "source": "",
+        "protein": 65,
+        "carbs": 95,
+        "calories": 1050,
+        "note": "估算：沿用先前雙倍雞肉飯的雞肉份量設定，這次未註明飯減半，因此按完整一份白飯估算；約蛋白質 65 g、碳水 95 g、1050 kcal。實際醬汁與用油可能造成誤差。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 51,
+      "row": 114,
       "date": "2026-08-11",
-      "exercise": "啞鈴側平舉",
-      "set": 1,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 52,
-      "date": "2026-08-11",
-      "exercise": "啞鈴側平舉",
-      "set": 2,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 53,
-      "date": "2026-08-11",
-      "exercise": "啞鈴側平舉",
-      "set": 3,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 54,
-      "date": "2026-08-11",
-      "exercise": "啞鈴側平舉",
-      "set": 4,
+      "meal": "晚餐",
+      "food": "雙倍雞肉飯",
       "status": "written"
     }
   ]
