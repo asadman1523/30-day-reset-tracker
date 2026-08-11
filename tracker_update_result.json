@@ -6,14 +6,14 @@
   "results": [
     {
       "status": "written",
-      "row": 42,
+      "row": 47,
       "item": {
         "type": "workout_set",
         "date": "2026-08-11",
         "workout_name": "重訓",
-        "exercise": "划船",
+        "exercise": "臀推機",
         "set": 1,
-        "weight": 22.5,
+        "weight": 20,
         "reps": 15,
         "rpe": "",
         "note": "DBR 5"
@@ -21,29 +21,29 @@
     },
     {
       "status": "written",
-      "row": 43,
+      "row": 48,
       "item": {
         "type": "workout_set",
         "date": "2026-08-11",
         "workout_name": "重訓",
-        "exercise": "划船",
+        "exercise": "臀推機",
         "set": 2,
-        "weight": 30,
-        "reps": 13,
+        "weight": 20,
+        "reps": 20,
         "rpe": "",
-        "note": "DBR 5"
+        "note": "DBR 3"
       }
     },
     {
       "status": "written",
-      "row": 44,
+      "row": 49,
       "item": {
         "type": "workout_set",
         "date": "2026-08-11",
         "workout_name": "重訓",
-        "exercise": "划船",
+        "exercise": "臀推機",
         "set": 3,
-        "weight": 30,
+        "weight": 20,
         "reps": 16,
         "rpe": "",
         "note": "DBR 2"
@@ -51,97 +51,51 @@
     },
     {
       "status": "written",
-      "row": 45,
+      "row": 50,
       "item": {
         "type": "workout_set",
         "date": "2026-08-11",
         "workout_name": "重訓",
-        "exercise": "划船",
+        "exercise": "臀推機",
         "set": 4,
-        "weight": 30,
-        "reps": 13,
+        "weight": 20,
+        "reps": 15,
         "rpe": "",
         "note": "DBR 1"
-      }
-    },
-    {
-      "status": "written",
-      "row": 46,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-11",
-        "workout_name": "重訓",
-        "exercise": "划船",
-        "set": 5,
-        "weight": 30,
-        "reps": 11,
-        "rpe": "",
-        "note": "DBR 0"
-      }
-    },
-    {
-      "status": "written",
-      "row": 113,
-      "item": {
-        "type": "food",
-        "date": "2026-08-11",
-        "meal": "晚餐",
-        "food": "運動前：豆漿 + 乳清蛋白粉 40g",
-        "source": "",
-        "protein": 43,
-        "carbs": 17,
-        "calories": 304,
-        "note": "估算沿用既有設定：乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；豆漿約蛋白質 13g、碳水 13g、144 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 42,
+      "row": 47,
       "date": "2026-08-11",
-      "exercise": "划船",
+      "exercise": "臀推機",
       "set": 1,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 43,
+      "row": 48,
       "date": "2026-08-11",
-      "exercise": "划船",
+      "exercise": "臀推機",
       "set": 2,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 44,
+      "row": 49,
       "date": "2026-08-11",
-      "exercise": "划船",
+      "exercise": "臀推機",
       "set": 3,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 45,
+      "row": 50,
       "date": "2026-08-11",
-      "exercise": "划船",
+      "exercise": "臀推機",
       "set": 4,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 46,
-      "date": "2026-08-11",
-      "exercise": "划船",
-      "set": 5,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 113,
-      "date": "2026-08-11",
-      "meal": "晚餐",
-      "food": "運動前：豆漿 + 乳清蛋白粉 40g",
       "status": "written"
     }
   ]
