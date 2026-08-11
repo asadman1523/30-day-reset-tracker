@@ -1,3 +1,8 @@
 {
-  "updates": []
+  "updates": [
+    {"type":"workout_set","date":"2026-08-11","workout_name":"重訓","exercise":"啞鈴側平舉","set":1,"weight":10,"reps":15,"rpe":"","note":"DBR 3"},
+    {"type":"workout_set","date":"2026-08-11","workout_name":"重訓","exercise":"啞鈴側平舉","set":2,"weight":10,"reps":17,"rpe":"","note":"DBR 1"},
+    {"type":"workout_set","date":"2026-08-11","workout_name":"重訓","exercise":"啞鈴側平舉","set":3,"weight":10,"reps":14,"rpe":"","note":"DBR 0"},
+    {"type":"workout_set","date":"2026-08-11","workout_name":"重訓","exercise":"啞鈴側平舉","set":4,"weight":10,"reps":14,"rpe":"","note":"DBR 0"}
+  ]
 }
