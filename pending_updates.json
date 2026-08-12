@@ -1,26 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "workout_set",
-      "date": "2026-08-12",
-      "workout_name": "重訓",
-      "exercise": "羅馬尼亞蹲",
-      "set": 7,
-      "weight": 5,
-      "reps": 14,
-      "rpe": "",
-      "note": "左腳；額外加重 5 kg；DBR 0"
-    },
-    {
-      "type": "workout_set",
-      "date": "2026-08-12",
-      "workout_name": "重訓",
-      "exercise": "羅馬尼亞蹲",
-      "set": 8,
-      "weight": 5,
-      "reps": 14,
-      "rpe": "",
-      "note": "右腳；額外加重 5 kg；DBR 0"
-    }
-  ]
+  "updates": []
 }
