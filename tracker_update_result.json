@@ -3,54 +3,6 @@
     "carbs_column_added": false,
     "carbs_column": 8
   },
-  "results": [
-    {
-      "status": "written",
-      "row": 69,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-12",
-        "workout_name": "重訓",
-        "exercise": "羅馬尼亞蹲",
-        "set": 7,
-        "weight": 5,
-        "reps": 14,
-        "rpe": "",
-        "note": "左腳；額外加重 5 kg；DBR 0"
-      }
-    },
-    {
-      "status": "written",
-      "row": 70,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-12",
-        "workout_name": "重訓",
-        "exercise": "羅馬尼亞蹲",
-        "set": 8,
-        "weight": 5,
-        "reps": 14,
-        "rpe": "",
-        "note": "右腳；額外加重 5 kg；DBR 0"
-      }
-    }
-  ],
-  "verification": [
-    {
-      "verified": true,
-      "row": 69,
-      "date": "2026-08-12",
-      "exercise": "羅馬尼亞蹲",
-      "set": 7,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 70,
-      "date": "2026-08-12",
-      "exercise": "羅馬尼亞蹲",
-      "set": 8,
-      "status": "written"
-    }
-  ]
+  "results": [],
+  "verification": []
 }
