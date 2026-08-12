@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "workout_name": "重訓",
+      "exercise": "蝴蝶機夾胸",
+      "set": 1,
+      "weight": 25,
+      "reps": 15,
+      "rpe": "",
+      "note": "DBR 3"
+    }
+  ]
 }
