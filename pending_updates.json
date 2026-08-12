@@ -1,3 +1,37 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "workout_name": "重訓",
+      "exercise": "睾丸繩下拉",
+      "set": 1,
+      "weight": 3.9689332375,
+      "reps": 20,
+      "rpe": "",
+      "note": "原始重量 8.75 lb；DBR 0"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "workout_name": "重訓",
+      "exercise": "睾丸繩下拉",
+      "set": 2,
+      "weight": 5.1029141625,
+      "reps": 12,
+      "rpe": "",
+      "note": "原始重量 11.25 lb；DBR 0"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "workout_name": "重訓",
+      "exercise": "睾丸繩下拉",
+      "set": 3,
+      "weight": 3.9689332375,
+      "reps": 7,
+      "rpe": "",
+      "note": "原始重量 8.75 lb；DBR 0"
+    }
+  ]
 }
