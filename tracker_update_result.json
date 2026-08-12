@@ -6,50 +6,50 @@
   "results": [
     {
       "status": "written",
-      "row": 67,
+      "row": 116,
       "item": {
-        "type": "workout_set",
+        "type": "food",
         "date": "2026-08-12",
-        "workout_name": "重訓",
-        "exercise": "羅馬尼亞蹲",
-        "set": 5,
-        "weight": 5,
-        "reps": 14,
-        "rpe": "",
-        "note": "左腳；額外加重 5 kg；DBR 0"
+        "meal": "早餐",
+        "food": "地瓜 + 豆漿 + 乳清蛋白粉 40g",
+        "source": "使用者回報",
+        "protein": 45,
+        "carbs": 52,
+        "calories": 429,
+        "note": "估算沿用既有設定：乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；豆漿約蛋白質 13g、碳水 13g、144 kcal；地瓜約蛋白質 2g、碳水 35g、125 kcal。"
       }
     },
     {
       "status": "written",
-      "row": 68,
+      "row": 117,
       "item": {
-        "type": "workout_set",
+        "type": "food",
         "date": "2026-08-12",
-        "workout_name": "重訓",
-        "exercise": "羅馬尼亞蹲",
-        "set": 6,
-        "weight": 5,
-        "reps": 14,
-        "rpe": "",
-        "note": "右腳；額外加重 5 kg；DBR 0"
+        "meal": "午餐",
+        "food": "黑咖啡 1 杯",
+        "source": "使用者回報",
+        "protein": 0,
+        "carbs": 0,
+        "calories": 0,
+        "note": "按無糖、無奶黑咖啡記錄；熱量視為可忽略。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 67,
+      "row": 116,
       "date": "2026-08-12",
-      "exercise": "羅馬尼亞蹲",
-      "set": 5,
+      "meal": "早餐",
+      "food": "地瓜 + 豆漿 + 乳清蛋白粉 40g",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 68,
+      "row": 117,
       "date": "2026-08-12",
-      "exercise": "羅馬尼亞蹲",
-      "set": 6,
+      "meal": "午餐",
+      "food": "黑咖啡 1 杯",
       "status": "written"
     }
   ]
