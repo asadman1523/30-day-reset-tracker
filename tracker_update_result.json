@@ -5,31 +5,31 @@
   },
   "results": [
     {
-      "status": "already_present",
-      "row": 55,
+      "status": "written",
+      "row": 57,
       "item": {
         "type": "workout_set",
         "date": "2026-08-12",
         "workout_name": "重訓",
         "exercise": "蝴蝶機夾胸",
-        "set": 1,
+        "set": 3,
         "weight": 25,
-        "reps": 15,
+        "reps": 7,
         "rpe": "",
-        "note": "DBR 3"
+        "note": "DBR 0"
       }
     },
     {
       "status": "written",
-      "row": 56,
+      "row": 58,
       "item": {
         "type": "workout_set",
         "date": "2026-08-12",
         "workout_name": "重訓",
         "exercise": "蝴蝶機夾胸",
-        "set": 2,
+        "set": 4,
         "weight": 20,
-        "reps": 15,
+        "reps": 13,
         "rpe": "",
         "note": "DBR 0"
       }
@@ -38,18 +38,18 @@
   "verification": [
     {
       "verified": true,
-      "row": 55,
+      "row": 57,
       "date": "2026-08-12",
       "exercise": "蝴蝶機夾胸",
-      "set": 1,
-      "status": "already_present"
+      "set": 3,
+      "status": "written"
     },
     {
       "verified": true,
-      "row": 56,
+      "row": 58,
       "date": "2026-08-12",
       "exercise": "蝴蝶機夾胸",
-      "set": 2,
+      "set": 4,
       "status": "written"
     }
   ]
