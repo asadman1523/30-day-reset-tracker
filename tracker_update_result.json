@@ -3,31 +3,6 @@
     "carbs_column_added": false,
     "carbs_column": 8
   },
-  "results": [
-    {
-      "status": "written",
-      "row": 62,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-12",
-        "workout_name": "重訓",
-        "exercise": "睾丸繩下拉",
-        "set": 4,
-        "weight": 2.8349523125,
-        "reps": 16,
-        "rpe": "",
-        "note": "原始重量 6.25 lb；DBR 0"
-      }
-    }
-  ],
-  "verification": [
-    {
-      "verified": true,
-      "row": 62,
-      "date": "2026-08-12",
-      "exercise": "睾丸繩下拉",
-      "set": 4,
-      "status": "written"
-    }
-  ]
+  "results": [],
+  "verification": []
 }
