@@ -36,8 +36,20 @@
       renderWorkouts = rows => {
         baseRenderWorkouts(rows); if (!rows.length) return;
         const table=document.querySelector('#workouts .workout-table'); if(!table) return;
-        const th=table.querySelector('thead tr th:last-child'); if(th) th.textContent='DBR';
-        table.querySelectorAll('tbody tr').forEach((tr,index)=>{const note=firstField(rows[index],['備註']);const direct=firstField(rows[index],['DBR']);const match=note.match(/\bDBR\s*([0-9]+(?:\.[0-9]+)?)/i);const dbr=direct||(match?match[1]:'');const td=tr.querySelector('td:last-child');if(td)td.textContent=dbr||'—';});
+        const headerRow=table.querySelector('thead tr');
+        const setHeader=headerRow?.querySelector('th:nth-child(2)');
+        if(setHeader) setHeader.insertAdjacentHTML('beforebegin','<th>側別</th>');
+        const lastHeader=headerRow?.querySelector('th:last-child'); if(lastHeader) lastHeader.textContent='DBR';
+        table.querySelectorAll('tbody tr').forEach((tr,index)=>{
+          const note=firstField(rows[index],['備註']);
+          const direct=firstField(rows[index],['DBR']);
+          const match=note.match(/\bDBR\s*([0-9]+(?:\.[0-9]+)?)/i);
+          const dbr=direct||(match?match[1]:'');
+          const side=/左腳/.test(note)?'左腳':/右腳/.test(note)?'右腳':'—';
+          const setCell=tr.querySelector('td:nth-child(2)');
+          if(setCell) setCell.insertAdjacentHTML('beforebegin',`<td>${side}</td>`);
+          const td=tr.querySelector('td:last-child');if(td)td.textContent=dbr||'—';
+        });
       };
     })();
   </script>
