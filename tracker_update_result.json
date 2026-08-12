@@ -8,16 +8,14 @@
       "status": "updated",
       "row": 13,
       "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge"
+        "walk_minutes",
+        "sleep_hours"
       ],
       "item": {
         "type": "daily_checkin",
         "date": "2026-08-12",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0
+        "walk_minutes": 0,
+        "sleep_hours": 3
       }
     }
   ],
