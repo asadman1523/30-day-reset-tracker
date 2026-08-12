@@ -1,3 +1,128 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "date": "2026-08-04",
+      "exercise": "睾丸繩下拉",
+      "set": 1,
+      "weight": 6.25,
+      "note": "器械刻度確認為 kg；原始重量 6.25 kg；動作名稱照使用者原文。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-04",
+      "exercise": "睾丸繩下拉",
+      "set": 2,
+      "weight": 6.25,
+      "note": "器械刻度確認為 kg；原始重量 6.25 kg；動作名稱照使用者原文。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-04",
+      "exercise": "睾丸繩下拉",
+      "set": 3,
+      "weight": 6.25,
+      "note": "器械刻度確認為 kg；原始重量 6.25 kg；動作名稱照使用者原文。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-04",
+      "exercise": "睾丸繩下拉",
+      "set": 4,
+      "weight": 6.25,
+      "note": "器械刻度確認為 kg；原始重量 6.25 kg；動作名稱照使用者原文。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "exercise": "睾丸繩下拉",
+      "set": 1,
+      "weight": 8.75,
+      "reps": 20,
+      "rpe": "",
+      "note": "器械刻度確認為 kg；DBR 0",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "exercise": "睾丸繩下拉",
+      "set": 2,
+      "weight": 11.25,
+      "reps": 12,
+      "rpe": "",
+      "note": "器械刻度確認為 kg；DBR 0",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "exercise": "睾丸繩下拉",
+      "set": 3,
+      "weight": 8.75,
+      "reps": 7,
+      "rpe": "",
+      "note": "器械刻度確認為 kg；DBR 0",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "exercise": "睾丸繩下拉",
+      "set": 4,
+      "weight": 6.25,
+      "reps": 16,
+      "rpe": "",
+      "note": "器械刻度確認為 kg；DBR 0",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "workout_name": "重訓",
+      "exercise": "羅馬尼亞蹲",
+      "set": 1,
+      "weight": 0,
+      "reps": 15,
+      "rpe": "",
+      "note": "左腳；自重；DBR 3"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "workout_name": "重訓",
+      "exercise": "羅馬尼亞蹲",
+      "set": 2,
+      "weight": 0,
+      "reps": 15,
+      "rpe": "",
+      "note": "右腳；自重；DBR 3"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "workout_name": "重訓",
+      "exercise": "羅馬尼亞蹲",
+      "set": 3,
+      "weight": 5,
+      "reps": 15,
+      "rpe": "",
+      "note": "左腳；額外加重 5 kg；DBR 2"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-12",
+      "workout_name": "重訓",
+      "exercise": "羅馬尼亞蹲",
+      "set": 4,
+      "weight": 5,
+      "reps": 8,
+      "rpe": "",
+      "note": "右腳；額外加重 5 kg；DBR 0"
+    }
+  ]
 }
