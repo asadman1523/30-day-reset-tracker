@@ -3,56 +3,6 @@
     "carbs_column_added": false,
     "carbs_column": 8
   },
-  "results": [
-    {
-      "status": "written",
-      "row": 115,
-      "item": {
-        "type": "food",
-        "date": "2026-08-11",
-        "meal": "午餐",
-        "food": "未進食",
-        "source": "使用者回報",
-        "note": "使用者明確回報午餐未進食。"
-      }
-    },
-    {
-      "status": "updated",
-      "row": 12,
-      "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "workout_done",
-        "walk_minutes",
-        "sleep_hours"
-      ],
-      "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-11",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "workout_done": "是",
-        "walk_minutes": 0,
-        "sleep_hours": 9
-      }
-    }
-  ],
-  "verification": [
-    {
-      "verified": true,
-      "row": 115,
-      "date": "2026-08-11",
-      "meal": "午餐",
-      "food": "未進食",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 12,
-      "date": "2026-08-11",
-      "status": "updated"
-    }
-  ]
+  "results": [],
+  "verification": []
 }
