@@ -5,72 +5,28 @@
   },
   "results": [
     {
-      "status": "written",
-      "row": 118,
+      "status": "updated",
+      "row": 13,
+      "fields": [
+        "zero_bet",
+        "viewed_odds",
+        "urge"
+      ],
       "item": {
-        "type": "food",
+        "type": "daily_checkin",
         "date": "2026-08-12",
-        "meal": "晚餐",
-        "food": "全家 健身G肉餐盒",
-        "source": "公開資料估算（FatSecret；商品版本可能不同）",
-        "protein": 29,
-        "carbs": 67.7,
-        "calories": 500,
-        "note": "採公開完整營養資料：每份約蛋白質 29 g、碳水 67.7 g、500 kcal。另有近期商品分享標示 385 g／481 kcal，推測版本或配方不同，因此本筆為透明估算。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 119,
-      "item": {
-        "type": "food",
-        "date": "2026-08-12",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 40g",
-        "source": "估算",
-        "protein": 32,
-        "carbs": 4,
-        "calories": 160,
-        "note": "未提供品牌與營養標示；以一般乳清蛋白粉約每 40 g 含蛋白質 32 g、碳水 4 g、160 kcal 估算。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 120,
-      "item": {
-        "type": "food",
-        "date": "2026-08-12",
-        "meal": "晚餐",
-        "food": "豆漿",
-        "source": "使用者回報",
-        "note": "品牌、容量與營養標示未提供；依規則不猜份量，蛋白質、碳水與熱量暫留空白待補。"
+        "zero_bet": "是",
+        "viewed_odds": "否",
+        "urge": 0
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 118,
+      "row": 13,
       "date": "2026-08-12",
-      "meal": "晚餐",
-      "food": "全家 健身G肉餐盒",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 119,
-      "date": "2026-08-12",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 40g",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 120,
-      "date": "2026-08-12",
-      "meal": "晚餐",
-      "food": "豆漿",
-      "status": "written"
+      "status": "updated"
     }
   ]
 }
