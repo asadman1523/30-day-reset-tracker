@@ -6,73 +6,27 @@
   "results": [
     {
       "status": "written",
-      "row": 59,
+      "row": 62,
       "item": {
         "type": "workout_set",
         "date": "2026-08-12",
         "workout_name": "重訓",
         "exercise": "睾丸繩下拉",
-        "set": 1,
-        "weight": 3.9689332375,
-        "reps": 20,
+        "set": 4,
+        "weight": 2.8349523125,
+        "reps": 16,
         "rpe": "",
-        "note": "原始重量 8.75 lb；DBR 0"
-      }
-    },
-    {
-      "status": "written",
-      "row": 60,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-12",
-        "workout_name": "重訓",
-        "exercise": "睾丸繩下拉",
-        "set": 2,
-        "weight": 5.1029141625,
-        "reps": 12,
-        "rpe": "",
-        "note": "原始重量 11.25 lb；DBR 0"
-      }
-    },
-    {
-      "status": "written",
-      "row": 61,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-12",
-        "workout_name": "重訓",
-        "exercise": "睾丸繩下拉",
-        "set": 3,
-        "weight": 3.9689332375,
-        "reps": 7,
-        "rpe": "",
-        "note": "原始重量 8.75 lb；DBR 0"
+        "note": "原始重量 6.25 lb；DBR 0"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 59,
+      "row": 62,
       "date": "2026-08-12",
       "exercise": "睾丸繩下拉",
-      "set": 1,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 60,
-      "date": "2026-08-12",
-      "exercise": "睾丸繩下拉",
-      "set": 2,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 61,
-      "date": "2026-08-12",
-      "exercise": "睾丸繩下拉",
-      "set": 3,
+      "set": 4,
       "status": "written"
     }
   ]
