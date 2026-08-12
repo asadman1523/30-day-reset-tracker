@@ -5,7 +5,7 @@
   },
   "results": [
     {
-      "status": "written",
+      "status": "already_present",
       "row": 55,
       "item": {
         "type": "workout_set",
@@ -18,6 +18,21 @@
         "rpe": "",
         "note": "DBR 3"
       }
+    },
+    {
+      "status": "written",
+      "row": 56,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-08-12",
+        "workout_name": "重訓",
+        "exercise": "蝴蝶機夾胸",
+        "set": 2,
+        "weight": 20,
+        "reps": 15,
+        "rpe": "",
+        "note": "DBR 0"
+      }
     }
   ],
   "verification": [
@@ -27,6 +42,14 @@
       "date": "2026-08-12",
       "exercise": "蝴蝶機夾胸",
       "set": 1,
+      "status": "already_present"
+    },
+    {
+      "verified": true,
+      "row": 56,
+      "date": "2026-08-12",
+      "exercise": "蝴蝶機夾胸",
+      "set": 2,
       "status": "written"
     }
   ]
