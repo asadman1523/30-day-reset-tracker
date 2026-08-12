@@ -12,14 +12,9 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   apply:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,25 +25,6 @@ jobs:
           python-version: '3.12'
       - name: Install workbook dependency
         run: python -m pip install --disable-pip-version-check openpyxl
-      - name: Normalize historical exercise name
-        shell: bash
-        run: |
-          python - <<'PY'
-          from openpyxl import load_workbook
-
-          path = '30天重建追蹤.xlsx'
-          wb = load_workbook(path)
-          changed = 0
-          for ws in wb.worksheets:
-              for row in ws.iter_rows():
-                  for cell in row:
-                      if cell.value == '坐姿胸推':
-                          cell.value = '蝴蝶機夾胸'
-                          changed += 1
-          if changed:
-              wb.save(path)
-          print(f'Renamed {changed} historical rows')
-          PY
       - name: Apply and verify pending updates
         run: python scripts/apply_tracker_updates.py
       - name: Export dashboard data
@@ -66,12 +42,3 @@ jobs:
           else
             echo "No tracker changes to commit."
           fi
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload dashboard artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: '.'
-      - name: Deploy dashboard
-        id: deployment
-        uses: actions/deploy-pages@v4
