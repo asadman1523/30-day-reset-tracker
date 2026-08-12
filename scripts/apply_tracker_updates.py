@@ -317,6 +317,30 @@ def apply_workout_set(ws, item):
     header_row, mapping = locate_workout_headers(ws)
     existing = workout_exists(ws, header_row, mapping, item)
 
+    if existing and item.get("update_existing"):
+        changed_fields = []
+        for field in ("workout_name", "weight", "reps", "rpe", "note"):
+            if field not in item or not mapping.get(field):
+                continue
+            expected = item[field]
+            actual = ws.cell(existing, mapping[field]).value
+            if not scalar_equal(actual, expected):
+                ws.cell(existing, mapping[field]).value = expected
+                changed_fields.append(field)
+        if item.get("note_append") and mapping.get("note"):
+            cell = ws.cell(existing, mapping["note"])
+            updated_note = append_note(cell.value, item["note_append"])
+            if updated_note != str(cell.value or ""):
+                cell.value = updated_note
+                changed_fields.append("note_append")
+        set_volume_formula(ws, existing, mapping)
+        return {
+            "status": "updated" if changed_fields else "already_present",
+            "row": existing,
+            "fields": changed_fields,
+            "item": item,
+        }
+
     if existing:
         return {"status": "already_present", "row": existing, "item": item}
 
