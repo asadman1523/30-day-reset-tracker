@@ -5,18 +5,24 @@
   },
   "results": [
     {
-      "status": "written",
+      "status": "updated",
       "row": 122,
+      "fields": [
+        "protein",
+        "carbs",
+        "calories",
+        "note"
+      ],
       "item": {
         "type": "food",
         "date": "2026-08-13",
         "meal": "晚餐",
         "food": "牛腩咖哩 + 雞腿肉 1 份 + 番茄 + 豆漿 + 乳清蛋白粉 40g",
-        "source": "使用者回報",
-        "protein": 109,
-        "carbs": 97,
-        "calories": 1269,
-        "note": "估算：牛腩咖哩按一般一份含白飯計約蛋白質 35g、碳水 75g、700 kcal；雞腿肉 1 份約蛋白質 30g、240 kcal；番茄約蛋白質 1g、碳水 5g、25 kcal；豆漿沿用既有設定約蛋白質 13g、碳水 13g、144 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal。實際咖哩份量、牛腩肥瘦、飯量與雞腿料理方式會造成誤差。"
+        "protein": 114,
+        "carbs": 157,
+        "calories": 1549,
+        "note": "修正估算：使用者補充白飯份量可能接近兩份且份量偏多。原估算上額外加約 1 碗白飯（蛋白質約 5g、碳水約 60g、280 kcal）。其餘牛腩咖哩、雞腿肉、番茄、豆漿與乳清沿用先前估算。",
+        "update_existing": true
       }
     }
   ],
@@ -27,7 +33,7 @@
       "date": "2026-08-13",
       "meal": "晚餐",
       "food": "牛腩咖哩 + 雞腿肉 1 份 + 番茄 + 豆漿 + 乳清蛋白粉 40g",
-      "status": "written"
+      "status": "updated"
     }
   ]
 }
