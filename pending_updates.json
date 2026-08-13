@@ -1,22 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "date": "2026-08-13",
-      "meal": "午餐",
-      "food": "未進食",
-      "source": "使用者回報",
-      "note": "使用者明確回報午餐未進食。"
-    },
-    {
-      "type": "daily_checkin",
-      "date": "2026-08-13",
-      "zero_bet": "是",
-      "viewed_odds": "否",
-      "urge": 0,
-      "workout_done": "否",
-      "walk_minutes": 10,
-      "sleep_hours": 6
-    }
-  ]
+  "updates": []
 }
