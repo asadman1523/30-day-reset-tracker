@@ -6,95 +6,95 @@
   "results": [
     {
       "status": "written",
-      "row": 80,
+      "row": 84,
       "item": {
         "type": "workout_set",
         "date": "2026-08-14",
         "workout_name": "重訓",
-        "exercise": "腿後勾",
+        "exercise": "臀推機",
         "set": 1,
-        "weight": 40,
-        "reps": 15,
+        "weight": 30,
+        "reps": 13,
         "rpe": "",
         "note": "DBR 2"
       }
     },
     {
       "status": "written",
-      "row": 81,
+      "row": 85,
       "item": {
         "type": "workout_set",
         "date": "2026-08-14",
         "workout_name": "重訓",
-        "exercise": "腿後勾",
+        "exercise": "臀推機",
         "set": 2,
-        "weight": 40,
-        "reps": 15,
+        "weight": 30,
+        "reps": 13,
         "rpe": "",
-        "note": "DBR 1"
+        "note": "DBR 1；重量未重複提供，沿用上一組 30 kg"
       }
     },
     {
       "status": "written",
-      "row": 82,
+      "row": 86,
       "item": {
         "type": "workout_set",
         "date": "2026-08-14",
         "workout_name": "重訓",
-        "exercise": "腿後勾",
+        "exercise": "臀推機",
         "set": 3,
-        "weight": 40,
-        "reps": 15,
+        "weight": 30,
+        "reps": 12,
         "rpe": "",
-        "note": "DBR 1；重量未重複提供，沿用上一組 40 kg"
+        "note": "DBR 0；重量未重複提供，沿用上一組 30 kg"
       }
     },
     {
       "status": "written",
-      "row": 83,
+      "row": 87,
       "item": {
         "type": "workout_set",
         "date": "2026-08-14",
         "workout_name": "重訓",
-        "exercise": "腿後勾",
+        "exercise": "臀推機",
         "set": 4,
-        "weight": 40,
-        "reps": 15,
+        "weight": 30,
+        "reps": 10,
         "rpe": "",
-        "note": "DBR 0；重量未重複提供，沿用上一組 40 kg"
+        "note": "DBR 0；重量未重複提供，沿用上一組 30 kg"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 80,
+      "row": 84,
       "date": "2026-08-14",
-      "exercise": "腿後勾",
+      "exercise": "臀推機",
       "set": 1,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 81,
+      "row": 85,
       "date": "2026-08-14",
-      "exercise": "腿後勾",
+      "exercise": "臀推機",
       "set": 2,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 82,
+      "row": 86,
       "date": "2026-08-14",
-      "exercise": "腿後勾",
+      "exercise": "臀推機",
       "set": 3,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 83,
+      "row": 87,
       "date": "2026-08-14",
-      "exercise": "腿後勾",
+      "exercise": "臀推機",
       "set": 4,
       "status": "written"
     }
