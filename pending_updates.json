@@ -1,15 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "date": "2026-08-14",
-      "meal": "運動前",
-      "food": "乳清蛋白粉 40g + 豆漿 1 杯",
-      "source": "使用者回報",
-      "protein": 43,
-      "carbs": 17,
-      "calories": 304,
-      "note": "估算沿用既有設定：乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；豆漿約蛋白質 13g、碳水 13g、144 kcal。"
-    }
-  ]
+  "updates": []
 }
