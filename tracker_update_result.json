@@ -6,96 +6,119 @@
   "results": [
     {
       "status": "written",
-      "row": 71,
+      "row": 75,
       "item": {
         "type": "workout_set",
         "date": "2026-08-14",
         "workout_name": "重訓",
-        "exercise": "上斜胸推",
+        "exercise": "睾丸繩下拉",
         "set": 1,
-        "weight": 20,
-        "reps": 15,
+        "weight": 8.75,
+        "reps": 11,
         "rpe": "",
-        "note": "DBR 3"
+        "note": "器械刻度確認為 kg；DBR 0"
       }
     },
     {
       "status": "written",
-      "row": 72,
+      "row": 76,
       "item": {
         "type": "workout_set",
         "date": "2026-08-14",
         "workout_name": "重訓",
-        "exercise": "上斜胸推",
+        "exercise": "睾丸繩下拉",
         "set": 2,
-        "weight": 25,
-        "reps": 12,
+        "weight": 8.75,
+        "reps": 10,
         "rpe": "",
-        "note": "DBR 1"
+        "note": "器械刻度確認為 kg；DBR 0；重量未重複提供，沿用上一組 8.75 kg"
       }
     },
     {
       "status": "written",
-      "row": 73,
+      "row": 77,
       "item": {
         "type": "workout_set",
         "date": "2026-08-14",
         "workout_name": "重訓",
-        "exercise": "上斜胸推",
+        "exercise": "睾丸繩下拉",
         "set": 3,
-        "weight": 25,
-        "reps": 10,
+        "weight": 6.25,
+        "reps": 13,
         "rpe": "",
-        "note": "DBR 0；重量未重複提供，沿用上一組 25 kg"
+        "note": "器械刻度確認為 kg；DBR 0"
       }
     },
     {
       "status": "written",
-      "row": 74,
+      "row": 78,
       "item": {
         "type": "workout_set",
         "date": "2026-08-14",
         "workout_name": "重訓",
-        "exercise": "上斜胸推",
+        "exercise": "睾丸繩下拉",
         "set": 4,
-        "weight": 25,
-        "reps": 10,
+        "weight": 6.25,
+        "reps": 13,
         "rpe": "",
-        "note": "DBR 0；重量未重複提供，沿用上一組 25 kg"
+        "note": "器械刻度確認為 kg；DBR 0；重量未重複提供，沿用上一組 6.25 kg"
+      }
+    },
+    {
+      "status": "written",
+      "row": 79,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-08-14",
+        "workout_name": "重訓",
+        "exercise": "睾丸繩下拉",
+        "set": 5,
+        "weight": 6.25,
+        "reps": 11,
+        "rpe": "",
+        "note": "器械刻度確認為 kg；DBR 0；重量未重複提供，沿用上一組 6.25 kg"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 71,
+      "row": 75,
       "date": "2026-08-14",
-      "exercise": "上斜胸推",
+      "exercise": "睾丸繩下拉",
       "set": 1,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 72,
+      "row": 76,
       "date": "2026-08-14",
-      "exercise": "上斜胸推",
+      "exercise": "睾丸繩下拉",
       "set": 2,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 73,
+      "row": 77,
       "date": "2026-08-14",
-      "exercise": "上斜胸推",
+      "exercise": "睾丸繩下拉",
       "set": 3,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 74,
+      "row": 78,
       "date": "2026-08-14",
-      "exercise": "上斜胸推",
+      "exercise": "睾丸繩下拉",
       "set": 4,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 79,
+      "date": "2026-08-14",
+      "exercise": "睾丸繩下拉",
+      "set": 5,
       "status": "written"
     }
   ]
