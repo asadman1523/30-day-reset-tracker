@@ -6,96 +6,27 @@
   "results": [
     {
       "status": "written",
-      "row": 84,
+      "row": 126,
       "item": {
-        "type": "workout_set",
+        "type": "food",
         "date": "2026-08-14",
-        "workout_name": "重訓",
-        "exercise": "臀推機",
-        "set": 1,
-        "weight": 30,
-        "reps": 13,
-        "rpe": "",
-        "note": "DBR 2"
-      }
-    },
-    {
-      "status": "written",
-      "row": 85,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-14",
-        "workout_name": "重訓",
-        "exercise": "臀推機",
-        "set": 2,
-        "weight": 30,
-        "reps": 13,
-        "rpe": "",
-        "note": "DBR 1；重量未重複提供，沿用上一組 30 kg"
-      }
-    },
-    {
-      "status": "written",
-      "row": 86,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-14",
-        "workout_name": "重訓",
-        "exercise": "臀推機",
-        "set": 3,
-        "weight": 30,
-        "reps": 12,
-        "rpe": "",
-        "note": "DBR 0；重量未重複提供，沿用上一組 30 kg"
-      }
-    },
-    {
-      "status": "written",
-      "row": 87,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-14",
-        "workout_name": "重訓",
-        "exercise": "臀推機",
-        "set": 4,
-        "weight": 30,
-        "reps": 10,
-        "rpe": "",
-        "note": "DBR 0；重量未重複提供，沿用上一組 30 kg"
+        "meal": "晚餐",
+        "food": "烤肉：旗魚黑輪 1 串 + 雞腿肉 3 串 + 雞胗 1 串 + 豆皮 1 份 + 牛肉串 2 串",
+        "source": "一般烤肉份量估算",
+        "protein": 80,
+        "carbs": 30,
+        "calories": 820,
+        "note": "估算僅依使用者提供的品項與串數，不另計未提及的白飯、飲料或額外配菜。以一般夜市／烤肉攤常見單串份量估算：約旗魚黑輪 120 kcal、蛋白質 6 g、碳水 12 g；雞腿肉 3 串合計 270 kcal、蛋白質 30 g、碳水 6 g；雞胗 1 串 60 kcal、蛋白質 10 g；豆皮 1 份 150 kcal、蛋白質 10 g、碳水 8 g；牛肉串 2 串合計 220 kcal、蛋白質 24 g、碳水 4 g。總計約蛋白質 80 g、碳水 30 g、820 kcal。實際串重、油脂與醬料會造成誤差。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 84,
+      "row": 126,
       "date": "2026-08-14",
-      "exercise": "臀推機",
-      "set": 1,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 85,
-      "date": "2026-08-14",
-      "exercise": "臀推機",
-      "set": 2,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 86,
-      "date": "2026-08-14",
-      "exercise": "臀推機",
-      "set": 3,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 87,
-      "date": "2026-08-14",
-      "exercise": "臀推機",
-      "set": 4,
+      "meal": "晚餐",
+      "food": "烤肉：旗魚黑輪 1 串 + 雞腿肉 3 串 + 雞胗 1 串 + 豆皮 1 份 + 牛肉串 2 串",
       "status": "written"
     }
   ]
