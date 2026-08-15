@@ -6,28 +6,71 @@
   "results": [
     {
       "status": "written",
-      "row": 130,
+      "row": 131,
       "item": {
         "type": "food",
         "date": "2026-08-15",
-        "meal": "早餐",
-        "food": "乳清蛋白粉 40g + 豆漿半杯",
-        "source": "使用者回報",
-        "protein": 36.5,
-        "carbs": 10.5,
-        "calories": 232,
-        "note": "估算沿用既有設定：乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；豆漿半杯按既有一杯設定的一半估算，約蛋白質 6.5g、碳水 6.5g、72 kcal。"
+        "meal": "午餐",
+        "food": "雞腿肉套餐 + 花椰菜 1 份",
+        "source": "一般份量估算",
+        "protein": 45,
+        "carbs": 70,
+        "calories": 720,
+        "note": "估算：未提供店家、雞腿肉重量、主食份量與套餐配菜細節；先以一般雞腿肉套餐加一份花椰菜估算約蛋白質 45 g、碳水 70 g、720 kcal。不另計未提及飲料與額外醬料。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 132,
+      "item": {
+        "type": "food",
+        "date": "2026-08-15",
+        "meal": "晚餐",
+        "food": "乳清蛋白粉 60g + 豆漿 1 杯",
+        "source": "沿用既有估算設定",
+        "protein": 58,
+        "carbs": 19,
+        "calories": 384,
+        "note": "沿用既有 60 g 乳清 + 1 杯豆漿估算設定：約蛋白質 58 g、碳水 19 g、384 kcal；本次未提供品牌與容量。"
+      }
+    },
+    {
+      "status": "updated",
+      "row": 16,
+      "fields": [
+        "walk_minutes",
+        "sleep_hours"
+      ],
+      "item": {
+        "type": "daily_checkin",
+        "date": "2026-08-15",
+        "walk_minutes": 40,
+        "sleep_hours": 8
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 130,
+      "row": 131,
       "date": "2026-08-15",
-      "meal": "早餐",
-      "food": "乳清蛋白粉 40g + 豆漿半杯",
+      "meal": "午餐",
+      "food": "雞腿肉套餐 + 花椰菜 1 份",
       "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 132,
+      "date": "2026-08-15",
+      "meal": "晚餐",
+      "food": "乳清蛋白粉 60g + 豆漿 1 杯",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 16,
+      "date": "2026-08-15",
+      "status": "updated"
     }
   ]
 }
