@@ -6,94 +6,28 @@
   "results": [
     {
       "status": "written",
-      "row": 127,
+      "row": 130,
       "item": {
         "type": "food",
-        "date": "2026-08-14",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 40g",
-        "source": "估算",
-        "protein": 32,
-        "carbs": 4,
-        "calories": 160,
-        "note": "未提供品牌與營養標示；以一般乳清蛋白粉每 40 g 約蛋白質 32 g、碳水 4 g、160 kcal 估算。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 128,
-      "item": {
-        "type": "food",
-        "date": "2026-08-14",
-        "meal": "晚餐",
-        "food": "豆漿",
+        "date": "2026-08-15",
+        "meal": "早餐",
+        "food": "乳清蛋白粉 40g + 豆漿半杯",
         "source": "使用者回報",
-        "note": "品牌、容量與營養標示未提供；依規則不猜份量，蛋白質、碳水與熱量暫留空白待補。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 129,
-      "item": {
-        "type": "food",
-        "date": "2026-08-14",
-        "meal": "午餐",
-        "food": "未進食",
-        "source": "使用者回報",
-        "note": "使用者以『其他都沒有』回覆當晚剩餘缺漏，依上下文記為午餐未進食。"
-      }
-    },
-    {
-      "status": "updated",
-      "row": 15,
-      "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "walk_minutes",
-        "sleep_hours"
-      ],
-      "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-14",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "walk_minutes": 0,
-        "sleep_hours": 8
+        "protein": 36.5,
+        "carbs": 10.5,
+        "calories": 232,
+        "note": "估算沿用既有設定：乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；豆漿半杯按既有一杯設定的一半估算，約蛋白質 6.5g、碳水 6.5g、72 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 127,
-      "date": "2026-08-14",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 40g",
+      "row": 130,
+      "date": "2026-08-15",
+      "meal": "早餐",
+      "food": "乳清蛋白粉 40g + 豆漿半杯",
       "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 128,
-      "date": "2026-08-14",
-      "meal": "晚餐",
-      "food": "豆漿",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 129,
-      "date": "2026-08-14",
-      "meal": "午餐",
-      "food": "未進食",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 15,
-      "date": "2026-08-14",
-      "status": "updated"
     }
   ]
 }
