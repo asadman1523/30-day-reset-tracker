@@ -6,51 +6,53 @@
   "results": [
     {
       "status": "written",
-      "row": 133,
+      "row": 135,
       "item": {
         "type": "food",
         "date": "2026-08-16",
-        "meal": "早餐",
-        "food": "豆漿 1 杯 + 乳清蛋白粉 40g + 地瓜",
+        "meal": "午餐",
+        "food": "未進食",
         "source": "使用者回報",
-        "protein": 45,
-        "carbs": 52,
-        "calories": 429,
-        "note": "估算沿用既有設定：豆漿約蛋白質 13g、碳水 13g、144 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；地瓜約蛋白質 2g、碳水 35g、125 kcal。"
+        "note": "使用者回覆其他沒有，依當晚剩餘缺漏記為午餐未進食。"
       }
     },
     {
-      "status": "written",
-      "row": 134,
+      "status": "updated",
+      "row": 17,
+      "fields": [
+        "zero_bet",
+        "viewed_odds",
+        "urge",
+        "workout_done",
+        "walk_minutes",
+        "sleep_hours"
+      ],
       "item": {
-        "type": "food",
+        "type": "daily_checkin",
         "date": "2026-08-16",
-        "meal": "晚餐",
-        "food": "三元酒樓：烤鴨 + 佛跳牆 + 脆皮雞",
-        "source": "使用者回報",
-        "protein": 90,
-        "carbs": 45,
-        "calories": 1400,
-        "note": "未提供各道實際食用份量，按一般中式聚餐個人食用量做透明估算：約蛋白質 90g、碳水 45g、1400 kcal。烤鴨與脆皮雞的皮脂、佛跳牆配料與湯汁會使熱量誤差較大，實際可上下浮動約 300–500 kcal；若補充吃了幾塊鴨、雞、是否有餅皮或飯，可再修正。"
+        "zero_bet": "是",
+        "viewed_odds": "否",
+        "urge": 0,
+        "workout_done": "否",
+        "walk_minutes": 0,
+        "sleep_hours": 11
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 133,
+      "row": 135,
       "date": "2026-08-16",
-      "meal": "早餐",
-      "food": "豆漿 1 杯 + 乳清蛋白粉 40g + 地瓜",
+      "meal": "午餐",
+      "food": "未進食",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 134,
+      "row": 17,
       "date": "2026-08-16",
-      "meal": "晚餐",
-      "food": "三元酒樓：烤鴨 + 佛跳牆 + 脆皮雞",
-      "status": "written"
+      "status": "updated"
     }
   ]
 }
