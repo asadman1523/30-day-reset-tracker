@@ -1,3 +1,22 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-08-16",
+      "meal": "午餐",
+      "food": "未進食",
+      "source": "使用者回報",
+      "note": "使用者回覆其他沒有，依當晚剩餘缺漏記為午餐未進食。"
+    },
+    {
+      "type": "daily_checkin",
+      "date": "2026-08-16",
+      "zero_bet": "是",
+      "viewed_odds": "否",
+      "urge": 0,
+      "workout_done": "否",
+      "walk_minutes": 0,
+      "sleep_hours": 11
+    }
+  ]
 }
