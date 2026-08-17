@@ -6,53 +6,71 @@
   "results": [
     {
       "status": "written",
-      "row": 135,
+      "row": 136,
       "item": {
         "type": "food",
-        "date": "2026-08-16",
-        "meal": "午餐",
-        "food": "未進食",
-        "source": "使用者回報",
-        "note": "使用者回覆其他沒有，依當晚剩餘缺漏記為午餐未進食。"
+        "date": "2026-08-17",
+        "meal": "早餐",
+        "food": "地瓜 + 乳清蛋白粉 40g + 豆漿 1 杯",
+        "source": "使用者回報＋乳清一般估算",
+        "protein": 32,
+        "carbs": 4,
+        "calories": 160,
+        "note": "乳清 40g 先以一般估算約蛋白質 32g、碳水 4g、160 kcal；地瓜重量與豆漿品牌／容量未提供，因此不猜其營養數值，早餐實際總量高於本列已填數值。"
       }
     },
     {
-      "status": "updated",
-      "row": 17,
-      "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "workout_done",
-        "walk_minutes",
-        "sleep_hours"
-      ],
+      "status": "written",
+      "row": 137,
       "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-16",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "workout_done": "否",
-        "walk_minutes": 0,
-        "sleep_hours": 11
+        "type": "food",
+        "date": "2026-08-17",
+        "meal": "午餐",
+        "food": "乳清蛋白粉 40g + 豆漿 1 杯",
+        "source": "使用者回報＋乳清一般估算",
+        "protein": 32,
+        "carbs": 4,
+        "calories": 160,
+        "note": "乳清 40g 先以一般估算約蛋白質 32g、碳水 4g、160 kcal；豆漿品牌／容量未提供，因此不猜其營養數值，午餐實際總量高於本列已填數值。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 138,
+      "item": {
+        "type": "food",
+        "date": "2026-08-17",
+        "meal": "晚餐",
+        "food": "三顧茅廬：豬肉片、牛肉片、高麗菜、凍豆腐、大豆干、蛋、冬粉、三角油豆腐、經典乾拌麵(F)",
+        "source": "使用者回報",
+        "note": "各配料與麵體實際重量／份量未提供；依規則不猜份量，因此蛋白質、碳水與熱量暫留空白。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 135,
-      "date": "2026-08-16",
-      "meal": "午餐",
-      "food": "未進食",
+      "row": 136,
+      "date": "2026-08-17",
+      "meal": "早餐",
+      "food": "地瓜 + 乳清蛋白粉 40g + 豆漿 1 杯",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 17,
-      "date": "2026-08-16",
-      "status": "updated"
+      "row": 137,
+      "date": "2026-08-17",
+      "meal": "午餐",
+      "food": "乳清蛋白粉 40g + 豆漿 1 杯",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 138,
+      "date": "2026-08-17",
+      "meal": "晚餐",
+      "food": "三顧茅廬：豬肉片、牛肉片、高麗菜、凍豆腐、大豆干、蛋、冬粉、三角油豆腐、經典乾拌麵(F)",
+      "status": "written"
     }
   ]
 }
