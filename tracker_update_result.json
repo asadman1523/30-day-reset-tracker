@@ -5,29 +5,30 @@
   },
   "results": [
     {
-      "status": "written",
-      "row": 141,
+      "status": "updated",
+      "row": 19,
+      "fields": [
+        "zero_bet",
+        "viewed_odds",
+        "urge",
+        "sleep_hours"
+      ],
       "item": {
-        "type": "food",
+        "type": "daily_checkin",
         "date": "2026-08-18",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 60g + 豆漿 1 瓶 + 全家 芝麻香鬆飯糰",
-        "source": "使用者回報＋既有乳清/豆漿設定＋公開營養標示",
-        "protein": 63.6,
-        "carbs": 57.1,
-        "calories": 613,
-        "note": "估算沿用既有設定：乳清蛋白粉 60g 約蛋白質 45g、碳水 6g、240 kcal；豆漿 1 瓶先沿用既有一份設定約蛋白質 13g、碳水 13g、144 kcal。全家芝麻香鬆飯糰公開營養標示每份 104g：蛋白質 5.6g、碳水 38.1g、229 kcal。合計約蛋白質 63.6g、碳水 57.1g、613 kcal；若本次豆漿品牌/容量與既有設定不同，可再修正。"
+        "zero_bet": "是",
+        "viewed_odds": "否",
+        "urge": 0,
+        "sleep_hours": 8
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 141,
+      "row": 19,
       "date": "2026-08-18",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 60g + 豆漿 1 瓶 + 全家 芝麻香鬆飯糰",
-      "status": "written"
+      "status": "updated"
     }
   ]
 }
