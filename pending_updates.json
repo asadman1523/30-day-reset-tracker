@@ -1,3 +1,48 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "date": "2026-08-18",
+      "workout_name": "重訓",
+      "exercise": "上斜胸推",
+      "set": 1,
+      "weight": 25,
+      "reps": 12,
+      "rpe": "",
+      "note": "DBR 3"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-18",
+      "workout_name": "重訓",
+      "exercise": "上斜胸推",
+      "set": 2,
+      "weight": 25,
+      "reps": 12,
+      "rpe": "",
+      "note": "DBR 3"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-18",
+      "workout_name": "重訓",
+      "exercise": "上斜胸推",
+      "set": 3,
+      "weight": 25,
+      "reps": 13,
+      "rpe": "",
+      "note": "DBR 0"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-18",
+      "workout_name": "重訓",
+      "exercise": "上斜胸推",
+      "set": 4,
+      "weight": 25,
+      "reps": 5,
+      "rpe": "",
+      "note": "DBR 0"
+    }
+  ]
 }
