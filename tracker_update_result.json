@@ -5,34 +5,52 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 18,
-      "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "workout_done",
-        "walk_minutes",
-        "sleep_hours"
-      ],
+      "status": "written",
+      "row": 139,
       "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-17",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "workout_done": "否",
-        "walk_minutes": 0,
-        "sleep_hours": 8
+        "type": "food",
+        "date": "2026-08-18",
+        "meal": "早餐",
+        "food": "乳清蛋白粉 40g + 豆漿 1 杯 + 地瓜",
+        "source": "使用者回報",
+        "protein": 45,
+        "carbs": 52,
+        "calories": 429,
+        "note": "估算沿用既有設定：乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；豆漿約蛋白質 13g、碳水 13g、144 kcal；地瓜約蛋白質 2g、碳水 35g、125 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 140,
+      "item": {
+        "type": "food",
+        "date": "2026-08-18",
+        "meal": "午餐",
+        "food": "三商鮮五丼 麻婆魚排套餐",
+        "source": "使用者回報；公開菜單確認套餐含主餐、小菜與味噌豆腐湯",
+        "protein": 30,
+        "carbs": 105,
+        "calories": 850,
+        "note": "透明估算：約蛋白質 30g、碳水 105g、850 kcal。公開菜單顯示麻婆魚排為麻婆醬搭配厚切魚排，套餐另含小菜與味噌豆腐湯；店家未提供完整營養標示，實際熱量會受飯量、炸魚排吸油與麻婆醬份量影響，估計誤差約 ±150–200 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 18,
-      "date": "2026-08-17",
-      "status": "updated"
+      "row": 139,
+      "date": "2026-08-18",
+      "meal": "早餐",
+      "food": "乳清蛋白粉 40g + 豆漿 1 杯 + 地瓜",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 140,
+      "date": "2026-08-18",
+      "meal": "午餐",
+      "food": "三商鮮五丼 麻婆魚排套餐",
+      "status": "written"
     }
   ]
 }
