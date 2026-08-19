@@ -6,27 +6,50 @@
   "results": [
     {
       "status": "written",
-      "row": 142,
+      "row": 143,
       "item": {
         "type": "food",
         "date": "2026-08-19",
-        "meal": "早餐",
-        "food": "雞胸肉 1 份 + 地瓜 1 份 + 豆漿 1 杯 + 乳清蛋白粉 40g",
+        "meal": "午餐",
+        "food": "豆漿 1 杯",
         "source": "使用者回報",
-        "protein": 75,
-        "carbs": 52,
-        "calories": 589,
-        "note": "估算沿用既有設定：雞胸肉 1 份約蛋白質 30g、160 kcal；地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；豆漿 1 杯約蛋白質 13g、碳水 13g、144 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal。"
+        "protein": 13,
+        "carbs": 13,
+        "calories": 144,
+        "note": "估算沿用既有設定：豆漿 1 杯約蛋白質 13g、碳水 13g、144 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 144,
+      "item": {
+        "type": "food",
+        "date": "2026-08-19",
+        "meal": "晚餐",
+        "food": "韭菜水餃 10 顆",
+        "source": "使用者回報",
+        "protein": 22,
+        "carbs": 65,
+        "calories": 520,
+        "note": "透明估算：未提供品牌、單顆重量與內餡比例，先按一般韭菜豬肉水餃 10 顆估約蛋白質 22g、碳水 65g、520 kcal；實際大小與肥瘦比例不同可再修正。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 142,
+      "row": 143,
       "date": "2026-08-19",
-      "meal": "早餐",
-      "food": "雞胸肉 1 份 + 地瓜 1 份 + 豆漿 1 杯 + 乳清蛋白粉 40g",
+      "meal": "午餐",
+      "food": "豆漿 1 杯",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 144,
+      "date": "2026-08-19",
+      "meal": "晚餐",
+      "food": "韭菜水餃 10 顆",
       "status": "written"
     }
   ]
