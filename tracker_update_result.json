@@ -5,34 +5,46 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 144,
-      "fields": [
-        "protein",
-        "carbs",
-        "calories",
-        "note"
-      ],
+      "status": "written",
+      "row": 145,
       "item": {
         "type": "food",
         "date": "2026-08-19",
         "meal": "晚餐",
-        "food": "韭菜水餃 10 顆",
-        "protein": 16,
-        "carbs": 65,
-        "calories": 520,
-        "note": "修正估算：先前蛋白質 22g 偏高。參考台灣韭菜水餃公開營養標示，多數約每 100g 蛋白質 8–9g；在未提供品牌與單顆重量下，10 顆一般大小先改估蛋白質約 16g。熱量與碳水暫維持原估算，若補充品牌/單顆重量可再精修。",
-        "update_existing": true
+        "food": "香蕉 1 根",
+        "source": "使用者回報＋一般中型香蕉估算",
+        "protein": 1.3,
+        "carbs": 27,
+        "calories": 105,
+        "note": "未提供香蕉重量，先以一般中型香蕉透明估算：約蛋白質 1.3g、碳水 27g、105 kcal；實際依大小會有差異。"
+      }
+    },
+    {
+      "status": "updated",
+      "row": 20,
+      "fields": [
+        "sleep_hours"
+      ],
+      "item": {
+        "type": "daily_checkin",
+        "date": "2026-08-19",
+        "sleep_hours": 3
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 144,
+      "row": 145,
       "date": "2026-08-19",
       "meal": "晚餐",
-      "food": "韭菜水餃 10 顆",
+      "food": "香蕉 1 根",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 20,
+      "date": "2026-08-19",
       "status": "updated"
     }
   ]
