@@ -5,30 +5,29 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 19,
-      "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "sleep_hours"
-      ],
+      "status": "written",
+      "row": 142,
       "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-18",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "sleep_hours": 8
+        "type": "food",
+        "date": "2026-08-19",
+        "meal": "早餐",
+        "food": "雞胸肉 1 份 + 地瓜 1 份 + 豆漿 1 杯 + 乳清蛋白粉 40g",
+        "source": "使用者回報",
+        "protein": 75,
+        "carbs": 52,
+        "calories": 589,
+        "note": "估算沿用既有設定：雞胸肉 1 份約蛋白質 30g、160 kcal；地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；豆漿 1 杯約蛋白質 13g、碳水 13g、144 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 19,
-      "date": "2026-08-18",
-      "status": "updated"
+      "row": 142,
+      "date": "2026-08-19",
+      "meal": "早餐",
+      "food": "雞胸肉 1 份 + 地瓜 1 份 + 豆漿 1 杯 + 乳清蛋白粉 40g",
+      "status": "written"
     }
   ]
 }
