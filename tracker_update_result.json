@@ -5,52 +5,35 @@
   },
   "results": [
     {
-      "status": "written",
-      "row": 143,
-      "item": {
-        "type": "food",
-        "date": "2026-08-19",
-        "meal": "午餐",
-        "food": "豆漿 1 杯",
-        "source": "使用者回報",
-        "protein": 13,
-        "carbs": 13,
-        "calories": 144,
-        "note": "估算沿用既有設定：豆漿 1 杯約蛋白質 13g、碳水 13g、144 kcal。"
-      }
-    },
-    {
-      "status": "written",
+      "status": "updated",
       "row": 144,
+      "fields": [
+        "protein",
+        "carbs",
+        "calories",
+        "note"
+      ],
       "item": {
         "type": "food",
         "date": "2026-08-19",
         "meal": "晚餐",
         "food": "韭菜水餃 10 顆",
-        "source": "使用者回報",
-        "protein": 22,
+        "protein": 16,
         "carbs": 65,
         "calories": 520,
-        "note": "透明估算：未提供品牌、單顆重量與內餡比例，先按一般韭菜豬肉水餃 10 顆估約蛋白質 22g、碳水 65g、520 kcal；實際大小與肥瘦比例不同可再修正。"
+        "note": "修正估算：先前蛋白質 22g 偏高。參考台灣韭菜水餃公開營養標示，多數約每 100g 蛋白質 8–9g；在未提供品牌與單顆重量下，10 顆一般大小先改估蛋白質約 16g。熱量與碳水暫維持原估算，若補充品牌/單顆重量可再精修。",
+        "update_existing": true
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 143,
-      "date": "2026-08-19",
-      "meal": "午餐",
-      "food": "豆漿 1 杯",
-      "status": "written"
-    },
-    {
-      "verified": true,
       "row": 144,
       "date": "2026-08-19",
       "meal": "晚餐",
       "food": "韭菜水餃 10 顆",
-      "status": "written"
+      "status": "updated"
     }
   ]
 }
