@@ -1,3 +1,13 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "daily_checkin",
+      "date": "2026-08-19",
+      "zero_bet": "是",
+      "viewed_odds": "否",
+      "urge": 0,
+      "workout_done": "否",
+      "walk_minutes": 0
+    }
+  ]
 }
