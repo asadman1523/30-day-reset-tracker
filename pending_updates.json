@@ -1,3 +1,32 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-08-20",
+      "meal": "早餐",
+      "food": "地瓜 + 雞胸肉 + 豆漿 1 杯 + 乳清蛋白粉 40g",
+      "source": "使用者回報＋沿用既有估算設定",
+      "protein": 75,
+      "carbs": 52,
+      "calories": 589,
+      "note": "沿用既有相同組合設定：雞胸肉約蛋白質 30g、160 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；豆漿 1 杯約蛋白質 13g、碳水 13g、144 kcal；地瓜約蛋白質 2g、碳水 35g、125 kcal。"
+    },
+    {
+      "type": "food",
+      "date": "2026-08-20",
+      "meal": "午餐",
+      "food": "未進食",
+      "source": "使用者回報",
+      "note": "使用者回覆其他都沒有，依當晚剩餘缺漏記為午餐未進食。"
+    },
+    {
+      "type": "daily_checkin",
+      "date": "2026-08-20",
+      "zero_bet": "是",
+      "viewed_odds": "否",
+      "urge": 0,
+      "workout_done": "否",
+      "walk_minutes": 30
+    }
+  ]
 }
