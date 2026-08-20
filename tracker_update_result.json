@@ -6,28 +6,74 @@
   "results": [
     {
       "status": "written",
-      "row": 147,
+      "row": 148,
       "item": {
         "type": "food",
         "date": "2026-08-20",
-        "meal": "晚餐",
-        "food": "厚野雞排：炸雞排 + 炸魷魚 + 香蕉 1 根 + 乳清蛋白粉 40g + 豆漿 1 杯",
+        "meal": "早餐",
+        "food": "地瓜 + 雞胸肉 + 豆漿 1 杯 + 乳清蛋白粉 40g",
+        "source": "使用者回報＋沿用既有估算設定",
+        "protein": 75,
+        "carbs": 52,
+        "calories": 589,
+        "note": "沿用既有相同組合設定：雞胸肉約蛋白質 30g、160 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；豆漿 1 杯約蛋白質 13g、碳水 13g、144 kcal；地瓜約蛋白質 2g、碳水 35g、125 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 149,
+      "item": {
+        "type": "food",
+        "date": "2026-08-20",
+        "meal": "午餐",
+        "food": "未進食",
         "source": "使用者回報",
-        "protein": 99,
-        "carbs": 114,
-        "calories": 1289,
-        "note": "透明估算：炸雞排與炸魷魚未提供實際重量，先沿用一般台式炸物份量估算，兩者合計約蛋白質 54g、碳水 70g、880 kcal；香蕉 1 根約蛋白質 2g、碳水 27g、105 kcal；乳清蛋白粉 40g + 豆漿 1 杯沿用既有設定約蛋白質 43g、碳水 17g、304 kcal。炸物實際熱量受大小、裹粉與吸油量影響大，整餐估算誤差可達約 ±200–300 kcal。"
+        "note": "使用者回覆其他都沒有，依當晚剩餘缺漏記為午餐未進食。"
+      }
+    },
+    {
+      "status": "updated",
+      "row": 21,
+      "fields": [
+        "zero_bet",
+        "viewed_odds",
+        "urge",
+        "workout_done",
+        "walk_minutes"
+      ],
+      "item": {
+        "type": "daily_checkin",
+        "date": "2026-08-20",
+        "zero_bet": "是",
+        "viewed_odds": "否",
+        "urge": 0,
+        "workout_done": "否",
+        "walk_minutes": 30
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 147,
+      "row": 148,
       "date": "2026-08-20",
-      "meal": "晚餐",
-      "food": "厚野雞排：炸雞排 + 炸魷魚 + 香蕉 1 根 + 乳清蛋白粉 40g + 豆漿 1 杯",
+      "meal": "早餐",
+      "food": "地瓜 + 雞胸肉 + 豆漿 1 杯 + 乳清蛋白粉 40g",
       "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 149,
+      "date": "2026-08-20",
+      "meal": "午餐",
+      "food": "未進食",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 21,
+      "date": "2026-08-20",
+      "status": "updated"
     }
   ]
 }
