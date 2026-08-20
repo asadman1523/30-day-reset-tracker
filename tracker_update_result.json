@@ -5,32 +5,29 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 20,
-      "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "workout_done",
-        "walk_minutes"
-      ],
+      "status": "written",
+      "row": 147,
       "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-19",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "workout_done": "否",
-        "walk_minutes": 0
+        "type": "food",
+        "date": "2026-08-20",
+        "meal": "晚餐",
+        "food": "厚野雞排：炸雞排 + 炸魷魚 + 香蕉 1 根 + 乳清蛋白粉 40g + 豆漿 1 杯",
+        "source": "使用者回報",
+        "protein": 99,
+        "carbs": 114,
+        "calories": 1289,
+        "note": "透明估算：炸雞排與炸魷魚未提供實際重量，先沿用一般台式炸物份量估算，兩者合計約蛋白質 54g、碳水 70g、880 kcal；香蕉 1 根約蛋白質 2g、碳水 27g、105 kcal；乳清蛋白粉 40g + 豆漿 1 杯沿用既有設定約蛋白質 43g、碳水 17g、304 kcal。炸物實際熱量受大小、裹粉與吸油量影響大，整餐估算誤差可達約 ±200–300 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 20,
-      "date": "2026-08-19",
-      "status": "updated"
+      "row": 147,
+      "date": "2026-08-20",
+      "meal": "晚餐",
+      "food": "厚野雞排：炸雞排 + 炸魷魚 + 香蕉 1 根 + 乳清蛋白粉 40g + 豆漿 1 杯",
+      "status": "written"
     }
   ]
 }
