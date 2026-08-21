@@ -5,46 +5,34 @@
   },
   "results": [
     {
-      "status": "deleted",
-      "row": 153,
+      "status": "updated",
+      "row": 22,
+      "fields": [
+        "zero_bet",
+        "viewed_odds",
+        "urge",
+        "workout_done",
+        "walk_minutes",
+        "sleep_hours"
+      ],
       "item": {
-        "type": "delete_food",
+        "type": "daily_checkin",
         "date": "2026-08-21",
-        "meal": "晚餐",
-        "food": "滷肉飯 1 碗 + 肝連 1 份 + 嘴邊肉 1 份"
-      }
-    },
-    {
-      "status": "written",
-      "row": 153,
-      "item": {
-        "type": "food",
-        "date": "2026-08-21",
-        "meal": "晚餐",
-        "food": "滷肉飯 1 碗 + 肝連 1 份 + 豬肝 1 份",
-        "source": "使用者更正",
-        "protein": 58,
-        "carbs": 65,
-        "calories": 750,
-        "note": "使用者更正：原先誤記為嘴邊肉，實際為豬肝。未提供實際份量，先按一般小吃店常見個人份量透明估算：滷肉飯 1 碗 + 肝連 1 份 + 豬肝 1 份，約蛋白質 58g、碳水 65g、750 kcal；實際飯量、滷肉肥瘦與肉類份量會造成明顯誤差。"
+        "zero_bet": "是",
+        "viewed_odds": "否",
+        "urge": 0,
+        "workout_done": "否",
+        "walk_minutes": 0,
+        "sleep_hours": 0
       }
     }
   ],
   "verification": [
     {
       "verified": true,
+      "row": 22,
       "date": "2026-08-21",
-      "meal": "晚餐",
-      "food": "滷肉飯 1 碗 + 肝連 1 份 + 嘴邊肉 1 份",
-      "status": "deleted"
-    },
-    {
-      "verified": true,
-      "row": 153,
-      "date": "2026-08-21",
-      "meal": "晚餐",
-      "food": "滷肉飯 1 碗 + 肝連 1 份 + 豬肝 1 份",
-      "status": "written"
+      "status": "updated"
     }
   ]
 }
