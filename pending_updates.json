@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-08-21",
+      "meal": "早餐",
+      "food": "地瓜 1 份 + 雞胸肉 1 份",
+      "source": "使用者回報",
+      "protein": 32,
+      "carbs": 35,
+      "calories": 285,
+      "note": "估算沿用既有設定：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal。"
+    }
+  ]
 }
