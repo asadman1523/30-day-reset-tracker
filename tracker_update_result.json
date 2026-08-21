@@ -6,27 +6,27 @@
   "results": [
     {
       "status": "written",
-      "row": 150,
+      "row": 151,
       "item": {
         "type": "food",
         "date": "2026-08-21",
-        "meal": "早餐",
-        "food": "地瓜 1 份 + 雞胸肉 1 份",
+        "meal": "午餐",
+        "food": "蚵仔滷肉飯 1 碗",
         "source": "使用者回報",
-        "protein": 32,
-        "carbs": 35,
-        "calories": 285,
-        "note": "估算沿用既有設定：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal。"
+        "protein": 22,
+        "carbs": 85,
+        "calories": 680,
+        "note": "透明估算：未提供店家與實際份量，先按一般一碗蚵仔滷肉飯估算約蛋白質 22g、碳水 85g、680 kcal。主要誤差來自白飯份量、滷肉肥瘦與醬汁；若補充照片或店家可再修正。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 150,
+      "row": 151,
       "date": "2026-08-21",
-      "meal": "早餐",
-      "food": "地瓜 1 份 + 雞胸肉 1 份",
+      "meal": "午餐",
+      "food": "蚵仔滷肉飯 1 碗",
       "status": "written"
     }
   ]
