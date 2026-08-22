@@ -1,3 +1,9 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "daily_checkin",
+      "date": "2026-08-22",
+      "sleep_hours": 7
+    }
+  ]
 }
