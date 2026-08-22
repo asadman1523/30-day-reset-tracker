@@ -5,34 +5,29 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 22,
-      "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "workout_done",
-        "walk_minutes",
-        "sleep_hours"
-      ],
+      "status": "written",
+      "row": 154,
       "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-21",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "workout_done": "否",
-        "walk_minutes": 0,
-        "sleep_hours": 0
+        "type": "food",
+        "date": "2026-08-22",
+        "meal": "早餐",
+        "food": "乳清蛋白粉 40g + 地瓜 1 份 + 7-ELEVEN 鮮蔬鮪魚御飯糰 1 個",
+        "source": "使用者回報；7-ELEVEN 官方現售雙蔬鮪魚飯糰熱量與公開營養標示",
+        "protein": 37,
+        "carbs": 77,
+        "calories": 506,
+        "note": "乳清 40g 沿用既有設定：約蛋白質 30g、碳水 4g、160 kcal；地瓜 1 份沿用既有設定：約蛋白質 2g、碳水 35g、125 kcal。使用者稱『711鮮蔬鮪魚御飯糰』，按目前 7-ELEVEN 官網對應的雙蔬鮪魚飯糰記錄：官方熱量 221 kcal；公開營養標示約蛋白質 5g、碳水 38g。合計約蛋白質 37g、碳水 77g、506 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 22,
-      "date": "2026-08-21",
-      "status": "updated"
+      "row": 154,
+      "date": "2026-08-22",
+      "meal": "早餐",
+      "food": "乳清蛋白粉 40g + 地瓜 1 份 + 7-ELEVEN 鮮蔬鮪魚御飯糰 1 個",
+      "status": "written"
     }
   ]
 }
