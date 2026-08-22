@@ -5,70 +5,19 @@
   },
   "results": [
     {
-      "status": "written",
-      "row": 156,
-      "item": {
-        "type": "food",
-        "date": "2026-08-22",
-        "meal": "晚餐",
-        "food": "金針菇 2 份 + 火鍋料大小芋頭 1 顆 + 小條天婦羅 2 條",
-        "source": "使用者回報＋一般火鍋份量估算",
-        "protein": 7,
-        "carbs": 22,
-        "calories": 130,
-        "note": "使用者未提供實際重量；以一般火鍋常見小份量透明估算。未辨識的綠色蔬菜依使用者指示不計入。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 157,
-      "item": {
-        "type": "food",
-        "date": "2026-08-22",
-        "meal": "午餐",
-        "food": "未進食",
-        "source": "使用者回報",
-        "note": "使用者回覆其他都沒有，依當晚剩餘缺漏記為午餐未進食。"
-      }
-    },
-    {
       "status": "updated",
       "row": 23,
       "fields": [
-        "zero_bet",
-        "viewed_odds",
-        "urge",
-        "workout_done",
-        "walk_minutes"
+        "sleep_hours"
       ],
       "item": {
         "type": "daily_checkin",
         "date": "2026-08-22",
-        "zero_bet": "是",
-        "viewed_odds": "否",
-        "urge": 0,
-        "workout_done": "否",
-        "walk_minutes": 0
+        "sleep_hours": 7
       }
     }
   ],
   "verification": [
-    {
-      "verified": true,
-      "row": 156,
-      "date": "2026-08-22",
-      "meal": "晚餐",
-      "food": "金針菇 2 份 + 火鍋料大小芋頭 1 顆 + 小條天婦羅 2 條",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 157,
-      "date": "2026-08-22",
-      "meal": "午餐",
-      "food": "未進食",
-      "status": "written"
-    },
     {
       "verified": true,
       "row": 23,
