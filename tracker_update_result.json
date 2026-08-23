@@ -6,50 +6,27 @@
   "results": [
     {
       "status": "written",
-      "row": 161,
+      "row": 163,
       "item": {
         "type": "food",
         "date": "2026-08-23",
         "meal": "晚餐",
-        "food": "腿庫飯（半肥半瘦）",
+        "food": "乳清蛋白粉 60g",
         "source": "使用者回報",
-        "protein": 28,
-        "carbs": 80,
-        "calories": 780,
-        "note": "透明估算：未提供店家、飯量、腿庫肉實際重量與配菜；按一般小吃店腿庫飯、肉為半肥半瘦估約蛋白質 28g、碳水 80g、780 kcal。肥肉比例、滷汁與白飯份量會造成明顯誤差，估計約 ±150–200 kcal。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 162,
-      "item": {
-        "type": "food",
-        "date": "2026-08-23",
-        "meal": "晚餐",
-        "food": "香蕉 1 根",
-        "source": "使用者回報",
-        "protein": 1.3,
-        "carbs": 27,
-        "calories": 105,
-        "note": "透明估算：按一般中型香蕉 1 根估算，約蛋白質 1.3g、碳水 27g、105 kcal；實際大小會造成差異。"
+        "protein": 45,
+        "carbs": 6,
+        "calories": 240,
+        "note": "估算沿用既有設定：乳清蛋白粉 60g 約蛋白質 45g、碳水 6g、240 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 161,
+      "row": 163,
       "date": "2026-08-23",
       "meal": "晚餐",
-      "food": "腿庫飯（半肥半瘦）",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 162,
-      "date": "2026-08-23",
-      "meal": "晚餐",
-      "food": "香蕉 1 根",
+      "food": "乳清蛋白粉 60g",
       "status": "written"
     }
   ]
