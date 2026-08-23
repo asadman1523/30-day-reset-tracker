@@ -5,29 +5,34 @@
   },
   "results": [
     {
-      "status": "written",
-      "row": 163,
+      "status": "updated",
+      "row": 24,
+      "fields": [
+        "zero_bet",
+        "viewed_odds",
+        "urge",
+        "workout_done",
+        "walk_minutes",
+        "sleep_hours"
+      ],
       "item": {
-        "type": "food",
+        "type": "daily_checkin",
         "date": "2026-08-23",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 60g",
-        "source": "使用者回報",
-        "protein": 45,
-        "carbs": 6,
-        "calories": 240,
-        "note": "估算沿用既有設定：乳清蛋白粉 60g 約蛋白質 45g、碳水 6g、240 kcal。"
+        "zero_bet": "是",
+        "viewed_odds": "否",
+        "urge": 0,
+        "workout_done": "否",
+        "walk_minutes": 0,
+        "sleep_hours": 7
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 163,
+      "row": 24,
       "date": "2026-08-23",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 60g",
-      "status": "written"
+      "status": "updated"
     }
   ]
 }
