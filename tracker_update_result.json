@@ -6,119 +6,27 @@
   "results": [
     {
       "status": "written",
-      "row": 101,
+      "row": 106,
       "item": {
         "type": "workout_set",
         "date": "2026-08-24",
         "workout_name": "重訓",
-        "exercise": "滑輪下拉",
+        "exercise": "划船",
         "set": 1,
         "weight": 30,
-        "reps": 15,
+        "reps": 14,
         "rpe": "",
-        "note": "DBR 5"
-      }
-    },
-    {
-      "status": "written",
-      "row": 102,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "滑輪下拉",
-        "set": 2,
-        "weight": 33.75,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 4"
-      }
-    },
-    {
-      "status": "written",
-      "row": 103,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "滑輪下拉",
-        "set": 3,
-        "weight": 33.75,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 3"
-      }
-    },
-    {
-      "status": "written",
-      "row": 104,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "滑輪下拉",
-        "set": 4,
-        "weight": 33.75,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 1"
-      }
-    },
-    {
-      "status": "written",
-      "row": 105,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "滑輪下拉",
-        "set": 5,
-        "weight": 30.75,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 0；使用者回報做到前臂酸"
+        "note": "DBR 0"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 101,
+      "row": 106,
       "date": "2026-08-24",
-      "exercise": "滑輪下拉",
+      "exercise": "划船",
       "set": 1,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 102,
-      "date": "2026-08-24",
-      "exercise": "滑輪下拉",
-      "set": 2,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 103,
-      "date": "2026-08-24",
-      "exercise": "滑輪下拉",
-      "set": 3,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 104,
-      "date": "2026-08-24",
-      "exercise": "滑輪下拉",
-      "set": 4,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 105,
-      "date": "2026-08-24",
-      "exercise": "滑輪下拉",
-      "set": 5,
       "status": "written"
     }
   ]
