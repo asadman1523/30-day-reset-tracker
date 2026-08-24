@@ -5,232 +5,51 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 9,
-      "fields": [
-        "weight",
-        "note"
-      ],
+      "status": "written",
+      "row": 164,
       "item": {
-        "type": "workout_set",
-        "date": "2026-08-04",
-        "workout_name": "重訓",
-        "exercise": "腿推舉",
-        "set": 1,
-        "weight": 40,
-        "reps": 16,
-        "rpe": 7,
-        "note": "器械雙刻度確認：原回報 80 為 lb，同一插銷位置對應機台標示 40 kg；原回報剩餘 3 下（RIR 3），換算 RPE 7。",
-        "update_existing": true
-      }
-    },
-    {
-      "status": "updated",
-      "row": 10,
-      "fields": [
-        "weight",
-        "note"
-      ],
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-04",
-        "workout_name": "重訓",
-        "exercise": "腿推舉",
-        "set": 2,
-        "weight": 40,
-        "reps": 18,
-        "rpe": 8,
-        "note": "器械雙刻度確認：原回報 80 為 lb，同一插銷位置對應機台標示 40 kg；原回報剩餘 2 下（RIR 2），換算 RPE 8。",
-        "update_existing": true
-      }
-    },
-    {
-      "status": "updated",
-      "row": 11,
-      "fields": [
-        "weight",
-        "note"
-      ],
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-04",
-        "workout_name": "重訓",
-        "exercise": "腿推舉",
-        "set": 3,
-        "weight": 40,
-        "reps": 16,
-        "rpe": 9,
-        "note": "器械雙刻度確認：原回報 80 為 lb，同一插銷位置對應機台標示 40 kg；原回報剩餘 1 下（RIR 1），換算 RPE 9。",
-        "update_existing": true
-      }
-    },
-    {
-      "status": "updated",
-      "row": 12,
-      "fields": [
-        "weight",
-        "note"
-      ],
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-04",
-        "workout_name": "重訓",
-        "exercise": "腿推舉",
-        "set": 4,
-        "weight": 40,
-        "reps": 16,
-        "rpe": 10,
-        "note": "器械雙刻度確認：原回報 80 為 lb，同一插銷位置對應機台標示 40 kg；原回報剩餘 0 下（RIR 0），換算 RPE 10。",
-        "update_existing": true
+        "type": "food",
+        "date": "2026-08-24",
+        "meal": "早餐",
+        "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 60g",
+        "source": "使用者回報",
+        "protein": 77,
+        "carbs": 41,
+        "calories": 525,
+        "note": "估算沿用既有設定：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal；乳清蛋白粉 60g 約蛋白質 45g、碳水 6g、240 kcal。"
       }
     },
     {
       "status": "written",
-      "row": 110,
+      "row": 165,
       "item": {
-        "type": "workout_set",
+        "type": "food",
         "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "腿外展",
-        "set": 1,
-        "weight": 32,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 1"
-      }
-    },
-    {
-      "status": "written",
-      "row": 111,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "腿外展",
-        "set": 2,
-        "weight": 32,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 1"
-      }
-    },
-    {
-      "status": "written",
-      "row": 112,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "腿外展",
-        "set": 3,
-        "weight": 32,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 0"
-      }
-    },
-    {
-      "status": "written",
-      "row": 113,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "腿外展",
-        "set": 4,
-        "weight": 25,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 2"
-      }
-    },
-    {
-      "status": "written",
-      "row": 114,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-24",
-        "workout_name": "重訓",
-        "exercise": "腿外展",
-        "set": 5,
-        "weight": 25,
-        "reps": 15,
-        "rpe": "",
-        "note": "DBR 1"
+        "meal": "晚餐",
+        "food": "雞胸肉 1 份 + 乳清蛋白粉 40g + 7-ELEVEN 潮粵坊京醬鴨絲飯糰 1 個",
+        "source": "使用者回報＋7-ELEVEN 官方現售品項確認＋透明估算",
+        "protein": 66,
+        "carbs": 44,
+        "calories": 550,
+        "note": "雞胸肉 1 份沿用既有設定約蛋白質 30g、160 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal。7-ELEVEN 官方頁面可確認現售『潮粵坊-京醬鴨絲飯糰』，但官方頁面未提供完整營養標示，因此飯糰先按一般同級御飯糰透明估算約蛋白質 6g、碳水 40g、230 kcal；若補包裝營養標示可再修正。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 9,
-      "date": "2026-08-04",
-      "exercise": "腿推舉",
-      "set": 1,
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 10,
-      "date": "2026-08-04",
-      "exercise": "腿推舉",
-      "set": 2,
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 11,
-      "date": "2026-08-04",
-      "exercise": "腿推舉",
-      "set": 3,
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 12,
-      "date": "2026-08-04",
-      "exercise": "腿推舉",
-      "set": 4,
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 110,
+      "row": 164,
       "date": "2026-08-24",
-      "exercise": "腿外展",
-      "set": 1,
+      "meal": "早餐",
+      "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 60g",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 111,
+      "row": 165,
       "date": "2026-08-24",
-      "exercise": "腿外展",
-      "set": 2,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 112,
-      "date": "2026-08-24",
-      "exercise": "腿外展",
-      "set": 3,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 113,
-      "date": "2026-08-24",
-      "exercise": "腿外展",
-      "set": 4,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 114,
-      "date": "2026-08-24",
-      "exercise": "腿外展",
-      "set": 5,
+      "meal": "晚餐",
+      "food": "雞胸肉 1 份 + 乳清蛋白粉 40g + 7-ELEVEN 潮粵坊京醬鴨絲飯糰 1 個",
       "status": "written"
     }
   ]
