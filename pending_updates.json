@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "date": "2026-08-24",
+      "workout_name": "重訓",
+      "exercise": "划船",
+      "set": 4,
+      "weight": 26.25,
+      "reps": 13,
+      "rpe": "",
+      "note": "DBR 0；重量未重複提供，沿用上一組 26.25 kg"
+    }
+  ]
 }
