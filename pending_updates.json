@@ -1,3 +1,107 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "date": "2026-08-04",
+      "workout_name": "重訓",
+      "exercise": "腿推舉",
+      "set": 1,
+      "weight": 40,
+      "reps": 16,
+      "rpe": 7,
+      "note": "器械雙刻度確認：原回報 80 為 lb，同一插銷位置對應機台標示 40 kg；原回報剩餘 3 下（RIR 3），換算 RPE 7。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-04",
+      "workout_name": "重訓",
+      "exercise": "腿推舉",
+      "set": 2,
+      "weight": 40,
+      "reps": 18,
+      "rpe": 8,
+      "note": "器械雙刻度確認：原回報 80 為 lb，同一插銷位置對應機台標示 40 kg；原回報剩餘 2 下（RIR 2），換算 RPE 8。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-04",
+      "workout_name": "重訓",
+      "exercise": "腿推舉",
+      "set": 3,
+      "weight": 40,
+      "reps": 16,
+      "rpe": 9,
+      "note": "器械雙刻度確認：原回報 80 為 lb，同一插銷位置對應機台標示 40 kg；原回報剩餘 1 下（RIR 1），換算 RPE 9。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-04",
+      "workout_name": "重訓",
+      "exercise": "腿推舉",
+      "set": 4,
+      "weight": 40,
+      "reps": 16,
+      "rpe": 10,
+      "note": "器械雙刻度確認：原回報 80 為 lb，同一插銷位置對應機台標示 40 kg；原回報剩餘 0 下（RIR 0），換算 RPE 10。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-24",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 1,
+      "weight": 32,
+      "reps": 15,
+      "rpe": "",
+      "note": "DBR 1"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-24",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 2,
+      "weight": 32,
+      "reps": 15,
+      "rpe": "",
+      "note": "DBR 1"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-24",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 3,
+      "weight": 32,
+      "reps": 15,
+      "rpe": "",
+      "note": "DBR 0"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-24",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 4,
+      "weight": 25,
+      "reps": 15,
+      "rpe": "",
+      "note": "DBR 2"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-24",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 5,
+      "weight": 25,
+      "reps": 15,
+      "rpe": "",
+      "note": "DBR 1"
+    }
+  ]
 }
