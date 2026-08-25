@@ -6,36 +6,46 @@
   "results": [
     {
       "status": "updated",
-      "row": 165,
+      "row": 26,
       "fields": [
-        "source",
-        "protein",
-        "carbs",
-        "calories",
-        "note"
+        "sleep_hours"
       ],
       "item": {
+        "type": "daily_checkin",
+        "date": "2026-08-25",
+        "sleep_hours": 6
+      }
+    },
+    {
+      "status": "written",
+      "row": 166,
+      "item": {
         "type": "food",
-        "date": "2026-08-24",
-        "meal": "晚餐",
-        "food": "雞胸肉 1 份 + 乳清蛋白粉 40g + 7-ELEVEN 潮粵坊京醬鴨絲飯糰 1 個",
-        "source": "使用者回報＋包裝熱量",
-        "protein": 66,
-        "carbs": 44,
-        "calories": 652,
-        "note": "使用者補充京醬鴨絲飯糰包裝熱量為 332 kcal。雞胸肉 1 份沿用既有設定約蛋白質 30g、160 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；飯糰熱量改採使用者提供 332 kcal。飯糰蛋白質與碳水因未提供完整營養標示，暫沿用原估算約蛋白質 6g、碳水 40g。整餐約蛋白質 66g、碳水 44g、652 kcal。",
-        "update_existing": true
+        "date": "2026-08-25",
+        "meal": "早餐",
+        "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 40g",
+        "source": "使用者回報",
+        "protein": 62,
+        "carbs": 39,
+        "calories": 445,
+        "note": "估算沿用既有設定：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 165,
-      "date": "2026-08-24",
-      "meal": "晚餐",
-      "food": "雞胸肉 1 份 + 乳清蛋白粉 40g + 7-ELEVEN 潮粵坊京醬鴨絲飯糰 1 個",
+      "row": 26,
+      "date": "2026-08-25",
       "status": "updated"
+    },
+    {
+      "verified": true,
+      "row": 166,
+      "date": "2026-08-25",
+      "meal": "早餐",
+      "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 40g",
+      "status": "written"
     }
   ]
 }
