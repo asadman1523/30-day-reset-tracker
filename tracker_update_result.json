@@ -5,46 +5,28 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 26,
-      "fields": [
-        "sleep_hours"
-      ],
-      "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-25",
-        "sleep_hours": 6
-      }
-    },
-    {
       "status": "written",
-      "row": 166,
+      "row": 167,
       "item": {
         "type": "food",
         "date": "2026-08-25",
-        "meal": "早餐",
-        "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 40g",
+        "meal": "晚餐",
+        "food": "樂晴牛排館 牛雞雙拼",
         "source": "使用者回報",
-        "protein": 62,
-        "carbs": 39,
-        "calories": 445,
-        "note": "估算沿用既有設定：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal。"
+        "protein": 80,
+        "carbs": 75,
+        "calories": 1100,
+        "note": "透明估算：按牛排＋雞排雙主餐與一般牛排館鐵板麵／醬汁份量估約蛋白質 80g、碳水 75g、1100 kcal；未提及濃湯、餐包、飲料或額外配餐，故不另計。實際肉排大小、雞腿帶皮油脂與麵量會造成明顯差異，估計誤差約 ±200–300 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 26,
+      "row": 167,
       "date": "2026-08-25",
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 166,
-      "date": "2026-08-25",
-      "meal": "早餐",
-      "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 40g",
+      "meal": "晚餐",
+      "food": "樂晴牛排館 牛雞雙拼",
       "status": "written"
     }
   ]
