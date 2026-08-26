@@ -6,27 +6,27 @@
   "results": [
     {
       "status": "written",
-      "row": 171,
+      "row": 172,
       "item": {
         "type": "food",
         "date": "2026-08-26",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 60g + 肌酸 5g",
+        "meal": "早餐",
+        "food": "雞胸肉 1 份 + 地瓜 1 份",
         "source": "使用者回報",
-        "protein": 45,
-        "carbs": 6,
-        "calories": 240,
-        "note": "估算沿用既有設定：乳清蛋白粉 60g 約蛋白質 45g、碳水 6g、240 kcal；肌酸 5g 不另計蛋白質、碳水或熱量。"
+        "protein": 32,
+        "carbs": 35,
+        "calories": 285,
+        "note": "估算沿用既有設定：雞胸肉 1 份約蛋白質 30g、160 kcal；地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 171,
+      "row": 172,
       "date": "2026-08-26",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 60g + 肌酸 5g",
+      "meal": "早餐",
+      "food": "雞胸肉 1 份 + 地瓜 1 份",
       "status": "written"
     }
   ]
