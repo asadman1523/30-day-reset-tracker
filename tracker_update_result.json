@@ -5,37 +5,29 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 169,
-      "fields": [
-        "source",
-        "protein",
-        "carbs",
-        "calories",
-        "note"
-      ],
+      "status": "written",
+      "row": 171,
       "item": {
         "type": "food",
         "date": "2026-08-26",
         "meal": "晚餐",
-        "food": "牛肉麵 1 碗",
-        "source": "使用者回報＋吃剩照片估算",
-        "protein": 38,
-        "carbs": 60,
-        "calories": 650,
-        "note": "使用者補充牛肉麵的麵沒有吃完。依吃剩照片觀察，牛肉大致已吃完，但約仍剩 40–50% 麵量與不少湯。由原先完整一碗估算 850 kcal、蛋白質 42g、碳水 95g，下修為實際攝取約蛋白質 38g、碳水 60g、650 kcal。實際剩餘麵量與湯汁攝取仍有誤差，估計約 ±120–180 kcal。",
-        "update_existing": true
+        "food": "乳清蛋白粉 60g + 肌酸 5g",
+        "source": "使用者回報",
+        "protein": 45,
+        "carbs": 6,
+        "calories": 240,
+        "note": "估算沿用既有設定：乳清蛋白粉 60g 約蛋白質 45g、碳水 6g、240 kcal；肌酸 5g 不另計蛋白質、碳水或熱量。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 169,
+      "row": 171,
       "date": "2026-08-26",
       "meal": "晚餐",
-      "food": "牛肉麵 1 碗",
-      "status": "updated"
+      "food": "乳清蛋白粉 60g + 肌酸 5g",
+      "status": "written"
     }
   ]
 }

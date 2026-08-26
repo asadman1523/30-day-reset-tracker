@@ -1,15 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "date": "2026-08-26",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 60g + 肌酸 5g",
-      "source": "使用者回報",
-      "protein": 45,
-      "carbs": 6,
-      "calories": 240,
-      "note": "估算沿用既有設定：乳清蛋白粉 60g 約蛋白質 45g、碳水 6g、240 kcal；肌酸 5g 不另計蛋白質、碳水或熱量。"
-    }
-  ]
+  "updates": []
 }
