@@ -5,45 +5,28 @@
   },
   "results": [
     {
-      "status": "deleted",
-      "row": 168,
-      "item": {
-        "type": "delete_food",
-        "date": "2026-08-25",
-        "meal": "早餐",
-        "food": "地瓜 1 份 + 雞胸肉 1 份"
-      }
-    },
-    {
       "status": "written",
-      "row": 168,
+      "row": 169,
       "item": {
         "type": "food",
-        "date": "2026-08-25",
-        "meal": "早餐",
-        "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 40g",
-        "source": "使用者更正",
-        "protein": 62,
-        "carbs": 39,
-        "calories": 445,
-        "note": "使用者更正：早餐有喝乳清蛋白粉 40g。估算沿用既有設定：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal；乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal。"
+        "date": "2026-08-26",
+        "meal": "晚餐",
+        "food": "牛肉麵 1 碗",
+        "source": "使用者回報＋照片估算",
+        "protein": 42,
+        "carbs": 95,
+        "calories": 850,
+        "note": "依照片估算：一大碗牛肉麵，麵量看起來接近完整一份，約有多塊牛肉與青菜。先估蛋白質 42g、碳水 95g、850 kcal。照片上方另有兩盤小菜，但使用者本次只回報牛肉麵，因此暫不計入；若有吃可再補記。實際熱量受牛肉肥瘦、麵量與湯汁油脂影響，估計誤差約 ±150–200 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "date": "2026-08-25",
-      "meal": "早餐",
-      "food": "地瓜 1 份 + 雞胸肉 1 份",
-      "status": "deleted"
-    },
-    {
-      "verified": true,
-      "row": 168,
-      "date": "2026-08-25",
-      "meal": "早餐",
-      "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 40g",
+      "row": 169,
+      "date": "2026-08-26",
+      "meal": "晚餐",
+      "food": "牛肉麵 1 碗",
       "status": "written"
     }
   ]
