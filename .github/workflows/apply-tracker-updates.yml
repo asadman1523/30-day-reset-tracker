@@ -7,6 +7,7 @@ on:
       - pending_updates.json
       - scripts/apply_tracker_updates.py
       - scripts/export_dashboard_data.py
+      - scripts/migrate_workout_dbr.py
       - .github/workflows/apply-tracker-updates.yml
   workflow_dispatch:
 
@@ -25,8 +26,12 @@ jobs:
           python-version: '3.12'
       - name: Install workbook dependency
         run: python -m pip install --disable-pip-version-check openpyxl
+      - name: Prepare workout effort column for updater
+        run: python scripts/migrate_workout_dbr.py prepare
       - name: Apply and verify pending updates
         run: python scripts/apply_tracker_updates.py
+      - name: Finalize workout effort column as DBR
+        run: python scripts/migrate_workout_dbr.py finalize
       - name: Export dashboard data
         run: python scripts/export_dashboard_data.py
       - name: Commit workbook and dashboard update
