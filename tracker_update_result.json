@@ -3,31 +3,6 @@
     "carbs_column_added": false,
     "carbs_column": 8
   },
-  "results": [
-    {
-      "status": "written",
-      "row": 174,
-      "item": {
-        "type": "food",
-        "date": "2026-08-27",
-        "meal": "早餐",
-        "food": "雞胸肉 1 份 + 7-ELEVEN 海鹽水煮蛋 2 顆 + 地瓜 1 份",
-        "source": "使用者回報",
-        "protein": 42.8,
-        "carbs": 37.8,
-        "calories": 391,
-        "note": "估算沿用既有設定：雞胸肉 1 份約蛋白質 30g、160 kcal；地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；7-ELEVEN 海鹽水煮蛋 2 顆沿用先前雞蛋估算，每顆約蛋白質 5.4g、碳水 1.4g、53 kcal。"
-      }
-    }
-  ],
-  "verification": [
-    {
-      "verified": true,
-      "row": 174,
-      "date": "2026-08-27",
-      "meal": "早餐",
-      "food": "雞胸肉 1 份 + 7-ELEVEN 海鹽水煮蛋 2 顆 + 地瓜 1 份",
-      "status": "written"
-    }
-  ]
+  "results": [],
+  "verification": []
 }
