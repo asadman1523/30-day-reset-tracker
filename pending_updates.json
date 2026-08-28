@@ -1,7 +1,3 @@
 {
-  "updates": [
-    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"臀推機","set":1,"weight":20,"reps":12,"dbr":3,"note":"使用者回報；今天因先前30kg後骨盆後側曾痛超過一週，改以20kg回測。"},
-    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"臀推機","set":2,"weight":20,"reps":12,"dbr":2,"note":"使用者回報。"},
-    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"臀推機","set":3,"weight":20,"reps":12,"dbr":2,"note":"使用者回報。"}
-  ]
+  "updates": []
 }
