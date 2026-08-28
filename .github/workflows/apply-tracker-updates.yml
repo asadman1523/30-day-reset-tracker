@@ -8,6 +8,7 @@ on:
       - scripts/apply_tracker_updates.py
       - scripts/export_dashboard_data.py
       - scripts/migrate_workout_dbr.py
+      - scripts/update_exercise_baselines.py
       - .github/workflows/apply-tracker-updates.yml
   workflow_dispatch:
 
@@ -32,6 +33,8 @@ jobs:
         run: python scripts/apply_tracker_updates.py
       - name: Finalize workout effort column as DBR
         run: python scripts/migrate_workout_dbr.py finalize
+      - name: Refresh exercise baselines
+        run: python scripts/update_exercise_baselines.py
       - name: Export dashboard data
         run: python scripts/export_dashboard_data.py
       - name: Commit workbook and dashboard update
