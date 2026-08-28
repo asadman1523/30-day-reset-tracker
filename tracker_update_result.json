@@ -7,26 +7,27 @@
   "results": [
     {
       "status": "written",
-      "row": 2,
+      "row": 177,
       "item": {
-        "type": "cardio",
+        "type": "food",
         "date": "2026-08-28",
-        "activity": "跑步機爬坡",
-        "segment": 1,
-        "minutes": 20,
-        "incline": 12,
-        "speed": 4.1,
-        "note": "使用者回報：爬坡坡度 12、速度 4.1 km/h、20 分鐘；獨立記錄，不併入散步分鐘。"
+        "meal": "晚餐",
+        "food": "7-ELEVEN 林聰明雞肉飯飯糰 1 個 + 茶葉蛋 2 顆",
+        "source": "使用者回報＋7-ELEVEN 官方熱量＋既有雞蛋估算",
+        "protein": 16.8,
+        "carbs": 40.8,
+        "calories": 332,
+        "note": "7-ELEVEN 官方目前列林聰明-雞肉飯飯糰每個 226 kcal；完整蛋白質與碳水未公開，先以一般同尺寸飯糰約蛋白質 6g、碳水 38g 估算。茶葉蛋 2 顆沿用既有 7-ELEVEN 雞蛋估算，每顆約蛋白質 5.4g、碳水 1.4g、53 kcal。合計約蛋白質 16.8g、碳水 40.8g、332 kcal；若有包裝營養標示可再修正。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 2,
+      "row": 177,
       "date": "2026-08-28",
-      "activity": "跑步機爬坡",
-      "segment": 1,
+      "meal": "晚餐",
+      "food": "7-ELEVEN 林聰明雞肉飯飯糰 1 個 + 茶葉蛋 2 顆",
       "status": "written"
     }
   ]
