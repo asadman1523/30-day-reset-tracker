@@ -6,177 +6,27 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 127,
-      "fields": [
-        "dbr"
-      ],
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-28",
-        "workout_name": "重訓",
-        "exercise": "臀推機",
-        "set": 1,
-        "weight": 20,
-        "reps": 12,
-        "dbr": 3,
-        "update_existing": true
-      }
-    },
-    {
-      "status": "updated",
-      "row": 128,
-      "fields": [
-        "dbr"
-      ],
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-28",
-        "workout_name": "重訓",
-        "exercise": "臀推機",
-        "set": 2,
-        "weight": 20,
-        "reps": 12,
-        "dbr": 2,
-        "update_existing": true
-      }
-    },
-    {
-      "status": "updated",
-      "row": 129,
-      "fields": [
-        "dbr",
-        "note_append"
-      ],
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-28",
-        "workout_name": "重訓",
-        "exercise": "臀推機",
-        "set": 3,
-        "weight": 20,
-        "reps": 12,
-        "dbr": 2,
-        "note_append": "完成第3組後骨盆後側微痛；臀推當日停止。",
-        "update_existing": true
-      }
-    },
-    {
       "status": "written",
-      "row": 130,
+      "row": 2,
       "item": {
-        "type": "workout_set",
+        "type": "cardio",
         "date": "2026-08-28",
-        "workout_name": "重訓",
-        "exercise": "飛鳥夾胸",
-        "set": 1,
-        "weight": 20,
-        "reps": 15,
-        "dbr": 3,
-        "note": "使用者回報。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 131,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-28",
-        "workout_name": "重訓",
-        "exercise": "飛鳥夾胸",
-        "set": 2,
-        "weight": 20,
-        "reps": 14,
-        "dbr": 2,
-        "note": "重量未重複提供，沿用上一組 20 kg。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 132,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-28",
-        "workout_name": "重訓",
-        "exercise": "飛鳥夾胸",
-        "set": 3,
-        "weight": 20,
-        "reps": 12,
-        "dbr": 1,
-        "note": "重量未重複提供，沿用上一組 20 kg。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 133,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-08-28",
-        "workout_name": "重訓",
-        "exercise": "飛鳥夾胸",
-        "set": 4,
-        "weight": 20,
-        "reps": 10,
-        "dbr": 0,
-        "note": "重量未重複提供，沿用上一組 20 kg。"
+        "activity": "跑步機爬坡",
+        "segment": 1,
+        "minutes": 20,
+        "incline": 12,
+        "speed": 4.1,
+        "note": "使用者回報：爬坡坡度 12、速度 4.1 km/h、20 分鐘；獨立記錄，不併入散步分鐘。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 127,
+      "row": 2,
       "date": "2026-08-28",
-      "exercise": "臀推機",
-      "set": 1,
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 128,
-      "date": "2026-08-28",
-      "exercise": "臀推機",
-      "set": 2,
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 129,
-      "date": "2026-08-28",
-      "exercise": "臀推機",
-      "set": 3,
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 130,
-      "date": "2026-08-28",
-      "exercise": "飛鳥夾胸",
-      "set": 1,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 131,
-      "date": "2026-08-28",
-      "exercise": "飛鳥夾胸",
-      "set": 2,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 132,
-      "date": "2026-08-28",
-      "exercise": "飛鳥夾胸",
-      "set": 3,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 133,
-      "date": "2026-08-28",
-      "exercise": "飛鳥夾胸",
-      "set": 4,
+      "activity": "跑步機爬坡",
+      "segment": 1,
       "status": "written"
     }
   ]
