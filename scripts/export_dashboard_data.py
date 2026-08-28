@@ -9,7 +9,7 @@ from openpyxl import load_workbook
 ROOT = Path(__file__).resolve().parents[1]
 WORKBOOK = ROOT / "30天重建追蹤.xlsx"
 OUTPUT = ROOT / "dashboard-data.json"
-TARGET_SHEETS = ("每日檢核", "飲食紀錄", "重訓紀錄", "動作基準")
+TARGET_SHEETS = ("每日檢核", "飲食紀錄", "重訓紀錄", "有氧紀錄", "動作基準")
 
 
 def serialize(value):
@@ -25,7 +25,8 @@ def detect_header_row(ws):
         labels = [str(v).strip() for v in values if v not in (None, "")]
         score = len(labels)
         has_date = any("日期" in label or label.lower() == "date" for label in labels)
-        if has_date and score >= 2:
+        baseline_header = any(label == "動作" for label in labels) and any("建議下次重量" in label for label in labels)
+        if (has_date or baseline_header) and score >= 2:
             return row
         if score and (best is None or score > best[0]):
             best = (score, row)
@@ -64,10 +65,7 @@ def main():
         "workbook": WORKBOOK.name,
         "sheets": sheets,
     }
-    OUTPUT.write_text(
-        json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n",
-        encoding="utf-8",
-    )
+    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     print(f"Wrote {OUTPUT} with {', '.join(sheets)}")
 
 
