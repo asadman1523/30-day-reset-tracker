@@ -1,3 +1,82 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "date": "2026-08-28",
+      "workout_name": "重訓",
+      "exercise": "臀推機",
+      "set": 1,
+      "weight": 20,
+      "reps": 12,
+      "dbr": 3,
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-28",
+      "workout_name": "重訓",
+      "exercise": "臀推機",
+      "set": 2,
+      "weight": 20,
+      "reps": 12,
+      "dbr": 2,
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-28",
+      "workout_name": "重訓",
+      "exercise": "臀推機",
+      "set": 3,
+      "weight": 20,
+      "reps": 12,
+      "dbr": 2,
+      "note_append": "完成第3組後骨盆後側微痛；臀推當日停止。",
+      "update_existing": true
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-28",
+      "workout_name": "重訓",
+      "exercise": "飛鳥夾胸",
+      "set": 1,
+      "weight": 20,
+      "reps": 15,
+      "dbr": 3,
+      "note": "使用者回報。"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-28",
+      "workout_name": "重訓",
+      "exercise": "飛鳥夾胸",
+      "set": 2,
+      "weight": 20,
+      "reps": 14,
+      "dbr": 2,
+      "note": "重量未重複提供，沿用上一組 20 kg。"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-28",
+      "workout_name": "重訓",
+      "exercise": "飛鳥夾胸",
+      "set": 3,
+      "weight": 20,
+      "reps": 12,
+      "dbr": 1,
+      "note": "重量未重複提供，沿用上一組 20 kg。"
+    },
+    {
+      "type": "workout_set",
+      "date": "2026-08-28",
+      "workout_name": "重訓",
+      "exercise": "飛鳥夾胸",
+      "set": 4,
+      "weight": 20,
+      "reps": 10,
+      "dbr": 0,
+      "note": "重量未重複提供，沿用上一組 20 kg。"
+    }
+  ]
 }
