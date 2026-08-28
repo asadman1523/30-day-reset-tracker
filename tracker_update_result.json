@@ -7,28 +7,54 @@
   "results": [
     {
       "status": "written",
-      "row": 178,
+      "row": 179,
       "item": {
         "type": "food",
         "date": "2026-08-28",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 80g",
-        "source": "使用者回報＋既有乳清估算",
-        "protein": 60,
-        "carbs": 8,
-        "calories": 320,
-        "note": "估算沿用既有設定：乳清蛋白粉 80g 約蛋白質 60g、碳水 8g、320 kcal。"
+        "meal": "午餐",
+        "food": "未進食",
+        "source": "使用者回報",
+        "protein": 0,
+        "carbs": 0,
+        "calories": 0,
+        "note": "使用者明確回報今天午餐未進食。"
+      }
+    },
+    {
+      "status": "updated",
+      "row": 29,
+      "fields": [
+        "zero_bet",
+        "viewed_odds",
+        "urge",
+        "walk_minutes",
+        "sleep_hours"
+      ],
+      "item": {
+        "type": "daily_checkin",
+        "date": "2026-08-28",
+        "zero_bet": "是",
+        "viewed_odds": "否",
+        "urge": 0,
+        "walk_minutes": 0,
+        "sleep_hours": 2
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 178,
+      "row": 179,
       "date": "2026-08-28",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 80g",
+      "meal": "午餐",
+      "food": "未進食",
       "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 29,
+      "date": "2026-08-28",
+      "status": "updated"
     }
   ]
 }
