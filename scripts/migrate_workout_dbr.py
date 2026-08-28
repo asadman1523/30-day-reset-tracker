@@ -62,16 +62,16 @@ def finalize():
 
     already_migrated = bool(cell.comment and MARKER in str(cell.comment.text or ""))
 
+    note_col = None
+    for c in range(1, ws.max_column + 1):
+        if "備註" in str(ws.cell(header_row, c).value or ""):
+            note_col = c
+            break
+
     if not already_migrated:
         # Initial migration. Newer rows already stored DBR in 備註, so prefer
         # that exact user-reported value. Older rows with only RPE are converted
         # by DBR = 10 - RPE.
-        note_col = None
-        for c in range(1, ws.max_column + 1):
-            if "備註" in str(ws.cell(header_row, c).value or ""):
-                note_col = c
-                break
-
         for r in range(header_row + 1, ws.max_row + 1):
             effort_cell = ws.cell(r, col)
             note = ws.cell(r, note_col).value if note_col else ""
@@ -84,6 +84,19 @@ def finalize():
             if isinstance(value, (int, float)):
                 converted = 10 - float(value)
                 effort_cell.value = int(converted) if converted.is_integer() else converted
+    else:
+        # After the schema has already been migrated, the legacy updater may
+        # receive `dbr` in pending_updates and preserve it in 備註 while leaving
+        # the temporary RPE/DBR cell blank. Backfill those blank cells from the
+        # exact DBR text so every new set has a real DBR value in the workbook.
+        for r in range(header_row + 1, ws.max_row + 1):
+            effort_cell = ws.cell(r, col)
+            if effort_cell.value not in (None, ""):
+                continue
+            note = ws.cell(r, note_col).value if note_col else ""
+            note_dbr = parse_dbr_from_note(note)
+            if note_dbr is not None:
+                effort_cell.value = note_dbr
 
     cell.value = "DBR"
     cell.comment = None
