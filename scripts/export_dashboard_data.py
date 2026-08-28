@@ -9,7 +9,7 @@ from openpyxl import load_workbook
 ROOT = Path(__file__).resolve().parents[1]
 WORKBOOK = ROOT / "30天重建追蹤.xlsx"
 OUTPUT = ROOT / "dashboard-data.json"
-TARGET_SHEETS = ("每日檢核", "飲食紀錄", "重訓紀錄")
+TARGET_SHEETS = ("每日檢核", "飲食紀錄", "重訓紀錄", "動作基準")
 
 
 def serialize(value):
