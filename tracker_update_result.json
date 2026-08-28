@@ -1,7 +1,8 @@
 {
   "migration": {
     "carbs_column_added": false,
-    "carbs_column": 8
+    "carbs_column": 8,
+    "cardio_sheet_created": true
   },
   "results": [],
   "verification": []
