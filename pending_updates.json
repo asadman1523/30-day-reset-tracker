@@ -1,3 +1,16 @@
 {
-  "updates": []
+  "updates": [
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"上斜胸推","set":1,"weight":25,"reps":13,"rpe":"","note":"DBR 2"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"上斜胸推","set":2,"weight":25,"reps":12,"rpe":"","note":"DBR 3"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"上斜胸推","set":3,"weight":25,"reps":13,"rpe":"","note":"DBR 1"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"上斜胸推","set":4,"weight":25,"reps":10,"rpe":"","note":"DBR 0"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":1,"weight":5,"reps":12,"rpe":"","note":"左腳；額外加重 5 kg；DBR 3"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":2,"weight":5,"reps":12,"rpe":"","note":"右腳；額外加重 5 kg；DBR 3"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":3,"weight":5,"reps":15,"rpe":"","note":"左腳；額外加重 5 kg；DBR 2"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":4,"weight":5,"reps":15,"rpe":"","note":"右腳；額外加重 5 kg；DBR 3"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":5,"weight":5,"reps":13,"rpe":"","note":"左腳；額外加重 5 kg；DBR 1"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":6,"weight":5,"reps":13,"rpe":"","note":"右腳；額外加重 5 kg；DBR 2"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":7,"weight":5,"reps":15,"rpe":"","note":"左腳；額外加重 5 kg；DBR 1"},
+    {"type":"workout_set","date":"2026-08-28","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":8,"weight":5,"reps":15,"rpe":"","note":"右腳；額外加重 5 kg；DBR 1"}
+  ]
 }
