@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-08-28",
+      "meal": "晚餐",
+      "food": "乳清蛋白粉 80g",
+      "source": "使用者回報＋既有乳清估算",
+      "protein": 60,
+      "carbs": 8,
+      "calories": 320,
+      "note": "估算沿用既有設定：乳清蛋白粉 80g 約蛋白質 60g、碳水 8g、320 kcal。"
+    }
+  ]
 }
