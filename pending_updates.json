@@ -1,3 +1,14 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "cardio",
+      "date": "2026-08-28",
+      "activity": "跑步機爬坡",
+      "segment": 1,
+      "minutes": 20,
+      "incline": 12,
+      "speed": 4.1,
+      "note": "使用者回報：爬坡坡度 12、速度 4.1 km/h、20 分鐘；獨立記錄，不併入散步分鐘。"
+    }
+  ]
 }
