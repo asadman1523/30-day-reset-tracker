@@ -7,28 +7,48 @@
   "results": [
     {
       "status": "written",
-      "row": 181,
+      "row": 182,
       "item": {
         "type": "food",
         "date": "2026-08-29",
-        "meal": "晚餐",
-        "food": "梁社漢 椒麻雞飯 1 份",
-        "source": "使用者回報＋公開菜單確認品項＋一般椒麻雞飯營養估算",
-        "protein": 50,
-        "carbs": 100,
-        "calories": 900,
-        "note": "公開菜單可確認梁社漢椒麻雞飯為去骨雞腿、椒麻醬、高麗菜絲與白飯；店家未公開完整營養標示。參考同類椒麻雞腿飯公開營養資料與一般便當份量，先估約蛋白質 50g、碳水 100g、900 kcal；主要誤差來自雞腿油脂、炸粉/吸油、白飯份量與椒麻醬，估計誤差約 ±150–200 kcal。"
+        "meal": "午餐",
+        "food": "未進食",
+        "source": "使用者回報",
+        "protein": 0,
+        "carbs": 0,
+        "calories": 0,
+        "note": "使用者明確回報今天午餐未進食。"
+      }
+    },
+    {
+      "status": "updated",
+      "row": 30,
+      "fields": [
+        "workout_done",
+        "walk_minutes"
+      ],
+      "item": {
+        "type": "daily_checkin",
+        "date": "2026-08-29",
+        "workout_done": "否",
+        "walk_minutes": 0
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 181,
+      "row": 182,
       "date": "2026-08-29",
-      "meal": "晚餐",
-      "food": "梁社漢 椒麻雞飯 1 份",
+      "meal": "午餐",
+      "food": "未進食",
       "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 30,
+      "date": "2026-08-29",
+      "status": "updated"
     }
   ]
 }
