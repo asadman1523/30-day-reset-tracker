@@ -1,3 +1,21 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-08-29",
+      "meal": "午餐",
+      "food": "未進食",
+      "source": "使用者回報",
+      "protein": 0,
+      "carbs": 0,
+      "calories": 0,
+      "note": "使用者明確回報今天午餐未進食。"
+    },
+    {
+      "type": "daily_checkin",
+      "date": "2026-08-29",
+      "workout_done": "否",
+      "walk_minutes": 0
+    }
+  ]
 }
