@@ -7,28 +7,48 @@
   "results": [
     {
       "status": "written",
-      "row": 185,
+      "row": 186,
       "item": {
         "type": "food",
         "date": "2026-08-30",
-        "meal": "晚餐",
-        "food": "美式漢堡 1 個 + 雞塊 6 塊",
-        "source": "使用者回報＋一般份量估算",
-        "protein": 42,
-        "carbs": 65,
-        "calories": 850,
-        "note": "未提供店家、漢堡肉排大小、起司/醬料與雞塊品牌，先按一般美式牛肉漢堡 1 個加雞塊 6 塊透明估算：約蛋白質 42g、碳水 65g、850 kcal。實際熱量受肉排大小、起司、醬料、麵包與炸雞塊吸油量影響，估計誤差約 ±200 kcal；若補充店家或照片可再修正。"
+        "meal": "午餐",
+        "food": "未進食",
+        "source": "使用者回報",
+        "protein": 0,
+        "carbs": 0,
+        "calories": 0,
+        "note": "使用者明確回報今天午餐未進食。"
+      }
+    },
+    {
+      "status": "updated",
+      "row": 31,
+      "fields": [
+        "workout_done",
+        "walk_minutes"
+      ],
+      "item": {
+        "type": "daily_checkin",
+        "date": "2026-08-30",
+        "workout_done": "否",
+        "walk_minutes": 30
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 185,
+      "row": 186,
       "date": "2026-08-30",
-      "meal": "晚餐",
-      "food": "美式漢堡 1 個 + 雞塊 6 塊",
+      "meal": "午餐",
+      "food": "未進食",
       "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 31,
+      "date": "2026-08-30",
+      "status": "updated"
     }
   ]
 }
