@@ -7,48 +7,51 @@
   "results": [
     {
       "status": "written",
-      "row": 182,
+      "row": 183,
       "item": {
         "type": "food",
         "date": "2026-08-29",
-        "meal": "午餐",
-        "food": "未進食",
-        "source": "使用者回報",
-        "protein": 0,
-        "carbs": 0,
-        "calories": 0,
-        "note": "使用者明確回報今天午餐未進食。"
+        "meal": "晚餐",
+        "food": "乳清蛋白粉 40g",
+        "source": "使用者回報＋既有乳清估算",
+        "protein": 30,
+        "carbs": 4,
+        "calories": 160,
+        "note": "估算沿用既有設定：乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal。"
       }
     },
     {
-      "status": "updated",
-      "row": 30,
-      "fields": [
-        "workout_done",
-        "walk_minutes"
-      ],
+      "status": "written",
+      "row": 184,
       "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-29",
-        "workout_done": "否",
-        "walk_minutes": 0
+        "type": "food",
+        "date": "2026-08-30",
+        "meal": "早餐",
+        "food": "乳清蛋白粉 40g + 雞胸肉 1 份 + 地瓜 1 份",
+        "source": "使用者回報＋既有乳清/雞胸/地瓜估算",
+        "protein": 62,
+        "carbs": 39,
+        "calories": 445,
+        "note": "估算沿用既有設定：乳清蛋白粉 40g 約蛋白質 30g、碳水 4g、160 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal；地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 182,
+      "row": 183,
       "date": "2026-08-29",
-      "meal": "午餐",
-      "food": "未進食",
+      "meal": "晚餐",
+      "food": "乳清蛋白粉 40g",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 30,
-      "date": "2026-08-29",
-      "status": "updated"
+      "row": 184,
+      "date": "2026-08-30",
+      "meal": "早餐",
+      "food": "乳清蛋白粉 40g + 雞胸肉 1 份 + 地瓜 1 份",
+      "status": "written"
     }
   ]
 }
