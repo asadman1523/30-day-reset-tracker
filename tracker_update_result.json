@@ -7,28 +7,94 @@
   "results": [
     {
       "status": "written",
-      "row": 187,
+      "row": 188,
+      "item": {
+        "type": "food",
+        "date": "2026-08-31",
+        "meal": "早餐",
+        "food": "地瓜（份量未提供） + 乳清蛋白粉 40g + 雞胸肉 1 塊（重量未提供）",
+        "source": "使用者回報＋既有乳清估算",
+        "protein": 30,
+        "carbs": 4,
+        "calories": 160,
+        "note": "乳清蛋白粉 40g 沿用既有估算：約蛋白質 30g、碳水 4g、160 kcal。地瓜份量與雞胸肉重量未提供，依規則不猜份量，因此本列營養數值暫只計入乳清；地瓜與雞胸肉營養待補份量後再修正。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 189,
+      "item": {
+        "type": "food",
+        "date": "2026-08-31",
+        "meal": "午餐",
+        "food": "未進食",
+        "source": "使用者回報",
+        "protein": 0,
+        "carbs": 0,
+        "calories": 0,
+        "note": "使用者明確回報今天午餐未進食。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 190,
       "item": {
         "type": "food",
         "date": "2026-08-31",
         "meal": "晚餐",
-        "food": "海南雞飯 1 份 + 皮蛋豆腐 1 份 + 胡椒餅 1 個",
-        "source": "使用者回報＋一般份量估算",
-        "protein": 55,
-        "carbs": 125,
-        "calories": 1200,
-        "note": "未提供店家與實際份量，先以一般外食份量估算：海南雞飯約 650 kcal、蛋白質 38g、碳水 75g；皮蛋豆腐約 220 kcal、蛋白質 11g、碳水 8g；胡椒餅約 330 kcal、蛋白質 6g、碳水 42g。合計約 1200 kcal、蛋白質 55g、碳水 125g。雞皮、雞油飯、醬料、豆腐份量及胡椒餅大小會造成明顯誤差，整餐熱量估計誤差約 ±200 kcal。"
+        "food": "乳清蛋白粉 40g",
+        "source": "使用者回報＋既有乳清估算",
+        "protein": 30,
+        "carbs": 4,
+        "calories": 160,
+        "note": "晚餐原有餐點保留，本筆為追加。乳清蛋白粉 40g 沿用既有估算：約蛋白質 30g、碳水 4g、160 kcal。"
+      }
+    },
+    {
+      "status": "updated",
+      "row": 32,
+      "fields": [
+        "workout_done",
+        "walk_minutes"
+      ],
+      "item": {
+        "type": "daily_checkin",
+        "date": "2026-08-31",
+        "workout_done": "否",
+        "walk_minutes": 0
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 187,
+      "row": 188,
+      "date": "2026-08-31",
+      "meal": "早餐",
+      "food": "地瓜（份量未提供） + 乳清蛋白粉 40g + 雞胸肉 1 塊（重量未提供）",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 189,
+      "date": "2026-08-31",
+      "meal": "午餐",
+      "food": "未進食",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 190,
       "date": "2026-08-31",
       "meal": "晚餐",
-      "food": "海南雞飯 1 份 + 皮蛋豆腐 1 份 + 胡椒餅 1 個",
+      "food": "乳清蛋白粉 40g",
       "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 32,
+      "date": "2026-08-31",
+      "status": "updated"
     }
   ]
 }
