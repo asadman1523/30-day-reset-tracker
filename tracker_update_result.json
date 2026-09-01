@@ -7,94 +7,74 @@
   "results": [
     {
       "status": "written",
-      "row": 188,
+      "row": 191,
       "item": {
         "type": "food",
-        "date": "2026-08-31",
+        "date": "2026-09-01",
         "meal": "早餐",
-        "food": "地瓜（份量未提供） + 乳清蛋白粉 40g + 雞胸肉 1 塊（重量未提供）",
+        "food": "地瓜（份量未提供） + 雞胸肉（份量未提供） + 乳清蛋白粉 20g",
         "source": "使用者回報＋既有乳清估算",
-        "protein": 30,
-        "carbs": 4,
-        "calories": 160,
-        "note": "乳清蛋白粉 40g 沿用既有估算：約蛋白質 30g、碳水 4g、160 kcal。地瓜份量與雞胸肉重量未提供，依規則不猜份量，因此本列營養數值暫只計入乳清；地瓜與雞胸肉營養待補份量後再修正。"
+        "protein": 15,
+        "carbs": 2,
+        "calories": 80,
+        "note": "乳清蛋白粉 20g 沿用既有估算：約蛋白質 15g、碳水 2g、80 kcal。地瓜與雞胸肉未提供重量／份量，依規則不自行猜份量，因此本列營養數值暫只計入乳清；地瓜與雞胸肉營養待補份量後再修正。"
       }
     },
     {
       "status": "written",
-      "row": 189,
+      "row": 192,
       "item": {
         "type": "food",
-        "date": "2026-08-31",
+        "date": "2026-09-01",
         "meal": "午餐",
+        "food": "炸雞 3 塊",
+        "source": "使用者回報",
+        "protein": null,
+        "carbs": null,
+        "calories": null,
+        "note": "使用者回報炸雞 3 塊，但未提供店家、部位、單塊大小或重量；依規則不猜份量，因此蛋白質、碳水與熱量暫留空白。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 193,
+      "item": {
+        "type": "food",
+        "date": "2026-09-01",
+        "meal": "晚餐",
         "food": "未進食",
         "source": "使用者回報",
         "protein": 0,
         "carbs": 0,
         "calories": 0,
-        "note": "使用者明確回報今天午餐未進食。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 190,
-      "item": {
-        "type": "food",
-        "date": "2026-08-31",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 40g",
-        "source": "使用者回報＋既有乳清估算",
-        "protein": 30,
-        "carbs": 4,
-        "calories": 160,
-        "note": "晚餐原有餐點保留，本筆為追加。乳清蛋白粉 40g 沿用既有估算：約蛋白質 30g、碳水 4g、160 kcal。"
-      }
-    },
-    {
-      "status": "updated",
-      "row": 32,
-      "fields": [
-        "workout_done",
-        "walk_minutes"
-      ],
-      "item": {
-        "type": "daily_checkin",
-        "date": "2026-08-31",
-        "workout_done": "否",
-        "walk_minutes": 0
+        "note": "使用者明確回報今天晚餐未進食。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 188,
-      "date": "2026-08-31",
+      "row": 191,
+      "date": "2026-09-01",
       "meal": "早餐",
-      "food": "地瓜（份量未提供） + 乳清蛋白粉 40g + 雞胸肉 1 塊（重量未提供）",
+      "food": "地瓜（份量未提供） + 雞胸肉（份量未提供） + 乳清蛋白粉 20g",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 189,
-      "date": "2026-08-31",
+      "row": 192,
+      "date": "2026-09-01",
       "meal": "午餐",
+      "food": "炸雞 3 塊",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 193,
+      "date": "2026-09-01",
+      "meal": "晚餐",
       "food": "未進食",
       "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 190,
-      "date": "2026-08-31",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 40g",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 32,
-      "date": "2026-08-31",
-      "status": "updated"
     }
   ]
 }
