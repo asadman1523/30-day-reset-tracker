@@ -7,12 +7,12 @@
   "results": [
     {
       "status": "deleted",
-      "row": 193,
+      "row": 191,
       "item": {
         "type": "delete_food",
         "date": "2026-09-01",
-        "meal": "晚餐",
-        "food": "未進食"
+        "meal": "早餐",
+        "food": "地瓜（份量未提供） + 雞胸肉（份量未提供） + 乳清蛋白粉 20g"
       }
     },
     {
@@ -21,27 +21,30 @@
       "item": {
         "type": "food",
         "date": "2026-09-01",
-        "meal": "晚餐",
-        "food": "香蕉 1 根",
-        "source": "使用者更正＋一般中型香蕉估算",
-        "protein": 1.3,
-        "carbs": 27,
-        "calories": 105,
-        "note": "使用者更正：晚餐有吃香蕉 1 根，取代先前『未進食』紀錄。未提供重量，按一般中型香蕉透明估算：約蛋白質 1.3g、碳水 27g、105 kcal；實際依大小會有差異。"
+        "meal": "早餐",
+        "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 20g",
+        "source": "使用者更正＋沿用既有固定估算",
+        "protein": 47,
+        "carbs": 37,
+        "calories": 365,
+        "note": "使用者更正早餐份量為地瓜 1 份、雞胸肉 1 份。沿用既有固定估算：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal；乳清蛋白粉 20g 約蛋白質 15g、碳水 2g、80 kcal。合計約蛋白質 47g、碳水 37g、365 kcal。"
       }
     },
     {
       "status": "updated",
-      "row": 33,
+      "row": 191,
       "fields": [
-        "workout_done",
-        "walk_minutes"
+        "protein",
+        "note_append"
       ],
       "item": {
-        "type": "daily_checkin",
+        "type": "food",
         "date": "2026-09-01",
-        "workout_done": "否",
-        "walk_minutes": 0
+        "meal": "午餐",
+        "food": "炸雞 3 塊",
+        "protein": 50,
+        "update_existing": true,
+        "note_append": "使用者指定炸雞 3 塊蛋白質以 50g 計。"
       }
     }
   ],
@@ -49,22 +52,24 @@
     {
       "verified": true,
       "date": "2026-09-01",
-      "meal": "晚餐",
-      "food": "未進食",
+      "meal": "早餐",
+      "food": "地瓜（份量未提供） + 雞胸肉（份量未提供） + 乳清蛋白粉 20g",
       "status": "deleted"
     },
     {
       "verified": true,
       "row": 193,
       "date": "2026-09-01",
-      "meal": "晚餐",
-      "food": "香蕉 1 根",
+      "meal": "早餐",
+      "food": "地瓜 1 份 + 雞胸肉 1 份 + 乳清蛋白粉 20g",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 33,
+      "row": 191,
       "date": "2026-09-01",
+      "meal": "午餐",
+      "food": "炸雞 3 塊",
       "status": "updated"
     }
   ]
