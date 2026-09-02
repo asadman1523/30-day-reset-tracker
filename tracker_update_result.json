@@ -6,7 +6,7 @@
   },
   "results": [
     {
-      "status": "written",
+      "status": "already_present",
       "row": 198,
       "item": {
         "type": "food",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "status": "written",
+      "status": "already_present",
       "row": 199,
       "item": {
         "type": "food",
@@ -43,7 +43,7 @@
       "date": "2026-09-02",
       "meal": "早餐",
       "food": "7-ELEVEN 鮮蔬鮪魚御飯糰 1 個",
-      "status": "written"
+      "status": "already_present"
     },
     {
       "verified": true,
@@ -51,7 +51,7 @@
       "date": "2026-09-02",
       "meal": "午餐",
       "food": "7-ELEVEN 肉鬆御飯糰 1 個 + 乳清蛋白粉 40g",
-      "status": "written"
+      "status": "already_present"
     }
   ]
 }
