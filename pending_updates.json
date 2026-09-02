@@ -1,26 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "date": "2026-09-02",
-      "meal": "早餐",
-      "food": "7-ELEVEN 鮮蔬鮪魚御飯糰 1 個",
-      "source": "使用者回報＋既有 7-ELEVEN 飯糰紀錄",
-      "protein": 5.2,
-      "carbs": 45,
-      "calories": 234,
-      "note": "沿用追蹤表既有 7-ELEVEN 雙蔬／鮮蔬鮪魚飯糰設定：約 234 kcal、蛋白質 5.2g；碳水未有本次包裝標示，按既有同尺寸飯糰估算約 45g。"
-    },
-    {
-      "type": "food",
-      "date": "2026-09-02",
-      "meal": "午餐",
-      "food": "7-ELEVEN 肉鬆御飯糰 1 個 + 乳清蛋白粉 40g",
-      "source": "使用者回報＋既有 7-ELEVEN 飯糰／乳清估算",
-      "protein": 35.5,
-      "carbs": 49,
-      "calories": 411,
-      "note": "肉鬆御飯糰沿用追蹤表既有設定：約 251 kcal、蛋白質 5.5g，碳水約 45g；乳清蛋白粉 40g 沿用既有設定：約 160 kcal、蛋白質 30g、碳水 4g。合計約 411 kcal、蛋白質 35.5g、碳水 49g。"
-    }
-  ]
+  "updates": []
 }
