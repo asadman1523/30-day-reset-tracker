@@ -1,3 +1,21 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-09-02",
+      "meal": "晚餐",
+      "food": "乳清蛋白粉 40g",
+      "source": "使用者回報＋既有乳清估算",
+      "protein": 30,
+      "carbs": 4,
+      "calories": 160,
+      "note": "使用者補充今天另外喝了乳清蛋白粉 40g；本筆為追加，不覆蓋既有早餐、午餐與晚餐紀錄。沿用既有估算：約蛋白質 30g、碳水 4g、160 kcal。"
+    },
+    {
+      "type": "daily_checkin",
+      "date": "2026-09-02",
+      "workout_done": "否",
+      "walk_minutes": 0
+    }
+  ]
 }
