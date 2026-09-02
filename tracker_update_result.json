@@ -7,27 +7,48 @@
   "results": [
     {
       "status": "written",
-      "row": 3,
+      "row": 200,
       "item": {
-        "type": "cardio",
+        "type": "food",
         "date": "2026-09-02",
-        "activity": "跑步機爬坡",
-        "segment": 1,
-        "minutes": 30,
-        "incline": 12,
-        "speed": 4.1,
-        "note": "使用者回報：爬坡坡度 12、速度 4.1 km/h、30 分鐘；獨立記錄，不併入散步分鐘。"
+        "meal": "晚餐",
+        "food": "乳清蛋白粉 40g",
+        "source": "使用者回報＋既有乳清估算",
+        "protein": 30,
+        "carbs": 4,
+        "calories": 160,
+        "note": "使用者補充今天另外喝了乳清蛋白粉 40g；本筆為追加，不覆蓋既有早餐、午餐與晚餐紀錄。沿用既有估算：約蛋白質 30g、碳水 4g、160 kcal。"
+      }
+    },
+    {
+      "status": "updated",
+      "row": 34,
+      "fields": [
+        "workout_done",
+        "walk_minutes"
+      ],
+      "item": {
+        "type": "daily_checkin",
+        "date": "2026-09-02",
+        "workout_done": "否",
+        "walk_minutes": 0
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 3,
+      "row": 200,
       "date": "2026-09-02",
-      "activity": "跑步機爬坡",
-      "segment": 1,
+      "meal": "晚餐",
+      "food": "乳清蛋白粉 40g",
       "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 34,
+      "date": "2026-09-02",
+      "status": "updated"
     }
   ]
 }
