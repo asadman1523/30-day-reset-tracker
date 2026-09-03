@@ -7,27 +7,27 @@
   "results": [
     {
       "status": "written",
-      "row": 203,
+      "row": 204,
       "item": {
         "type": "food",
         "date": "2026-09-03",
-        "meal": "午餐",
-        "source": "使用者回報",
-        "food": "未進食",
-        "protein": 0,
-        "carbs": 0,
-        "calories": 0,
-        "note": "使用者明確回報今天午餐未進食。"
+        "meal": "晚餐",
+        "source": "使用者回報＋既有乳清估算",
+        "food": "乳清蛋白粉 60g",
+        "protein": 45,
+        "carbs": 6,
+        "calories": 240,
+        "note": "使用者補充晚餐後喝了乳清蛋白粉 60g；沿用既有估算：約蛋白質 45g、碳水 6g、240 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 203,
+      "row": 204,
       "date": "2026-09-03",
-      "meal": "午餐",
-      "food": "未進食",
+      "meal": "晚餐",
+      "food": "乳清蛋白粉 60g",
       "status": "written"
     }
   ]
