@@ -7,48 +7,28 @@
   "results": [
     {
       "status": "written",
-      "row": 200,
+      "row": 201,
       "item": {
         "type": "food",
-        "date": "2026-09-02",
-        "meal": "晚餐",
-        "food": "乳清蛋白粉 40g",
-        "source": "使用者回報＋既有乳清估算",
-        "protein": 30,
-        "carbs": 4,
-        "calories": 160,
-        "note": "使用者補充今天另外喝了乳清蛋白粉 40g；本筆為追加，不覆蓋既有早餐、午餐與晚餐紀錄。沿用既有估算：約蛋白質 30g、碳水 4g、160 kcal。"
-      }
-    },
-    {
-      "status": "updated",
-      "row": 34,
-      "fields": [
-        "workout_done",
-        "walk_minutes"
-      ],
-      "item": {
-        "type": "daily_checkin",
-        "date": "2026-09-02",
-        "workout_done": "否",
-        "walk_minutes": 0
+        "date": "2026-09-03",
+        "meal": "早餐",
+        "food": "地瓜 + 雞胸肉 1 塊",
+        "source": "使用者回報",
+        "protein": null,
+        "carbs": null,
+        "calories": null,
+        "note": "使用者回報早餐吃地瓜與雞胸肉 1 塊；地瓜份量與雞胸肉重量未提供，依規則不猜營養數值。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 200,
-      "date": "2026-09-02",
-      "meal": "晚餐",
-      "food": "乳清蛋白粉 40g",
+      "row": 201,
+      "date": "2026-09-03",
+      "meal": "早餐",
+      "food": "地瓜 + 雞胸肉 1 塊",
       "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 34,
-      "date": "2026-09-02",
-      "status": "updated"
     }
   ]
 }
