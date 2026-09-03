@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-09-03",
+      "meal": "晚餐",
+      "food": "青醬義大利麵 + 小雞腿",
+      "source": "使用者回報",
+      "protein": null,
+      "carbs": null,
+      "calories": null,
+      "note": "使用者回報晚餐吃青醬義大利麵與小雞腿；未提供義大利麵實際份量、雞腿數量或重量，依規則不猜營養數值。"
+    }
+  ]
 }
