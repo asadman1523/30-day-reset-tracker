@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "date": "2026-09-03",
+      "meal": "早餐",
+      "food": "地瓜 + 雞胸肉 1 塊",
+      "source": "使用者回報",
+      "protein": null,
+      "carbs": null,
+      "calories": null,
+      "note": "使用者回報早餐吃地瓜與雞胸肉 1 塊；地瓜份量與雞胸肉重量未提供，依規則不猜營養數值。"
+    }
+  ]
 }
