@@ -6,28 +6,45 @@
   },
   "results": [
     {
+      "status": "deleted",
+      "row": 201,
+      "item": {
+        "type": "delete_food",
+        "date": "2026-09-03",
+        "meal": "早餐",
+        "food": "地瓜 + 雞胸肉 1 塊"
+      }
+    },
+    {
       "status": "written",
       "row": 201,
       "item": {
         "type": "food",
         "date": "2026-09-03",
         "meal": "早餐",
-        "food": "地瓜 + 雞胸肉 1 塊",
-        "source": "使用者回報",
-        "protein": null,
-        "carbs": null,
-        "calories": null,
-        "note": "使用者回報早餐吃地瓜與雞胸肉 1 塊；地瓜份量與雞胸肉重量未提供，依規則不猜營養數值。"
+        "food": "7-ELEVEN 30元地瓜 1 份 + 21Plus剝皮辣椒雞胸肉 1 包（145g）",
+        "source": "使用者更正＋既有地瓜設定＋7-ELEVEN官方現售品項資料",
+        "protein": 32,
+        "carbs": 35,
+        "calories": 288,
+        "note": "使用者更正實際品項：地瓜為 7-ELEVEN 現售 30 元地瓜；雞胸為 21Plus 剝皮辣椒雞胸肉。地瓜沿用追蹤表既有 1 份設定：約蛋白質 2g、碳水 35g、125 kcal。21Plus 剝皮辣椒雞胸肉目前 7-ELEVEN 現售規格為 145g，官方頁面列熱量 163 kcal；官方頁面未列完整蛋白質數字，本筆蛋白質先沿用一包雞胸約 30g 的透明估算。合計約蛋白質 32g、288 kcal；碳水 35g 僅計入地瓜，雞胸調味碳水未有可靠標示故不猜。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 201,
       "date": "2026-09-03",
       "meal": "早餐",
       "food": "地瓜 + 雞胸肉 1 塊",
+      "status": "deleted"
+    },
+    {
+      "verified": true,
+      "row": 201,
+      "date": "2026-09-03",
+      "meal": "早餐",
+      "food": "7-ELEVEN 30元地瓜 1 份 + 21Plus剝皮辣椒雞胸肉 1 包（145g）",
       "status": "written"
     }
   ]
