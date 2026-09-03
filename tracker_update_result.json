@@ -6,35 +6,29 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 202,
-      "fields": [
-        "protein",
-        "carbs",
-        "calories",
-        "note_append"
-      ],
+      "status": "written",
+      "row": 203,
       "item": {
         "type": "food",
         "date": "2026-09-03",
-        "meal": "晚餐",
-        "food": "青醬義大利麵 + 小雞腿",
-        "protein": 42,
-        "carbs": 95,
-        "calories": 900,
-        "update_existing": true,
-        "note_append": "依使用者提供照片做透明估算：青醬義大利麵約 1 份偏大份量，麵體約 250–300g 熟重並含青醬與可見雞肉；另有 1 支小雞腿。整餐先估約蛋白質 42g、碳水 95g、900 kcal。實際會受青醬用油/起司量、麵量與雞腿大小影響，熱量誤差約 ±150–200 kcal。照片中的飲料因種類未確認，不計入。"
+        "meal": "午餐",
+        "source": "使用者回報",
+        "food": "未進食",
+        "protein": 0,
+        "carbs": 0,
+        "calories": 0,
+        "note": "使用者明確回報今天午餐未進食。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 202,
+      "row": 203,
       "date": "2026-09-03",
-      "meal": "晚餐",
-      "food": "青醬義大利麵 + 小雞腿",
-      "status": "updated"
+      "meal": "午餐",
+      "food": "未進食",
+      "status": "written"
     }
   ]
 }

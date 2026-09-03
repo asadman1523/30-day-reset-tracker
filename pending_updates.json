@@ -1,15 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "date": "2026-09-03",
-      "meal": "午餐",
-      "source": "使用者回報",
-      "food": "未進食",
-      "protein": 0,
-      "carbs": 0,
-      "calories": 0,
-      "note": "使用者明確回報今天午餐未進食。"
-    }
-  ]
+  "updates": []
 }
