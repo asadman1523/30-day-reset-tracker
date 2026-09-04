@@ -6,7 +6,7 @@
   },
   "results": [
     {
-      "status": "written",
+      "status": "already_present",
       "row": 208,
       "item": {
         "type": "food",
@@ -26,7 +26,7 @@
       "date": "2026-09-04",
       "meal": "晚餐",
       "food": "額外蛋白質 26g",
-      "status": "written"
+      "status": "already_present"
     }
   ]
 }
