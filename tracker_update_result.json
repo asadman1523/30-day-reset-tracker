@@ -6,35 +6,27 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 207,
-      "fields": [
-        "protein",
-        "carbs",
-        "calories",
-        "note_append"
-      ],
+      "status": "written",
+      "row": 208,
       "item": {
         "type": "food",
         "date": "2026-09-04",
         "meal": "晚餐",
-        "food": "原味拉麵",
-        "protein": 30,
-        "carbs": 70,
-        "calories": 750,
-        "update_existing": true,
-        "note_append": "使用者補充有叉燒肉 4 片。依一般拉麵店常見份量透明估算整碗約蛋白質 30g、碳水 70g、750 kcal；主要誤差來自叉燒肥瘦、麵量與湯底油脂，熱量估計誤差約 ±150–200 kcal。"
+        "source": "使用者回報",
+        "food": "額外蛋白質 26g",
+        "protein": 26,
+        "note": "使用者補充晚餐另外攝取蛋白質 26g；來源、熱量與碳水未提供，因此僅記錄蛋白質 26g，其餘不猜。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 207,
+      "row": 208,
       "date": "2026-09-04",
       "meal": "晚餐",
-      "food": "原味拉麵",
-      "status": "updated"
+      "food": "額外蛋白質 26g",
+      "status": "written"
     }
   ]
 }
