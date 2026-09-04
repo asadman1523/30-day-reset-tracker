@@ -7,26 +7,25 @@
   "results": [
     {
       "status": "written",
-      "row": 205,
+      "row": 206,
       "item": {
         "type": "food",
         "date": "2026-09-04",
-        "meal": "早餐",
-        "source": "使用者回報＋沿用前一日同品項設定",
-        "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
-        "protein": 30,
-        "calories": 163,
-        "note": "使用者回報早餐吃 7-ELEVEN 剝皮辣椒雞胸肉；沿用 2026-09-03 同品項設定：21Plus 剝皮辣椒雞胸肉 145g，約 163 kcal，蛋白質先估 30g。官方頁面未提供可靠完整碳水標示，因此碳水留白不猜。"
+        "meal": "午餐",
+        "source": "使用者回報",
+        "food": "蛋白飲（蛋白質 52g）",
+        "protein": 52,
+        "note": "使用者回報中午喝了含蛋白質 52g 的飲品；未提供品牌、粉量、碳水或熱量標示，因此僅記錄蛋白質 52g，其餘不猜。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 205,
+      "row": 206,
       "date": "2026-09-04",
-      "meal": "早餐",
-      "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
+      "meal": "午餐",
+      "food": "蛋白飲（蛋白質 52g）",
       "status": "written"
     }
   ]
