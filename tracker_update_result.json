@@ -7,25 +7,24 @@
   "results": [
     {
       "status": "written",
-      "row": 206,
+      "row": 207,
       "item": {
         "type": "food",
         "date": "2026-09-04",
-        "meal": "午餐",
+        "meal": "晚餐",
         "source": "使用者回報",
-        "food": "蛋白飲（蛋白質 52g）",
-        "protein": 52,
-        "note": "使用者回報中午喝了含蛋白質 52g 的飲品；未提供品牌、粉量、碳水或熱量標示，因此僅記錄蛋白質 52g，其餘不猜。"
+        "food": "原味拉麵",
+        "note": "使用者回報晚餐吃原味拉麵；未提供店家、份量、配料或營養標示，因此蛋白質、碳水與熱量留白不猜。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 206,
+      "row": 207,
       "date": "2026-09-04",
-      "meal": "午餐",
-      "food": "蛋白飲（蛋白質 52g）",
+      "meal": "晚餐",
+      "food": "原味拉麵",
       "status": "written"
     }
   ]
