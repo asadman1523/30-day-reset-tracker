@@ -304,7 +304,7 @@ async function main() {
     const today = taipeiToday();
     state.startDate = checkDates[0] || allDates[0] || today;
     state.minDate = checkDates[0] || allDates[0] || today;
-    state.maxDate = checkDates.at(-1) || allDates.at(-1) || today;
+    state.maxDate = allDates.at(-1) || checkDates.at(-1) || today;
     $('datePicker').min = state.minDate;
     $('datePicker').max = state.maxDate;
 
