@@ -23,6 +23,39 @@
       "recommended_reps": "12–15",
       "recommended_dbr": "1–3",
       "note": "不以最高 25kg 作下次工作重量；本次 20kg 可連續兩組 15 次 DBR3，而 25kg 第二組僅 8 次 DBR0，故暫以 20kg 為可重複工作重量。"
+    },
+    {
+      "type": "food",
+      "date": "2026-09-05",
+      "meal": "晚餐",
+      "source": "使用者回報＋既有雞蛋估算",
+      "food": "茶葉蛋 2 顆",
+      "protein": 10.8,
+      "carbs": 2.8,
+      "calories": 106,
+      "note": "沿用追蹤表既有 7-ELEVEN 雞蛋估算：每顆約蛋白質 5.4g、碳水 1.4g、53 kcal。"
+    },
+    {
+      "type": "food",
+      "date": "2026-09-05",
+      "meal": "晚餐",
+      "source": "使用者回報＋一般中型香蕉估算",
+      "food": "香蕉 1 根",
+      "protein": 1.3,
+      "carbs": 27,
+      "calories": 105,
+      "note": "未提供重量，沿用一般中型香蕉透明估算：約蛋白質 1.3g、碳水 27g、105 kcal。"
+    },
+    {
+      "type": "food",
+      "date": "2026-09-05",
+      "meal": "晚餐",
+      "source": "使用者回報＋既有乳清估算",
+      "food": "乳清蛋白粉 52g",
+      "protein": 39,
+      "carbs": 5.2,
+      "calories": 208,
+      "note": "依追蹤表既有比例換算：40g 乳清約蛋白質30g、碳水4g、160 kcal；52g 乳清等比例估算約蛋白質39g、碳水5.2g、208 kcal。"
     }
   ]
 }
