@@ -6,27 +6,27 @@
   },
   "results": [
     {
-      "status": "already_present",
-      "row": 208,
+      "status": "written",
+      "row": 209,
       "item": {
         "type": "food",
-        "date": "2026-09-04",
-        "meal": "晚餐",
+        "date": "2026-09-05",
+        "meal": "早餐",
         "source": "使用者回報",
-        "food": "額外蛋白質 26g",
-        "protein": 26,
-        "note": "使用者補充晚餐另外攝取蛋白質 26g；來源、熱量與碳水未提供，因此僅記錄蛋白質 26g，其餘不猜。"
+        "food": "早餐蛋白質 52g",
+        "protein": 52,
+        "note": "使用者回報早上攝取蛋白質 52g；未提供食物來源、品牌、熱量或碳水，因此僅記錄蛋白質 52g，其餘不猜。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 208,
-      "date": "2026-09-04",
-      "meal": "晚餐",
-      "food": "額外蛋白質 26g",
-      "status": "already_present"
+      "row": 209,
+      "date": "2026-09-05",
+      "meal": "早餐",
+      "food": "早餐蛋白質 52g",
+      "status": "written"
     }
   ]
 }
