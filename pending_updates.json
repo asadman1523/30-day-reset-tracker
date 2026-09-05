@@ -1,67 +1,38 @@
 {
   "updates": [
-    {
-      "type": "workout",
-      "date": "2026-09-05",
-      "exercise": "上斜胸推",
-      "sets": [
-        {"weight": 15, "reps": 15, "dbr": 5},
-        {"weight": 20, "reps": 15, "dbr": 3},
-        {"weight": 20, "reps": 15, "dbr": 3},
-        {"weight": 25, "reps": 13, "dbr": 1},
-        {"weight": 25, "reps": 8, "dbr": 0}
-      ],
-      "note": "椅背 30 度。使用者更正：過去上斜胸推原本就應做 30 度，但過去實際誤做 45 度；使用者要求以前的上斜胸推從有效基準移除，不再用舊 45 度紀錄推算下次重量。今天 30 度重新建立基準；使用者回報二頭肌明顯疲勞。"
-    },
-    {
-      "type": "exercise_baseline_reset",
-      "date": "2026-09-05",
-      "exercise": "上斜胸推",
-      "exclude_before_date": "2026-09-05",
-      "reason": "過去紀錄實際椅背角度為 45 度，與使用者要求的標準 30 度不一致；舊紀錄保留歷史資料但從動作基準計算排除。從 2026-09-05 的 30 度上斜胸推重新建立有效重量基準。",
-      "recommended_next_weight": 20,
-      "recommended_reps": "12–15",
-      "recommended_dbr": "1–3",
-      "note": "不以最高 25kg 作下次工作重量；本次 20kg 可連續兩組 15 次 DBR3，而 25kg 第二組僅 8 次 DBR0，故暫以 20kg 為可重複工作重量。"
-    },
-    {
-      "type": "food",
-      "date": "2026-09-05",
-      "meal": "晚餐",
-      "source": "使用者回報＋既有雞蛋估算",
-      "food": "茶葉蛋 2 顆",
-      "protein": 10.8,
-      "carbs": 2.8,
-      "calories": 106,
-      "note": "沿用追蹤表既有 7-ELEVEN 雞蛋估算：每顆約蛋白質 5.4g、碳水 1.4g、53 kcal。"
-    },
-    {
-      "type": "food",
-      "date": "2026-09-05",
-      "meal": "晚餐",
-      "source": "使用者回報＋一般中型香蕉估算",
-      "food": "香蕉 1 根",
-      "protein": 1.3,
-      "carbs": 27,
-      "calories": 105,
-      "note": "未提供重量，沿用一般中型香蕉透明估算：約蛋白質 1.3g、碳水 27g、105 kcal。"
-    },
-    {
-      "type": "food",
-      "date": "2026-09-05",
-      "meal": "晚餐",
-      "source": "使用者回報",
-      "food": "乳清 2 包（每包蛋白質 26g）",
-      "protein": 52,
-      "note": "使用者澄清為兩包乳清，每包提供蛋白質 26g，因此合計蛋白質 52g。未提供每包粉量、熱量與碳水標示，因此僅記錄蛋白質 52g，其餘不猜。"
-    },
-    {
-      "type": "food",
-      "date": "2026-09-05",
-      "meal": "晚餐",
-      "source": "使用者回報＋使用者提供 Facebook 貼文",
-      "food": "7-ELEVEN 塔香香鬆素飯糰 1 個",
-      "note": "更正前一筆名稱：不是塔香香芋飯糰，而是使用者提供連結中的『塔香香鬆素飯糰』。貼文可辨識品名，但本次未取得可靠營養標示，因此蛋白質、碳水與熱量暫不猜；若提供包裝營養標示照片再補。"
-    }
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"上斜胸推","set":1,"weight":15,"reps":15,"dbr":5,"note":"椅背30度；啞鈴兩支合計15kg（每手7.5kg）。過去45度上斜胸推不再作有效重量基準；本日重新建立30度基準。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"上斜胸推","set":2,"weight":20,"reps":15,"dbr":3,"note":"椅背30度；啞鈴兩支合計20kg（每手10kg）。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"上斜胸推","set":3,"weight":20,"reps":15,"dbr":3,"note":"椅背30度；啞鈴兩支合計20kg（每手10kg）。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"上斜胸推","set":4,"weight":25,"reps":13,"dbr":1,"note":"椅背30度；啞鈴兩支合計25kg（每手12.5kg）。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"上斜胸推","set":5,"weight":25,"reps":8,"dbr":0,"note":"椅背30度；啞鈴兩支合計25kg（每手12.5kg）；本組力竭。使用者回報今日二頭肌明顯疲勞。"},
+
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":1,"weight":10,"reps":15,"dbr":3,"note":"左腳；每手5kg，兩手總負重10kg。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":2,"weight":10,"reps":15,"dbr":3,"note":"右腳；每手5kg，兩手總負重10kg。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":3,"weight":10,"reps":15,"dbr":2,"note":"左腳；每手5kg，兩手總負重10kg。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":4,"weight":10,"reps":15,"dbr":2,"note":"右腳；每手5kg，兩手總負重10kg。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":5,"weight":10,"reps":15,"dbr":1,"note":"左腳；每手5kg，兩手總負重10kg。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":6,"weight":10,"reps":11,"dbr":1,"note":"右腳；每手5kg，兩手總負重10kg。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":7,"weight":10,"reps":11,"dbr":2,"note":"左腳；每手5kg，兩手總負重10kg；最後一輪右腳先做。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"羅馬尼亞分腿蹲","set":8,"weight":10,"reps":11,"dbr":1,"note":"右腳；每手5kg，兩手總負重10kg；最後一輪右腳先做。"},
+
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"滑輪下拉","set":1,"weight":30,"reps":15,"dbr":4,"note":"使用者更正第一組重量為30kg，非37.5kg。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"滑輪下拉","set":2,"weight":37.5,"reps":14,"dbr":2,"note":"使用者回報。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"滑輪下拉","set":3,"weight":37.5,"reps":12,"dbr":2,"note":"使用者回報。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"滑輪下拉","set":4,"weight":37.5,"reps":12,"dbr":1,"note":"使用者回報。"},
+
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"反向飛鳥","set":1,"weight":20,"reps":8,"dbr":1,"note":"使用者回報。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"反向飛鳥","set":2,"weight":15,"reps":11,"dbr":1,"note":"使用者回報。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"反向飛鳥","set":3,"weight":15,"reps":12,"dbr":0,"note":"使用者回報；本組力竭。"},
+
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"腿內收","set":1,"weight":37.5,"reps":13,"dbr":2,"note":"使用者回報。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"腿內收","set":2,"weight":37.5,"reps":14,"dbr":2,"note":"使用者回報。"},
+    {"type":"workout_set","date":"2026-09-05","workout_name":"重訓","exercise":"腿內收","set":3,"weight":37.5,"reps":15,"dbr":0,"note":"使用者回報；本組力竭。"},
+
+    {"type":"cardio","date":"2026-09-05","activity":"跑步機有氧","segment":1,"minutes":20,"incline":1,"speed":3.3,"note":"重訓後跑步機有氧；心率約142 bpm。與日常散步分開記錄，也不與12%高坡度爬坡混為同一強度。"},
+
+    {"type":"food","date":"2026-09-05","meal":"晚餐","source":"使用者回報＋既有雞蛋估算","food":"茶葉蛋 2 顆","protein":10.8,"carbs":2.8,"calories":106,"note":"沿用追蹤表既有7-ELEVEN雞蛋估算：每顆約蛋白質5.4g、碳水1.4g、53 kcal。"},
+    {"type":"food","date":"2026-09-05","meal":"晚餐","source":"使用者回報＋一般中型香蕉估算","food":"香蕉 1 根","protein":1.3,"carbs":27,"calories":105,"note":"未提供重量，沿用一般中型香蕉透明估算：約蛋白質1.3g、碳水27g、105 kcal。"},
+    {"type":"food","date":"2026-09-05","meal":"晚餐","source":"使用者回報","food":"乳清 2 包（每包蛋白質 26g）","protein":52,"note":"兩包乳清，每包提供蛋白質26g，合計蛋白質52g；未提供熱量與碳水標示，因此其餘不猜。"},
+    {"type":"food","date":"2026-09-05","meal":"晚餐","source":"使用者回報＋使用者提供品名","food":"7-ELEVEN 塔香香鬆素飯糰 1 個","note":"使用者確認正式品名為7-ELEVEN塔香香鬆素飯糰；目前沒有可靠完整營養標示，因此蛋白質、碳水與熱量暫留空白。"}
   ]
 }
