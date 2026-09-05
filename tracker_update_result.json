@@ -7,25 +7,642 @@
   "results": [
     {
       "status": "written",
-      "row": 209,
+      "row": 134,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "上斜胸推",
+        "set": 1,
+        "weight": 15,
+        "reps": 15,
+        "dbr": 5,
+        "note": "椅背30度；啞鈴兩支合計15kg（每手7.5kg）。過去45度上斜胸推不再作有效重量基準；本日重新建立30度基準。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 135,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "上斜胸推",
+        "set": 2,
+        "weight": 20,
+        "reps": 15,
+        "dbr": 3,
+        "note": "椅背30度；啞鈴兩支合計20kg（每手10kg）。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 136,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "上斜胸推",
+        "set": 3,
+        "weight": 20,
+        "reps": 15,
+        "dbr": 3,
+        "note": "椅背30度；啞鈴兩支合計20kg（每手10kg）。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 137,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "上斜胸推",
+        "set": 4,
+        "weight": 25,
+        "reps": 13,
+        "dbr": 1,
+        "note": "椅背30度；啞鈴兩支合計25kg（每手12.5kg）。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 138,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "上斜胸推",
+        "set": 5,
+        "weight": 25,
+        "reps": 8,
+        "dbr": 0,
+        "note": "椅背30度；啞鈴兩支合計25kg（每手12.5kg）；本組力竭。使用者回報今日二頭肌明顯疲勞。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 139,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "羅馬尼亞分腿蹲",
+        "set": 1,
+        "weight": 10,
+        "reps": 15,
+        "dbr": 3,
+        "note": "左腳；每手5kg，兩手總負重10kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 140,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "羅馬尼亞分腿蹲",
+        "set": 2,
+        "weight": 10,
+        "reps": 15,
+        "dbr": 3,
+        "note": "右腳；每手5kg，兩手總負重10kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 141,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "羅馬尼亞分腿蹲",
+        "set": 3,
+        "weight": 10,
+        "reps": 15,
+        "dbr": 2,
+        "note": "左腳；每手5kg，兩手總負重10kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 142,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "羅馬尼亞分腿蹲",
+        "set": 4,
+        "weight": 10,
+        "reps": 15,
+        "dbr": 2,
+        "note": "右腳；每手5kg，兩手總負重10kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 143,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "羅馬尼亞分腿蹲",
+        "set": 5,
+        "weight": 10,
+        "reps": 15,
+        "dbr": 1,
+        "note": "左腳；每手5kg，兩手總負重10kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 144,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "羅馬尼亞分腿蹲",
+        "set": 6,
+        "weight": 10,
+        "reps": 11,
+        "dbr": 1,
+        "note": "右腳；每手5kg，兩手總負重10kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 145,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "羅馬尼亞分腿蹲",
+        "set": 7,
+        "weight": 10,
+        "reps": 11,
+        "dbr": 2,
+        "note": "左腳；每手5kg，兩手總負重10kg；最後一輪右腳先做。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 146,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "羅馬尼亞分腿蹲",
+        "set": 8,
+        "weight": 10,
+        "reps": 11,
+        "dbr": 1,
+        "note": "右腳；每手5kg，兩手總負重10kg；最後一輪右腳先做。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 147,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "滑輪下拉",
+        "set": 1,
+        "weight": 30,
+        "reps": 15,
+        "dbr": 4,
+        "note": "使用者更正第一組重量為30kg，非37.5kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 148,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "滑輪下拉",
+        "set": 2,
+        "weight": 37.5,
+        "reps": 14,
+        "dbr": 2,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 149,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "滑輪下拉",
+        "set": 3,
+        "weight": 37.5,
+        "reps": 12,
+        "dbr": 2,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 150,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "滑輪下拉",
+        "set": 4,
+        "weight": 37.5,
+        "reps": 12,
+        "dbr": 1,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 151,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "反向飛鳥",
+        "set": 1,
+        "weight": 20,
+        "reps": 8,
+        "dbr": 1,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 152,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "反向飛鳥",
+        "set": 2,
+        "weight": 15,
+        "reps": 11,
+        "dbr": 1,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 153,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "反向飛鳥",
+        "set": 3,
+        "weight": 15,
+        "reps": 12,
+        "dbr": 0,
+        "note": "使用者回報；本組力竭。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 154,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "腿內收",
+        "set": 1,
+        "weight": 37.5,
+        "reps": 13,
+        "dbr": 2,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 155,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "腿內收",
+        "set": 2,
+        "weight": 37.5,
+        "reps": 14,
+        "dbr": 2,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 156,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-05",
+        "workout_name": "重訓",
+        "exercise": "腿內收",
+        "set": 3,
+        "weight": 37.5,
+        "reps": 15,
+        "dbr": 0,
+        "note": "使用者回報；本組力竭。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 4,
+      "item": {
+        "type": "cardio",
+        "date": "2026-09-05",
+        "activity": "跑步機有氧",
+        "segment": 1,
+        "minutes": 20,
+        "incline": 1,
+        "speed": 3.3,
+        "note": "重訓後跑步機有氧；心率約142 bpm。與日常散步分開記錄，也不與12%高坡度爬坡混為同一強度。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 210,
       "item": {
         "type": "food",
         "date": "2026-09-05",
-        "meal": "早餐",
+        "meal": "晚餐",
+        "source": "使用者回報＋既有雞蛋估算",
+        "food": "茶葉蛋 2 顆",
+        "protein": 10.8,
+        "carbs": 2.8,
+        "calories": 106,
+        "note": "沿用追蹤表既有7-ELEVEN雞蛋估算：每顆約蛋白質5.4g、碳水1.4g、53 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 211,
+      "item": {
+        "type": "food",
+        "date": "2026-09-05",
+        "meal": "晚餐",
+        "source": "使用者回報＋一般中型香蕉估算",
+        "food": "香蕉 1 根",
+        "protein": 1.3,
+        "carbs": 27,
+        "calories": 105,
+        "note": "未提供重量，沿用一般中型香蕉透明估算：約蛋白質1.3g、碳水27g、105 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 212,
+      "item": {
+        "type": "food",
+        "date": "2026-09-05",
+        "meal": "晚餐",
         "source": "使用者回報",
-        "food": "早餐蛋白質 52g",
+        "food": "乳清 2 包（每包蛋白質 26g）",
         "protein": 52,
-        "note": "使用者回報早上攝取蛋白質 52g；未提供食物來源、品牌、熱量或碳水，因此僅記錄蛋白質 52g，其餘不猜。"
+        "note": "兩包乳清，每包提供蛋白質26g，合計蛋白質52g；未提供熱量與碳水標示，因此其餘不猜。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 213,
+      "item": {
+        "type": "food",
+        "date": "2026-09-05",
+        "meal": "晚餐",
+        "source": "使用者回報＋使用者提供品名",
+        "food": "7-ELEVEN 塔香香鬆素飯糰 1 個",
+        "note": "使用者確認正式品名為7-ELEVEN塔香香鬆素飯糰；目前沒有可靠完整營養標示，因此蛋白質、碳水與熱量暫留空白。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 209,
+      "row": 134,
       "date": "2026-09-05",
-      "meal": "早餐",
-      "food": "早餐蛋白質 52g",
+      "exercise": "上斜胸推",
+      "set": 1,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 135,
+      "date": "2026-09-05",
+      "exercise": "上斜胸推",
+      "set": 2,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 136,
+      "date": "2026-09-05",
+      "exercise": "上斜胸推",
+      "set": 3,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 137,
+      "date": "2026-09-05",
+      "exercise": "上斜胸推",
+      "set": 4,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 138,
+      "date": "2026-09-05",
+      "exercise": "上斜胸推",
+      "set": 5,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 139,
+      "date": "2026-09-05",
+      "exercise": "羅馬尼亞分腿蹲",
+      "set": 1,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 140,
+      "date": "2026-09-05",
+      "exercise": "羅馬尼亞分腿蹲",
+      "set": 2,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 141,
+      "date": "2026-09-05",
+      "exercise": "羅馬尼亞分腿蹲",
+      "set": 3,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 142,
+      "date": "2026-09-05",
+      "exercise": "羅馬尼亞分腿蹲",
+      "set": 4,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 143,
+      "date": "2026-09-05",
+      "exercise": "羅馬尼亞分腿蹲",
+      "set": 5,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 144,
+      "date": "2026-09-05",
+      "exercise": "羅馬尼亞分腿蹲",
+      "set": 6,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 145,
+      "date": "2026-09-05",
+      "exercise": "羅馬尼亞分腿蹲",
+      "set": 7,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 146,
+      "date": "2026-09-05",
+      "exercise": "羅馬尼亞分腿蹲",
+      "set": 8,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 147,
+      "date": "2026-09-05",
+      "exercise": "滑輪下拉",
+      "set": 1,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 148,
+      "date": "2026-09-05",
+      "exercise": "滑輪下拉",
+      "set": 2,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 149,
+      "date": "2026-09-05",
+      "exercise": "滑輪下拉",
+      "set": 3,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 150,
+      "date": "2026-09-05",
+      "exercise": "滑輪下拉",
+      "set": 4,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 151,
+      "date": "2026-09-05",
+      "exercise": "反向飛鳥",
+      "set": 1,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 152,
+      "date": "2026-09-05",
+      "exercise": "反向飛鳥",
+      "set": 2,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 153,
+      "date": "2026-09-05",
+      "exercise": "反向飛鳥",
+      "set": 3,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 154,
+      "date": "2026-09-05",
+      "exercise": "腿內收",
+      "set": 1,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 155,
+      "date": "2026-09-05",
+      "exercise": "腿內收",
+      "set": 2,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 156,
+      "date": "2026-09-05",
+      "exercise": "腿內收",
+      "set": 3,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 4,
+      "date": "2026-09-05",
+      "activity": "跑步機有氧",
+      "segment": 1,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 210,
+      "date": "2026-09-05",
+      "meal": "晚餐",
+      "food": "茶葉蛋 2 顆",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 211,
+      "date": "2026-09-05",
+      "meal": "晚餐",
+      "food": "香蕉 1 根",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 212,
+      "date": "2026-09-05",
+      "meal": "晚餐",
+      "food": "乳清 2 包（每包蛋白質 26g）",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 213,
+      "date": "2026-09-05",
+      "meal": "晚餐",
+      "food": "7-ELEVEN 塔香香鬆素飯糰 1 個",
       "status": "written"
     }
   ]
