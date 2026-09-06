@@ -1,4 +1,5 @@
 const DATA_PATH = './dashboard-data.json';
+const TREND_WINDOW_DAYS = 30;
 const $ = id => document.getElementById(id);
 const norm = value => String(value ?? '').trim();
 const displayValue = value => {
@@ -174,7 +175,10 @@ function renderTrend(selected) {
     grouped.set(date, current);
   });
 
-  const days = Array.from({ length: 7 }, (_, index) => shiftDate(selected, index - 6));
+  const days = Array.from(
+    { length: TREND_WINDOW_DAYS },
+    (_, index) => shiftDate(selected, index - (TREND_WINDOW_DAYS - 1)),
+  );
   const points = days.map(date => ({ date, ...(grouped.get(date) || { p: 0, c: 0 }) }));
   const proteinMax = niceMax(Math.max(...points.map(point => point.p), 1));
   const calorieMax = niceMax(Math.max(...points.map(point => point.c), 1));
@@ -199,7 +203,11 @@ function renderTrend(selected) {
 
   const proteinLine = points.map((point, index) => `${x(index)},${proteinY(point.p)}`).join(' ');
   const calorieLine = points.map((point, index) => `${x(index)},${calorieY(point.c)}`).join(' ');
-  const xLabels = points.map((point, index) => `<text class="axis-text${point.date === selected ? ' axis-selected' : ''}" x="${x(index)}" y="${H - 16}" text-anchor="middle">${Number(point.date.slice(5, 7))}/${Number(point.date.slice(8, 10))}</text>`).join('');
+  const xLabels = points.map((point, index) => {
+    const showLabel = index === 0 || index === points.length - 1 || index % 5 === 0 || point.date === selected;
+    if (!showLabel) return '';
+    return `<text class="axis-text${point.date === selected ? ' axis-selected' : ''}" x="${x(index)}" y="${H - 16}" text-anchor="middle">${Number(point.date.slice(5, 7))}/${Number(point.date.slice(8, 10))}</text>`;
+  }).join('');
   const proteinDots = points.map((point, index) => `<circle class="series-dot protein-series" cx="${x(index)}" cy="${proteinY(point.p)}" r="3.5"/>`).join('');
   const calorieDots = points.map((point, index) => `<circle class="series-dot calorie-series" cx="${x(index)}" cy="${calorieY(point.c)}" r="3.5"/>`).join('');
   const hoverTargets = points.map((point, index) => {
@@ -209,7 +217,7 @@ function renderTrend(selected) {
   }).join('');
 
   const box = $('trendBars');
-  box.innerHTML = `<div class="trend-chart-wrap"><svg class="trend-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="最近七天蛋白質與熱量趨勢圖">${grid}<line class="chart-axis" x1="${L}" y1="${T}" x2="${L}" y2="${T + IH}"/><line class="chart-axis" x1="${W - R}" y1="${T}" x2="${W - R}" y2="${T + IH}"/><line class="chart-axis" x1="${L}" y1="${T + IH}" x2="${W - R}" y2="${T + IH}"/><text class="axis-title protein-axis" x="${L}" y="12">蛋白質 (g)</text><text class="axis-title calorie-axis" x="${W - R}" y="12" text-anchor="end">熱量 (kcal)</text><polyline class="series-line protein-series" points="${proteinLine}"/>${proteinDots}<polyline class="series-line calorie-series" points="${calorieLine}"/>${calorieDots}${xLabels}${hoverTargets}</svg><div class="chart-tooltip" hidden></div></div>`;
+  box.innerHTML = `<div class="trend-chart-wrap"><svg class="trend-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="最近 30 天蛋白質與熱量趨勢圖">${grid}<line class="chart-axis" x1="${L}" y1="${T}" x2="${L}" y2="${T + IH}"/><line class="chart-axis" x1="${W - R}" y1="${T}" x2="${W - R}" y2="${T + IH}"/><line class="chart-axis" x1="${L}" y1="${T + IH}" x2="${W - R}" y2="${T + IH}"/><text class="axis-title protein-axis" x="${L}" y="12">蛋白質 (g)</text><text class="axis-title calorie-axis" x="${W - R}" y="12" text-anchor="end">熱量 (kcal)</text><polyline class="series-line protein-series" points="${proteinLine}"/>${proteinDots}<polyline class="series-line calorie-series" points="${calorieLine}"/>${calorieDots}${xLabels}${hoverTargets}</svg><div class="chart-tooltip" hidden></div></div>`;
 
   const tooltip = box.querySelector('.chart-tooltip');
   const wrap = box.querySelector('.trend-chart-wrap');
