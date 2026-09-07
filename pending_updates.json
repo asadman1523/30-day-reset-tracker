@@ -1,3 +1,16 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout",
+      "date": "2026-09-07",
+      "exercise": "腿外展",
+      "sets": [
+        {"weight": 40.8, "reps": 15, "dbr": 4},
+        {"weight": 48.75, "reps": 15, "dbr": 1},
+        {"weight": 45, "reps": 15, "dbr": 1},
+        {"weight": 45, "reps": 12, "dbr": 2}
+      ],
+      "note": "使用者回報。"
+    }
+  ]
 }
