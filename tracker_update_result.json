@@ -1,35 +1,6 @@
 {
-  "migration": {
-    "carbs_column_added": false,
-    "carbs_column": 8,
-    "cardio_sheet_created": false
-  },
-  "results": [
-    {
-      "status": "written",
-      "row": 169,
-      "item": {
-        "type": "workout_set",
-        "date": "2026-09-07",
-        "workout_name": "重訓",
-        "exercise": "腿後勾",
-        "set": 4,
-        "weight": 47,
-        "reps": 13,
-        "dbr": 0,
-        "note": "使用者回報。"
-      }
-    }
-  ],
-  "verification": [
-    {
-      "verified": true,
-      "row": 169,
-      "date": "2026-09-07",
-      "exercise": "腿後勾",
-      "set": 4,
-      "status": "written"
-    }
-  ],
-  "deduplicated_operation_ids": []
+  "status": "failed",
+  "error": "尚未支援的 update type: workout",
+  "pending_preserved": true,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/30-day-reset-tracker/30-day-reset-tracker/scripts/run_tracker_updates.py\", line 156, in main\n    tracker.main()\n  File \"/home/runner/work/30-day-reset-tracker/30-day-reset-tracker/scripts/apply_tracker_updates.py\", line 567, in main\n    raise RuntimeError(f\"尚未支援的 update type: {kind}\")\nRuntimeError: 尚未支援的 update type: workout\n"
 }
