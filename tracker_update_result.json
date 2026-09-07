@@ -7,16 +7,31 @@
   "results": [
     {
       "status": "written",
-      "row": 166,
+      "row": 167,
       "item": {
         "type": "workout_set",
         "date": "2026-09-07",
         "workout_name": "重訓",
         "exercise": "腿後勾",
-        "set": 1,
-        "weight": 40,
+        "set": 2,
+        "weight": 47,
         "reps": 15,
-        "dbr": 3,
+        "dbr": 1,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 168,
+      "item": {
+        "type": "workout_set",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "腿後勾",
+        "set": 3,
+        "weight": 47,
+        "reps": 12,
+        "dbr": 1,
         "note": "使用者回報。"
       }
     }
@@ -24,10 +39,18 @@
   "verification": [
     {
       "verified": true,
-      "row": 166,
+      "row": 167,
       "date": "2026-09-07",
       "exercise": "腿後勾",
-      "set": 1,
+      "set": 2,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 168,
+      "date": "2026-09-07",
+      "exercise": "腿後勾",
+      "set": 3,
       "status": "written"
     }
   ],
