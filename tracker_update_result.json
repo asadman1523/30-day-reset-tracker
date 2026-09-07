@@ -7,27 +7,27 @@
   "results": [
     {
       "status": "written",
-      "row": 159,
+      "row": 160,
       "item": {
         "type": "workout_set",
         "date": "2026-09-07",
         "workout_name": "重訓",
         "exercise": "上斜胸推",
-        "set": 3,
-        "weight": 15,
-        "reps": 11,
+        "set": 4,
+        "weight": 20,
+        "reps": 13,
         "dbr": 2,
-        "note": "30°啞鈴上斜胸推；重量為兩支啞鈴合計 15 kg（每手 7.5 kg）。"
+        "note": "30°啞鈴上斜胸推；重量為兩支啞鈴合計 20 kg（每手 10 kg）。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 159,
+      "row": 160,
       "date": "2026-09-07",
       "exercise": "上斜胸推",
-      "set": 3,
+      "set": 4,
       "status": "written"
     }
   ],
