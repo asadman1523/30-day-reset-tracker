@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "划船",
+      "set": 1,
+      "weight": 26.5,
+      "reps": 15,
+      "dbr": 4,
+      "note": "使用者回報。"
+    }
+  ]
 }
