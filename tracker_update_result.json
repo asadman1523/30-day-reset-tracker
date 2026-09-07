@@ -7,100 +7,73 @@
   "results": [
     {
       "status": "written",
-      "row": 175,
+      "row": 224,
       "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-07-lateral-raise-s1",
-        "date": "2026-09-07",
-        "workout_name": "重訓",
-        "exercise": "啞鈴側平舉",
-        "set": 1,
-        "weight": 10,
-        "reps": 15,
-        "dbr": 1,
-        "note": "使用者回報。"
+        "type": "food",
+        "operation_id": "2026-09-08-breakfast-sweet-potato-v1",
+        "date": "2026-09-08",
+        "meal": "早餐",
+        "food": "7-ELEVEN 30元地瓜",
+        "source": "使用者回報＋既有估算",
+        "protein": 2.3,
+        "carbs": 37.7,
+        "calories": 162,
+        "note": "沿用 2026-09-07 同款 7-ELEVEN 30元地瓜估算：以約145g計，約蛋白質2.3g、碳水37.7g、162 kcal。"
       }
     },
     {
       "status": "written",
-      "row": 176,
+      "row": 225,
       "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-07-lateral-raise-s2",
-        "date": "2026-09-07",
-        "workout_name": "重訓",
-        "exercise": "啞鈴側平舉",
-        "set": 2,
-        "weight": 10,
-        "reps": 13,
-        "dbr": 1,
-        "note": "重量未重複提供，沿用上一組 10 kg。"
+        "type": "food",
+        "operation_id": "2026-09-08-breakfast-chicken-v1",
+        "date": "2026-09-08",
+        "meal": "早餐",
+        "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
+        "source": "使用者回報＋既有同款紀錄",
+        "protein": 30,
+        "calories": 163,
+        "note": "沿用追蹤表先前同款紀錄：約蛋白質30g、163 kcal；未取得可靠碳水標示，因此碳水留白。"
       }
     },
     {
       "status": "written",
-      "row": 177,
+      "row": 226,
       "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-07-lateral-raise-s3",
-        "date": "2026-09-07",
-        "workout_name": "重訓",
-        "exercise": "啞鈴側平舉",
-        "set": 3,
-        "weight": 10,
-        "reps": 14,
-        "dbr": 1,
-        "note": "重量未重複提供，沿用上一組 10 kg。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 178,
-      "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-07-lateral-raise-s4",
-        "date": "2026-09-07",
-        "workout_name": "重訓",
-        "exercise": "啞鈴側平舉",
-        "set": 4,
-        "weight": 10,
-        "reps": 15,
-        "dbr": 0,
-        "note": "重量未重複提供，沿用上一組 10 kg。"
+        "type": "food",
+        "operation_id": "2026-09-08-breakfast-extra-protein-26-v1",
+        "date": "2026-09-08",
+        "meal": "早餐",
+        "food": "額外蛋白質 26g",
+        "source": "使用者回報",
+        "protein": 26,
+        "note": "使用者回報早餐另外攝取26g蛋白質；未提供來源、品牌、熱量或碳水，因此僅記錄蛋白質。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 175,
-      "date": "2026-09-07",
-      "exercise": "啞鈴側平舉",
-      "set": 1,
+      "row": 224,
+      "date": "2026-09-08",
+      "meal": "早餐",
+      "food": "7-ELEVEN 30元地瓜",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 176,
-      "date": "2026-09-07",
-      "exercise": "啞鈴側平舉",
-      "set": 2,
+      "row": 225,
+      "date": "2026-09-08",
+      "meal": "早餐",
+      "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 177,
-      "date": "2026-09-07",
-      "exercise": "啞鈴側平舉",
-      "set": 3,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 178,
-      "date": "2026-09-07",
-      "exercise": "啞鈴側平舉",
-      "set": 4,
+      "row": 226,
+      "date": "2026-09-08",
+      "meal": "早餐",
+      "food": "額外蛋白質 26g",
       "status": "written"
     }
   ],
