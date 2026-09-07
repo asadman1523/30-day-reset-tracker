@@ -7,28 +7,100 @@
   "results": [
     {
       "status": "written",
-      "row": 223,
+      "row": 175,
       "item": {
-        "type": "food",
-        "operation_id": "2026-09-07-lunch-none-v1",
+        "type": "workout_set",
+        "operation_id": "2026-09-07-lateral-raise-s1",
         "date": "2026-09-07",
-        "meal": "午餐",
-        "food": "未進食",
-        "source": "使用者回報",
-        "protein": 0,
-        "carbs": 0,
-        "calories": 0,
-        "note": "使用者回報午餐沒吃。"
+        "workout_name": "重訓",
+        "exercise": "啞鈴側平舉",
+        "set": 1,
+        "weight": 10,
+        "reps": 15,
+        "dbr": 1,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 176,
+      "item": {
+        "type": "workout_set",
+        "operation_id": "2026-09-07-lateral-raise-s2",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "啞鈴側平舉",
+        "set": 2,
+        "weight": 10,
+        "reps": 13,
+        "dbr": 1,
+        "note": "重量未重複提供，沿用上一組 10 kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 177,
+      "item": {
+        "type": "workout_set",
+        "operation_id": "2026-09-07-lateral-raise-s3",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "啞鈴側平舉",
+        "set": 3,
+        "weight": 10,
+        "reps": 14,
+        "dbr": 1,
+        "note": "重量未重複提供，沿用上一組 10 kg。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 178,
+      "item": {
+        "type": "workout_set",
+        "operation_id": "2026-09-07-lateral-raise-s4",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "啞鈴側平舉",
+        "set": 4,
+        "weight": 10,
+        "reps": 15,
+        "dbr": 0,
+        "note": "重量未重複提供，沿用上一組 10 kg。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 223,
+      "row": 175,
       "date": "2026-09-07",
-      "meal": "午餐",
-      "food": "未進食",
+      "exercise": "啞鈴側平舉",
+      "set": 1,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 176,
+      "date": "2026-09-07",
+      "exercise": "啞鈴側平舉",
+      "set": 2,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 177,
+      "date": "2026-09-07",
+      "exercise": "啞鈴側平舉",
+      "set": 3,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 178,
+      "date": "2026-09-07",
+      "exercise": "啞鈴側平舉",
+      "set": 4,
       "status": "written"
     }
   ],
