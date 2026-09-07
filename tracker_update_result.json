@@ -7,16 +7,16 @@
   "results": [
     {
       "status": "written",
-      "row": 163,
+      "row": 164,
       "item": {
         "type": "workout_set",
         "date": "2026-09-07",
         "workout_name": "重訓",
         "exercise": "划船",
-        "set": 3,
+        "set": 4,
         "weight": 30,
         "reps": 13,
-        "dbr": 2,
+        "dbr": 0,
         "note": "使用者回報。"
       }
     }
@@ -24,10 +24,10 @@
   "verification": [
     {
       "verified": true,
-      "row": 163,
+      "row": 164,
       "date": "2026-09-07",
       "exercise": "划船",
-      "set": 3,
+      "set": 4,
       "status": "written"
     }
   ],
