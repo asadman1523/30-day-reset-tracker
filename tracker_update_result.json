@@ -4,7 +4,104 @@
     "carbs_column": 8,
     "cardio_sheet_created": false
   },
-  "results": [],
-  "verification": [],
+  "results": [
+    {
+      "status": "written",
+      "row": 219,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-07-dinner-pork-shank-v1",
+        "date": "2026-09-07",
+        "meal": "晚餐",
+        "food": "腿庫肉 1 份",
+        "source": "使用者回報＋一般便當份量透明估算",
+        "protein": 28,
+        "calories": 400,
+        "note": "使用者回報腿庫便當；未提供重量，先以一般便當腿庫肉份量估算約蛋白質28g、400 kcal，實際依肥瘦與帶皮比例可能有明顯差異。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 220,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-07-dinner-rice-v1",
+        "date": "2026-09-07",
+        "meal": "晚餐",
+        "food": "白飯 1 份",
+        "source": "使用者回報＋一般便當份量透明估算",
+        "protein": 5,
+        "carbs": 60,
+        "calories": 280,
+        "note": "未提供飯量，先以一般便當白飯份量估算約蛋白質5g、碳水60g、280 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 221,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-07-dinner-vegetables-v1",
+        "date": "2026-09-07",
+        "meal": "晚餐",
+        "food": "便當配菜 2 份",
+        "source": "使用者回報＋一般便當配菜透明估算",
+        "protein": 4,
+        "carbs": 15,
+        "calories": 120,
+        "note": "使用者回報兩樣菜，未提供菜色與份量，先以一般便當兩份配菜估算約蛋白質4g、碳水15g、120 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 222,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-07-dinner-egg-v1",
+        "date": "2026-09-07",
+        "meal": "晚餐",
+        "food": "蛋 1 顆",
+        "source": "使用者回報＋一般雞蛋透明估算",
+        "protein": 6.5,
+        "carbs": 1,
+        "calories": 75,
+        "note": "未提供烹調方式，先以一般雞蛋1顆估算約蛋白質6.5g、碳水1g、75 kcal。"
+      }
+    }
+  ],
+  "verification": [
+    {
+      "verified": true,
+      "row": 219,
+      "date": "2026-09-07",
+      "meal": "晚餐",
+      "food": "腿庫肉 1 份",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 220,
+      "date": "2026-09-07",
+      "meal": "晚餐",
+      "food": "白飯 1 份",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 221,
+      "date": "2026-09-07",
+      "meal": "晚餐",
+      "food": "便當配菜 2 份",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 222,
+      "date": "2026-09-07",
+      "meal": "晚餐",
+      "food": "蛋 1 顆",
+      "status": "written"
+    }
+  ],
   "deduplicated_operation_ids": []
 }

@@ -1,6 +1,10 @@
 {
   "operation_ids": [
     "2026-09-07-breakfast-split-sweet-potato-v1",
-    "2026-09-07-breakfast-split-chicken-v1"
+    "2026-09-07-breakfast-split-chicken-v1",
+    "2026-09-07-dinner-pork-shank-v1",
+    "2026-09-07-dinner-rice-v1",
+    "2026-09-07-dinner-vegetables-v1",
+    "2026-09-07-dinner-egg-v1"
   ]
 }
