@@ -7,27 +7,27 @@
   "results": [
     {
       "status": "written",
-      "row": 165,
+      "row": 166,
       "item": {
         "type": "workout_set",
         "date": "2026-09-07",
         "workout_name": "重訓",
-        "exercise": "划船",
-        "set": 5,
-        "weight": 30,
-        "reps": 13,
-        "dbr": 0,
-        "note": "使用者補充：還有一組 30kg × 13，DBR0。"
+        "exercise": "腿後勾",
+        "set": 1,
+        "weight": 40,
+        "reps": 15,
+        "dbr": 3,
+        "note": "使用者回報。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 165,
+      "row": 166,
       "date": "2026-09-07",
-      "exercise": "划船",
-      "set": 5,
+      "exercise": "腿後勾",
+      "set": 1,
       "status": "written"
     }
   ],
