@@ -1,6 +1,132 @@
 {
-  "status": "failed",
-  "error": "尚未支援的 update type: workout",
-  "pending_preserved": true,
-  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/30-day-reset-tracker/30-day-reset-tracker/scripts/run_tracker_updates.py\", line 156, in main\n    tracker.main()\n  File \"/home/runner/work/30-day-reset-tracker/30-day-reset-tracker/scripts/apply_tracker_updates.py\", line 567, in main\n    raise RuntimeError(f\"尚未支援的 update type: {kind}\")\nRuntimeError: 尚未支援的 update type: workout\n"
+  "migration": {
+    "carbs_column_added": false,
+    "carbs_column": 8,
+    "cardio_sheet_created": false
+  },
+  "results": [
+    {
+      "status": "written",
+      "row": 170,
+      "item": {
+        "type": "workout_set",
+        "operation_id": "2026-09-07-hip-abduction-s1",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "腿外展",
+        "set": 1,
+        "weight": 40.8,
+        "reps": 15,
+        "dbr": 4,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 171,
+      "item": {
+        "type": "workout_set",
+        "operation_id": "2026-09-07-hip-abduction-s2",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "腿外展",
+        "set": 2,
+        "weight": 48.75,
+        "reps": 15,
+        "dbr": 1,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 172,
+      "item": {
+        "type": "workout_set",
+        "operation_id": "2026-09-07-hip-abduction-s3",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "腿外展",
+        "set": 3,
+        "weight": 45,
+        "reps": 15,
+        "dbr": 1,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 173,
+      "item": {
+        "type": "workout_set",
+        "operation_id": "2026-09-07-hip-abduction-s4",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "腿外展",
+        "set": 4,
+        "weight": 45,
+        "reps": 12,
+        "dbr": 2,
+        "note": "使用者回報。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 174,
+      "item": {
+        "type": "workout_set",
+        "operation_id": "2026-09-07-hip-abduction-s5",
+        "date": "2026-09-07",
+        "workout_name": "重訓",
+        "exercise": "腿外展",
+        "set": 5,
+        "weight": 45,
+        "reps": 15,
+        "dbr": 2,
+        "note": "使用者追加回報。"
+      }
+    }
+  ],
+  "verification": [
+    {
+      "verified": true,
+      "row": 170,
+      "date": "2026-09-07",
+      "exercise": "腿外展",
+      "set": 1,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 171,
+      "date": "2026-09-07",
+      "exercise": "腿外展",
+      "set": 2,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 172,
+      "date": "2026-09-07",
+      "exercise": "腿外展",
+      "set": 3,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 173,
+      "date": "2026-09-07",
+      "exercise": "腿外展",
+      "set": 4,
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 174,
+      "date": "2026-09-07",
+      "exercise": "腿外展",
+      "set": 5,
+      "status": "written"
+    }
+  ],
+  "deduplicated_operation_ids": []
 }
