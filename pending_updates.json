@@ -1,3 +1,16 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "food",
+      "operation_id": "2026-09-07-lunch-none-v1",
+      "date": "2026-09-07",
+      "meal": "午餐",
+      "food": "未進食",
+      "source": "使用者回報",
+      "protein": 0,
+      "carbs": 0,
+      "calories": 0,
+      "note": "使用者回報午餐沒吃。"
+    }
+  ]
 }
