@@ -1,3 +1,52 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-07-lateral-raise-s1",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "啞鈴側平舉",
+      "set": 1,
+      "weight": 10,
+      "reps": 15,
+      "dbr": 1,
+      "note": "使用者回報。"
+    },
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-07-lateral-raise-s2",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "啞鈴側平舉",
+      "set": 2,
+      "weight": 10,
+      "reps": 13,
+      "dbr": 1,
+      "note": "重量未重複提供，沿用上一組 10 kg。"
+    },
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-07-lateral-raise-s3",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "啞鈴側平舉",
+      "set": 3,
+      "weight": 10,
+      "reps": 14,
+      "dbr": 1,
+      "note": "重量未重複提供，沿用上一組 10 kg。"
+    },
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-07-lateral-raise-s4",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "啞鈴側平舉",
+      "set": 4,
+      "weight": 10,
+      "reps": 15,
+      "dbr": 0,
+      "note": "重量未重複提供，沿用上一組 10 kg。"
+    }
+  ]
 }
