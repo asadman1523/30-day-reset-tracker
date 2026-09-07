@@ -1,16 +1,64 @@
 {
   "updates": [
     {
-      "type": "workout",
+      "type": "workout_set",
+      "operation_id": "2026-09-07-hip-abduction-s1",
       "date": "2026-09-07",
+      "workout_name": "重訓",
       "exercise": "腿外展",
-      "sets": [
-        {"weight": 40.8, "reps": 15, "dbr": 4},
-        {"weight": 48.75, "reps": 15, "dbr": 1},
-        {"weight": 45, "reps": 15, "dbr": 1},
-        {"weight": 45, "reps": 12, "dbr": 2}
-      ],
+      "set": 1,
+      "weight": 40.8,
+      "reps": 15,
+      "dbr": 4,
       "note": "使用者回報。"
+    },
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-07-hip-abduction-s2",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 2,
+      "weight": 48.75,
+      "reps": 15,
+      "dbr": 1,
+      "note": "使用者回報。"
+    },
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-07-hip-abduction-s3",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 3,
+      "weight": 45,
+      "reps": 15,
+      "dbr": 1,
+      "note": "使用者回報。"
+    },
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-07-hip-abduction-s4",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 4,
+      "weight": 45,
+      "reps": 12,
+      "dbr": 2,
+      "note": "使用者回報。"
+    },
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-07-hip-abduction-s5",
+      "date": "2026-09-07",
+      "workout_name": "重訓",
+      "exercise": "腿外展",
+      "set": 5,
+      "weight": 45,
+      "reps": 15,
+      "dbr": 2,
+      "note": "使用者追加回報。"
     }
   ]
 }
