@@ -1,38 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "operation_id": "2026-09-08-lunch-protein-26-v1",
-      "date": "2026-09-08",
-      "meal": "午餐",
-      "food": "蛋白飲／額外蛋白質 26g",
-      "source": "使用者回報",
-      "protein": 26,
-      "note": "使用者回報午餐喝了26g蛋白質；未提供品牌、來源、熱量或碳水，因此僅記錄蛋白質。"
-    },
-    {
-      "type": "food",
-      "operation_id": "2026-09-08-dinner-chicken-rice-v1",
-      "date": "2026-09-08",
-      "meal": "晚餐",
-      "food": "雞肉飯 1 碗",
-      "source": "使用者回報＋一般台式份量透明估算",
-      "protein": 25,
-      "carbs": 65,
-      "calories": 500,
-      "note": "未提供店家與重量，先以一般台式雞肉飯1碗估算約蛋白質25g、碳水65g、500 kcal；實際會依飯量、雞肉量與雞油明顯變動。"
-    },
-    {
-      "type": "food",
-      "operation_id": "2026-09-08-dinner-pork-liver-soup-v1",
-      "date": "2026-09-08",
-      "meal": "晚餐",
-      "food": "豬肝湯 1 碗",
-      "source": "使用者回報＋一般台式份量透明估算",
-      "protein": 24,
-      "carbs": 4,
-      "calories": 180,
-      "note": "未提供店家與豬肝重量，先以一般台式豬肝湯1碗估算約蛋白質24g、碳水4g、180 kcal；實際依豬肝份量與湯底而變動。"
-    }
-  ]
+  "updates": []
 }

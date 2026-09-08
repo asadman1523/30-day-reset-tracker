@@ -7,73 +7,74 @@
   "results": [
     {
       "status": "written",
-      "row": 224,
+      "row": 227,
       "item": {
         "type": "food",
-        "operation_id": "2026-09-08-breakfast-sweet-potato-v1",
+        "operation_id": "2026-09-08-lunch-protein-26-v1",
         "date": "2026-09-08",
-        "meal": "早餐",
-        "food": "7-ELEVEN 30元地瓜",
-        "source": "使用者回報＋既有估算",
-        "protein": 2.3,
-        "carbs": 37.7,
-        "calories": 162,
-        "note": "沿用 2026-09-07 同款 7-ELEVEN 30元地瓜估算：以約145g計，約蛋白質2.3g、碳水37.7g、162 kcal。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 225,
-      "item": {
-        "type": "food",
-        "operation_id": "2026-09-08-breakfast-chicken-v1",
-        "date": "2026-09-08",
-        "meal": "早餐",
-        "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
-        "source": "使用者回報＋既有同款紀錄",
-        "protein": 30,
-        "calories": 163,
-        "note": "沿用追蹤表先前同款紀錄：約蛋白質30g、163 kcal；未取得可靠碳水標示，因此碳水留白。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 226,
-      "item": {
-        "type": "food",
-        "operation_id": "2026-09-08-breakfast-extra-protein-26-v1",
-        "date": "2026-09-08",
-        "meal": "早餐",
-        "food": "額外蛋白質 26g",
+        "meal": "午餐",
+        "food": "蛋白飲／額外蛋白質 26g",
         "source": "使用者回報",
         "protein": 26,
-        "note": "使用者回報早餐另外攝取26g蛋白質；未提供來源、品牌、熱量或碳水，因此僅記錄蛋白質。"
+        "note": "使用者回報午餐喝了26g蛋白質；未提供品牌、來源、熱量或碳水，因此僅記錄蛋白質。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 228,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-08-dinner-chicken-rice-v1",
+        "date": "2026-09-08",
+        "meal": "晚餐",
+        "food": "雞肉飯 1 碗",
+        "source": "使用者回報＋一般台式份量透明估算",
+        "protein": 25,
+        "carbs": 65,
+        "calories": 500,
+        "note": "未提供店家與重量，先以一般台式雞肉飯1碗估算約蛋白質25g、碳水65g、500 kcal；實際會依飯量、雞肉量與雞油明顯變動。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 229,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-08-dinner-pork-liver-soup-v1",
+        "date": "2026-09-08",
+        "meal": "晚餐",
+        "food": "豬肝湯 1 碗",
+        "source": "使用者回報＋一般台式份量透明估算",
+        "protein": 24,
+        "carbs": 4,
+        "calories": 180,
+        "note": "未提供店家與豬肝重量，先以一般台式豬肝湯1碗估算約蛋白質24g、碳水4g、180 kcal；實際依豬肝份量與湯底而變動。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 224,
+      "row": 227,
       "date": "2026-09-08",
-      "meal": "早餐",
-      "food": "7-ELEVEN 30元地瓜",
+      "meal": "午餐",
+      "food": "蛋白飲／額外蛋白質 26g",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 225,
+      "row": 228,
       "date": "2026-09-08",
-      "meal": "早餐",
-      "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
+      "meal": "晚餐",
+      "food": "雞肉飯 1 碗",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 226,
+      "row": 229,
       "date": "2026-09-08",
-      "meal": "早餐",
-      "food": "額外蛋白質 26g",
+      "meal": "晚餐",
+      "food": "豬肝湯 1 碗",
       "status": "written"
     }
   ],
