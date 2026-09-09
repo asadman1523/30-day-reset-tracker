@@ -1,16 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "operation_id": "2026-09-09-dinner-beef-offal-soup-v1",
-      "date": "2026-09-09",
-      "meal": "晚餐",
-      "food": "牛雜湯 1 碗",
-      "source": "使用者回報＋一般台式份量透明估算",
-      "protein": 28,
-      "carbs": 5,
-      "calories": 250,
-      "note": "未提供店家、牛雜種類與重量，先以一般台式牛雜湯1碗估算約蛋白質28g、碳水5g、250 kcal；實際依牛雜部位、油脂與湯底而變動。"
-    }
-  ]
+  "updates": []
 }

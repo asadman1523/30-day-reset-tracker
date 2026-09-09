@@ -7,51 +7,28 @@
   "results": [
     {
       "status": "written",
-      "row": 230,
+      "row": 232,
       "item": {
         "type": "food",
-        "operation_id": "2026-09-09-breakfast-sweet-potato-v1",
+        "operation_id": "2026-09-09-dinner-beef-offal-soup-v1",
         "date": "2026-09-09",
-        "meal": "早餐",
-        "food": "7-ELEVEN 30元地瓜",
-        "source": "使用者回報＋既有估算",
-        "protein": 2.3,
-        "carbs": 37.7,
-        "calories": 162,
-        "note": "沿用 2026-09-07 同款 7-ELEVEN 30元地瓜估算：以約145g計，約蛋白質2.3g、碳水37.7g、162 kcal。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 231,
-      "item": {
-        "type": "food",
-        "operation_id": "2026-09-09-breakfast-chicken-v1",
-        "date": "2026-09-09",
-        "meal": "早餐",
-        "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
-        "source": "使用者回報＋既有同款紀錄",
-        "protein": 30,
-        "calories": 163,
-        "note": "沿用追蹤表先前同款紀錄：約蛋白質30g、163 kcal；未取得可靠碳水標示，因此碳水留白。"
+        "meal": "晚餐",
+        "food": "牛雜湯 1 碗",
+        "source": "使用者回報＋一般台式份量透明估算",
+        "protein": 28,
+        "carbs": 5,
+        "calories": 250,
+        "note": "未提供店家、牛雜種類與重量，先以一般台式牛雜湯1碗估算約蛋白質28g、碳水5g、250 kcal；實際依牛雜部位、油脂與湯底而變動。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 230,
+      "row": 232,
       "date": "2026-09-09",
-      "meal": "早餐",
-      "food": "7-ELEVEN 30元地瓜",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 231,
-      "date": "2026-09-09",
-      "meal": "早餐",
-      "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
+      "meal": "晚餐",
+      "food": "牛雜湯 1 碗",
       "status": "written"
     }
   ],
