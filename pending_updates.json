@@ -1,28 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "food",
-      "operation_id": "2026-09-10-dinner-guava-v1",
-      "date": "2026-09-10",
-      "meal": "晚餐",
-      "food": "芭樂 1 顆",
-      "source": "使用者回報＋一般份量透明估算",
-      "protein": 2.5,
-      "carbs": 25,
-      "calories": 120,
-      "note": "使用者回報晚餐吃一顆芭樂；未提供重量，先以一般中型芭樂估算約蛋白質2.5g、碳水25g、120 kcal，實際依大小而變動。"
-    },
-    {
-      "type": "food",
-      "operation_id": "2026-09-10-dinner-lion-head-chicken-rice-v1",
-      "date": "2026-09-10",
-      "meal": "晚餐",
-      "food": "獅子頭雞肉飯 1 份",
-      "source": "使用者回報＋一般便當份量透明估算",
-      "protein": 35,
-      "carbs": 70,
-      "calories": 750,
-      "note": "使用者回報獅子頭雞肉飯；未提供店家、份量或配菜內容，先以一般一份主食估算約蛋白質35g、碳水70g、750 kcal，實際依獅子頭大小、雞肉量、飯量與醬汁而變動。"
-    }
-  ]
+  "updates": []
 }
