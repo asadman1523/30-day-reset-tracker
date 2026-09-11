@@ -5,15 +5,6 @@
       "type": "daily_checkin",
       "date": "2026-09-11",
       "walk_minutes": 20
-    },
-    {
-      "operation_id": "2026-09-11-remove-dinner-protein52-2230",
-      "type": "delete_food",
-      "date": "2026-09-11",
-      "meal": "晚餐",
-      "food": "蛋白質飲用（品項未提供）",
-      "source": "使用者回報",
-      "protein": 52
     }
   ]
 }
