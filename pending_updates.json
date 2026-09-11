@@ -1,16 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "workout_set",
-      "operation_id": "2026-09-11-incline-press-s3-v1",
-      "date": "2026-09-11",
-      "workout_name": "重訓",
-      "exercise": "上斜胸推",
-      "set": 3,
-      "weight": 25,
-      "reps": 9,
-      "dbr": 0,
-      "note": "30°啞鈴上斜胸推；重量未重複提供，沿用上一組每手 12.5 kg，兩支啞鈴合計 25 kg；本組前臂已有不適。"
-    }
-  ]
+  "updates": []
 }
