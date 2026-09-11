@@ -7,52 +7,28 @@
   "results": [
     {
       "status": "written",
-      "row": 185,
+      "row": 187,
       "item": {
         "type": "workout_set",
-        "operation_id": "2026-09-11-bulgarian-split-squat-s7-v1",
+        "operation_id": "2026-09-11-incline-press-s1-v1",
         "date": "2026-09-11",
         "workout_name": "重訓",
-        "exercise": "保加利亞分腿蹲",
-        "set": 7,
-        "weight": 10,
-        "reps": 12,
+        "exercise": "上斜胸推",
+        "set": 1,
+        "weight": 25,
+        "reps": 15,
         "dbr": 1,
-        "note": "左腳；每手 5 kg，兩手總負重 10 kg。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 186,
-      "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-11-bulgarian-split-squat-s8-v1",
-        "date": "2026-09-11",
-        "workout_name": "重訓",
-        "exercise": "保加利亞分腿蹲",
-        "set": 8,
-        "weight": 10,
-        "reps": 10,
-        "dbr": 1,
-        "note": "右腳；每手 5 kg，兩手總負重 10 kg。"
+        "note": "30°啞鈴上斜胸推；使用者回報每手 12.5 kg，兩支啞鈴合計 25 kg。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 185,
+      "row": 187,
       "date": "2026-09-11",
-      "exercise": "保加利亞分腿蹲",
-      "set": 7,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 186,
-      "date": "2026-09-11",
-      "exercise": "保加利亞分腿蹲",
-      "set": 8,
+      "exercise": "上斜胸推",
+      "set": 1,
       "status": "written"
     }
   ],
