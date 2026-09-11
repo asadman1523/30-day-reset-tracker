@@ -1,16 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "workout_set",
-      "operation_id": "2026-09-11-reverse-fly-s1-v1",
-      "date": "2026-09-11",
-      "workout_name": "重訓",
-      "exercise": "反向飛鳥",
-      "set": 1,
-      "weight": 15,
-      "reps": 15,
-      "dbr": 3,
-      "note": "使用者回報 15 kg × 15，DBR3。"
-    }
-  ]
+  "updates": []
 }
