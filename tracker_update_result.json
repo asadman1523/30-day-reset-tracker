@@ -6,82 +6,53 @@
   },
   "results": [
     {
-      "status": "updated",
-      "row": 180,
-      "fields": [
-        "reps",
-        "note"
-      ],
+      "status": "written",
+      "row": 183,
       "item": {
         "type": "workout_set",
-        "operation_id": "2026-09-11-bulgarian-split-squat-s2-correction-v1",
+        "operation_id": "2026-09-11-bulgarian-split-squat-s5-v1",
         "date": "2026-09-11",
         "workout_name": "重訓",
         "exercise": "保加利亞分腿蹲",
-        "set": 2,
+        "set": 5,
         "weight": 10,
-        "reps": 15,
+        "reps": 13,
         "dbr": 2,
-        "note": "右腳；每手 5 kg，兩手總負重 10 kg。使用者更正：第一條回報代表左右腳都完成 15 下 DBR2。",
-        "update_existing": true
+        "note": "左腳；每手 5 kg，兩手總負重 10 kg。"
       }
     },
     {
       "status": "written",
-      "row": 181,
+      "row": 184,
       "item": {
         "type": "workout_set",
-        "operation_id": "2026-09-11-bulgarian-split-squat-s3-v1",
+        "operation_id": "2026-09-11-bulgarian-split-squat-s6-v1",
         "date": "2026-09-11",
         "workout_name": "重訓",
         "exercise": "保加利亞分腿蹲",
-        "set": 3,
+        "set": 6,
         "weight": 10,
-        "reps": 12,
+        "reps": 10,
         "dbr": 2,
-        "note": "左腳；每手 5 kg，兩手總負重 10 kg。第二條回報代表左右腳都完成 12 下 DBR2。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 182,
-      "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-11-bulgarian-split-squat-s4-v1",
-        "date": "2026-09-11",
-        "workout_name": "重訓",
-        "exercise": "保加利亞分腿蹲",
-        "set": 4,
-        "weight": 10,
-        "reps": 12,
-        "dbr": 2,
-        "note": "右腳；每手 5 kg，兩手總負重 10 kg。第二條回報代表左右腳都完成 12 下 DBR2。"
+        "note": "右腳；每手 5 kg，兩手總負重 10 kg。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 180,
+      "row": 183,
       "date": "2026-09-11",
       "exercise": "保加利亞分腿蹲",
-      "set": 2,
-      "status": "updated"
-    },
-    {
-      "verified": true,
-      "row": 181,
-      "date": "2026-09-11",
-      "exercise": "保加利亞分腿蹲",
-      "set": 3,
+      "set": 5,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 182,
+      "row": 184,
       "date": "2026-09-11",
       "exercise": "保加利亞分腿蹲",
-      "set": 4,
+      "set": 6,
       "status": "written"
     }
   ],
