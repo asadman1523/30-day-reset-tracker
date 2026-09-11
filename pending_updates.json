@@ -1,3 +1,28 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-11-bulgarian-split-squat-s1",
+      "date": "2026-09-11",
+      "workout_name": "重訓",
+      "exercise": "保加利亞分腿蹲",
+      "set": 1,
+      "weight": 10,
+      "reps": 15,
+      "dbr": 2,
+      "note": "左腳；每手 5 kg，兩手總負重 10 kg。"
+    },
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-11-bulgarian-split-squat-s2",
+      "date": "2026-09-11",
+      "workout_name": "重訓",
+      "exercise": "保加利亞分腿蹲",
+      "set": 2,
+      "weight": 10,
+      "reps": 12,
+      "dbr": 2,
+      "note": "右腳；每手 5 kg，兩手總負重 10 kg。"
+    }
+  ]
 }
