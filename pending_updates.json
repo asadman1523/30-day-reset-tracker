@@ -1,3 +1,16 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-11-lat-pulldown-s3-v1",
+      "date": "2026-09-11",
+      "workout_name": "重訓",
+      "exercise": "滑輪下拉",
+      "set": 3,
+      "weight": 37.5,
+      "reps": 11,
+      "dbr": 1,
+      "note": "重量未重複提供，沿用上一組 37.5 kg。"
+    }
+  ]
 }
