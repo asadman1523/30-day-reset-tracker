@@ -7,51 +7,52 @@
   "results": [
     {
       "status": "written",
-      "row": 238,
+      "row": 179,
       "item": {
-        "type": "food",
-        "operation_id": "2026-09-11-breakfast-sweet-potato-v1",
+        "type": "workout_set",
+        "operation_id": "2026-09-11-bulgarian-split-squat-s1",
         "date": "2026-09-11",
-        "meal": "早餐",
-        "food": "7-ELEVEN 30元地瓜",
-        "source": "使用者回報＋既有估算",
-        "protein": 2.3,
-        "carbs": 37.7,
-        "calories": 162,
-        "note": "沿用先前同款7-ELEVEN 30元地瓜估算：以約145g計，約蛋白質2.3g、碳水37.7g、162 kcal。"
+        "workout_name": "重訓",
+        "exercise": "保加利亞分腿蹲",
+        "set": 1,
+        "weight": 10,
+        "reps": 15,
+        "dbr": 2,
+        "note": "左腳；每手 5 kg，兩手總負重 10 kg。"
       }
     },
     {
       "status": "written",
-      "row": 239,
+      "row": 180,
       "item": {
-        "type": "food",
-        "operation_id": "2026-09-11-breakfast-chicken-v1",
+        "type": "workout_set",
+        "operation_id": "2026-09-11-bulgarian-split-squat-s2",
         "date": "2026-09-11",
-        "meal": "早餐",
-        "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
-        "source": "使用者回報＋既有同款紀錄",
-        "protein": 30,
-        "calories": 163,
-        "note": "沿用追蹤表先前同款紀錄：約蛋白質30g、163 kcal；未取得可靠碳水標示，因此碳水留白。"
+        "workout_name": "重訓",
+        "exercise": "保加利亞分腿蹲",
+        "set": 2,
+        "weight": 10,
+        "reps": 12,
+        "dbr": 2,
+        "note": "右腳；每手 5 kg，兩手總負重 10 kg。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 238,
+      "row": 179,
       "date": "2026-09-11",
-      "meal": "早餐",
-      "food": "7-ELEVEN 30元地瓜",
+      "exercise": "保加利亞分腿蹲",
+      "set": 1,
       "status": "written"
     },
     {
       "verified": true,
-      "row": 239,
+      "row": 180,
       "date": "2026-09-11",
-      "meal": "早餐",
-      "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
+      "exercise": "保加利亞分腿蹲",
+      "set": 2,
       "status": "written"
     }
   ],
