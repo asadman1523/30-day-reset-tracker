@@ -7,33 +7,17 @@
   "results": [
     {
       "status": "written",
-      "row": 196,
+      "row": 198,
       "item": {
         "type": "workout_set",
-        "operation_id": "2026-09-11-lat-pulldown-s1-v1",
+        "operation_id": "2026-09-11-lat-pulldown-s3-v1",
         "date": "2026-09-11",
         "workout_name": "重訓",
         "exercise": "滑輪下拉",
-        "set": 1,
+        "set": 3,
         "weight": 37.5,
-        "reps": 13,
-        "dbr": 2,
-        "note": "重量未重複提供，沿用本次安排 37.5 kg。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 197,
-      "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-11-lat-pulldown-s2-v1",
-        "date": "2026-09-11",
-        "workout_name": "重訓",
-        "exercise": "滑輪下拉",
-        "set": 2,
-        "weight": 37.5,
-        "reps": 13,
-        "dbr": 2,
+        "reps": 11,
+        "dbr": 1,
         "note": "重量未重複提供，沿用上一組 37.5 kg。"
       }
     }
@@ -41,18 +25,10 @@
   "verification": [
     {
       "verified": true,
-      "row": 196,
+      "row": 198,
       "date": "2026-09-11",
       "exercise": "滑輪下拉",
-      "set": 1,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 197,
-      "date": "2026-09-11",
-      "exercise": "滑輪下拉",
-      "set": 2,
+      "set": 3,
       "status": "written"
     }
   ],
