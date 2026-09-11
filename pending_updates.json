@@ -1,3 +1,20 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "operation_id": "2026-09-11-walk-20min-2229",
+      "type": "daily_checkin",
+      "date": "2026-09-11",
+      "walk_minutes": 20
+    },
+    {
+      "operation_id": "2026-09-11-dinner-protein52-2229",
+      "type": "food",
+      "date": "2026-09-11",
+      "meal": "晚餐",
+      "food": "蛋白質飲用（品項未提供）",
+      "source": "使用者回報",
+      "protein": 52,
+      "note": "晚餐追加飲用；使用者回報蛋白質 52 g，未提供品項、碳水與熱量"
+    }
+  ]
 }
