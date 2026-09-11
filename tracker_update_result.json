@@ -7,100 +7,120 @@
   "results": [
     {
       "status": "written",
-      "row": 200,
+      "row": 240,
       "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-11-adduction-s1-v1",
+        "type": "food",
+        "operation_id": "2026-09-11-lunch-protein-52-v1",
         "date": "2026-09-11",
-        "workout_name": "重訓",
-        "exercise": "腿內收",
-        "set": 1,
-        "weight": 37.5,
-        "reps": 13,
-        "dbr": 2,
-        "note": "重量未重複提供，沿用本次安排 37.5 kg。"
+        "meal": "午餐",
+        "food": "蛋白飲／額外蛋白質 52g",
+        "source": "使用者回報",
+        "protein": 52,
+        "note": "使用者回報午餐喝了52g蛋白質；未提供品牌、熱量或碳水，因此僅記錄蛋白質。"
       }
     },
     {
       "status": "written",
-      "row": 201,
+      "row": 241,
       "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-11-adduction-s2-v1",
+        "type": "food",
+        "operation_id": "2026-09-11-dinner-salted-chicken-breast-v1",
         "date": "2026-09-11",
-        "workout_name": "重訓",
-        "exercise": "腿內收",
-        "set": 2,
-        "weight": 37.5,
-        "reps": 13,
-        "dbr": 1,
-        "note": "重量未重複提供，沿用上一組 37.5 kg。"
+        "meal": "晚餐",
+        "food": "鹽水雞：雞胸肉 1 份",
+        "source": "使用者回報＋照片份量透明估算",
+        "protein": 31,
+        "calories": 170,
+        "note": "照片可見多塊雞胸肉，估約100g熟重，約蛋白質31g、170 kcal；實際依份量與拌油而變動。"
       }
     },
     {
       "status": "written",
-      "row": 202,
+      "row": 242,
       "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-11-adduction-s3-v1",
+        "type": "food",
+        "operation_id": "2026-09-11-dinner-pig-ear-v1",
         "date": "2026-09-11",
-        "workout_name": "重訓",
-        "exercise": "腿內收",
-        "set": 3,
-        "weight": 37.5,
-        "reps": 13,
-        "dbr": 1,
-        "note": "重量未重複提供，沿用上一組 37.5 kg。"
+        "meal": "晚餐",
+        "food": "鹽水雞：豬耳朵 1 份",
+        "source": "使用者回報＋照片份量透明估算",
+        "protein": 14,
+        "calories": 180,
+        "note": "照片可見豬耳朵條狀切片，估一般鹽水雞配料1份，約蛋白質14g、180 kcal；實際依肥瘦與份量而變動。"
       }
     },
     {
       "status": "written",
-      "row": 203,
+      "row": 243,
       "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-11-adduction-s4-v1",
+        "type": "food",
+        "operation_id": "2026-09-11-dinner-cabbage-v1",
         "date": "2026-09-11",
-        "workout_name": "重訓",
-        "exercise": "腿內收",
-        "set": 4,
-        "weight": 37.5,
-        "reps": 13,
-        "dbr": 0,
-        "note": "重量未重複提供，沿用上一組 37.5 kg。"
+        "meal": "晚餐",
+        "food": "鹽水雞：高麗菜 1 份",
+        "source": "使用者回報＋照片份量透明估算",
+        "protein": 2,
+        "carbs": 8,
+        "calories": 45,
+        "note": "照片可見高麗菜約1份，估約蛋白質2g、碳水8g、45 kcal；未另加估拌油。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 244,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-11-dinner-tofu-v1",
+        "date": "2026-09-11",
+        "meal": "晚餐",
+        "food": "鹽水雞：豆乾 1 份",
+        "source": "使用者回報＋照片份量透明估算",
+        "protein": 12,
+        "carbs": 5,
+        "calories": 130,
+        "note": "照片可見豆乾切塊，估一般1份約蛋白質12g、碳水5g、130 kcal；實際依份量而變動。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 200,
+      "row": 240,
       "date": "2026-09-11",
-      "exercise": "腿內收",
-      "set": 1,
+      "meal": "午餐",
+      "food": "蛋白飲／額外蛋白質 52g",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 201,
+      "row": 241,
       "date": "2026-09-11",
-      "exercise": "腿內收",
-      "set": 2,
+      "meal": "晚餐",
+      "food": "鹽水雞：雞胸肉 1 份",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 202,
+      "row": 242,
       "date": "2026-09-11",
-      "exercise": "腿內收",
-      "set": 3,
+      "meal": "晚餐",
+      "food": "鹽水雞：豬耳朵 1 份",
       "status": "written"
     },
     {
       "verified": true,
-      "row": 203,
+      "row": 243,
       "date": "2026-09-11",
-      "exercise": "腿內收",
-      "set": 4,
+      "meal": "晚餐",
+      "food": "鹽水雞：高麗菜 1 份",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 244,
+      "date": "2026-09-11",
+      "meal": "晚餐",
+      "food": "鹽水雞：豆乾 1 份",
       "status": "written"
     }
   ],
