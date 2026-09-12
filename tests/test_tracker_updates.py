@@ -15,6 +15,18 @@ import run_tracker_updates as runner  # noqa: E402
 
 
 HEADERS = ["日期", "餐別", "餐點", "來源", "蛋白質", "碳水", "熱量", "備註"]
+DAILY_HEADERS = [
+    "日期",
+    "零下注",
+    "查看盤口",
+    "衝動 0–10",
+    "觸發原因",
+    "替代行動",
+    "完成重訓",
+    "散步分鐘",
+    "睡眠小時",
+    "連續零下注",
+]
 
 
 class TrackerFoodUpdateTests(unittest.TestCase):
@@ -126,6 +138,64 @@ class TrackerFoodUpdateTests(unittest.TestCase):
                 self.assertEqual(runner._load_processed_ids(), ["op-a", "op-b"])
         finally:
             runner.PROCESSED_IDS = original_path
+
+
+class TrackerDailyCheckinTests(unittest.TestCase):
+    def make_daily_sheet(self):
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "每日檢核"
+        ws.append(DAILY_HEADERS)
+        ws.append([date(2026, 9, 2), None, None, None, None, None, None, 10, None, "=1"])
+        return ws
+
+    def test_missing_date_is_created_and_walk_minutes_written(self):
+        ws = self.make_daily_sheet()
+        item = {
+            "type": "daily_checkin",
+            "date": "2026-09-11",
+            "walk_minutes": 20,
+        }
+
+        result = runner.apply_daily_checkin(ws, item)
+
+        self.assertEqual(result["status"], "written")
+        self.assertTrue(result["created"])
+        self.assertEqual(ws.max_row, 3)
+        self.assertEqual(ws.cell(3, 1).value, date(2026, 9, 11))
+        self.assertEqual(ws.cell(3, 8).value, 20)
+        self.assertTrue(runner.verify_daily_checkin(ws, result)["verified"])
+
+    def test_existing_date_is_updated_without_duplicate_row(self):
+        ws = self.make_daily_sheet()
+        item = {
+            "type": "daily_checkin",
+            "date": "2026-09-02",
+            "walk_minutes": 25,
+        }
+
+        result = runner.apply_daily_checkin(ws, item)
+
+        self.assertEqual(result["status"], "updated")
+        self.assertFalse(result["created"])
+        self.assertEqual(ws.max_row, 2)
+        self.assertEqual(ws.cell(2, 8).value, 25)
+        self.assertTrue(runner.verify_daily_checkin(ws, result)["verified"])
+
+    def test_new_date_only_writes_fields_explicitly_provided(self):
+        ws = self.make_daily_sheet()
+        item = {
+            "type": "daily_checkin",
+            "date": "2026-09-11",
+            "walk_minutes": 20,
+        }
+
+        result = runner.apply_daily_checkin(ws, item)
+        row = result["row"]
+
+        for col in (2, 3, 4, 5, 6, 7, 9, 10):
+            self.assertIn(ws.cell(row, col).value, (None, ""))
+        self.assertEqual(ws.cell(row, 8).value, 20)
 
 
 if __name__ == "__main__":
