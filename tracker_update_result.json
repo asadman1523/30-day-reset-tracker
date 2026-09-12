@@ -1,6 +1,81 @@
 {
-  "status": "failed",
-  "error": "每日檢核找不到日期 2026-09-11",
-  "pending_preserved": true,
-  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/30-day-reset-tracker/30-day-reset-tracker/scripts/run_tracker_updates.py\", line 156, in main\n    tracker.main()\n  File \"/home/runner/work/30-day-reset-tracker/30-day-reset-tracker/scripts/apply_tracker_updates.py\", line 561, in main\n    results.append(apply_daily_checkin(daily_ws, item))\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/30-day-reset-tracker/30-day-reset-tracker/scripts/apply_tracker_updates.py\", line 311, in apply_daily_checkin\n    raise RuntimeError(f\"每日檢核找不到日期 {item['date']}\")\nRuntimeError: 每日檢核找不到日期 2026-09-11\n"
+  "migration": {
+    "carbs_column_added": false,
+    "carbs_column": 8,
+    "cardio_sheet_created": false
+  },
+  "results": [
+    {
+      "status": "written",
+      "row": 245,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-12-breakfast-sweet-potato-v1",
+        "date": "2026-09-12",
+        "meal": "早餐",
+        "food": "7-ELEVEN 30元地瓜",
+        "source": "使用者回報＋既有估算",
+        "protein": 2.3,
+        "carbs": 37.7,
+        "calories": 162,
+        "note": "沿用先前同款 7-ELEVEN 30元地瓜估算：約145g，約蛋白質2.3g、碳水37.7g、162 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 246,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-12-breakfast-chicken-v1",
+        "date": "2026-09-12",
+        "meal": "早餐",
+        "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
+        "source": "使用者回報＋既有同款紀錄",
+        "protein": 30,
+        "calories": 163,
+        "note": "沿用追蹤表先前同款紀錄：約蛋白質30g、163 kcal；未取得可靠碳水標示，因此碳水留白。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 247,
+      "item": {
+        "type": "food",
+        "operation_id": "2026-09-12-breakfast-whey-protein-26-v1",
+        "date": "2026-09-12",
+        "meal": "早餐",
+        "food": "乳清蛋白 26g 蛋白質",
+        "source": "使用者回報",
+        "protein": 26,
+        "note": "使用者回報早餐攝取26g蛋白質乳清；未提供品牌、粉重、熱量或碳水，因此僅記錄蛋白質。"
+      }
+    }
+  ],
+  "verification": [
+    {
+      "verified": true,
+      "row": 245,
+      "date": "2026-09-12",
+      "meal": "早餐",
+      "food": "7-ELEVEN 30元地瓜",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 246,
+      "date": "2026-09-12",
+      "meal": "早餐",
+      "food": "7-ELEVEN 21Plus 剝皮辣椒雞胸肉 1 包（145g）",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 247,
+      "date": "2026-09-12",
+      "meal": "早餐",
+      "food": "乳清蛋白 26g 蛋白質",
+      "status": "written"
+    }
+  ],
+  "deduplicated_operation_ids": []
 }
