@@ -7,52 +7,26 @@
   "results": [
     {
       "status": "written",
-      "row": 248,
+      "row": 250,
       "item": {
-        "operation_id": "2026-09-12-lunch-ikea-chicken-meatballs-8-mash-2203",
-        "type": "food",
-        "date": "2026-09-12",
-        "meal": "午餐",
-        "food": "IKEA 瑞典雞肉丸 8 顆 + 馬鈴薯泥",
-        "source": "使用者回報＋IKEA官方品項確認＋透明估算",
-        "protein": 21,
-        "carbs": 35,
-        "calories": 430,
-        "note": "IKEA 台灣官方菜單可確認 8 顆瑞典雞肉丸主餐搭配薯泥；使用者僅明確回報雞肉丸 8 顆與馬鈴薯泥，因此不另計未提及的雙色蔬菜、肉丸奶醬或越橘果醬。未提供實際薯泥重量；雞肉丸參考 HUVUDROLL 公開營養資料並以一般 8 顆餐廳份量估算，整份先記約蛋白質 21g、碳水 35g、430 kcal，實際份量可能有明顯差異。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 249,
-      "item": {
-        "operation_id": "2026-09-12-dinner-chicken-rice-1bowl-2203",
+        "operation_id": "2026-09-12-dinner-protein52-0032",
         "type": "food",
         "date": "2026-09-12",
         "meal": "晚餐",
-        "food": "雞肉飯 1 碗",
-        "source": "使用者回報＋既有同品項透明估算",
-        "protein": 25,
-        "carbs": 65,
-        "calories": 500,
-        "note": "沿用追蹤表 2026-09-08 相同『雞肉飯 1 碗』估算：約蛋白質 25g、碳水 65g、500 kcal；未提供店家與份量，實際依飯量、雞肉量與雞油而變動。"
+        "food": "晚間額外蛋白質 52g",
+        "source": "使用者回報",
+        "protein": 52,
+        "note": "使用者回報 2026-09-12 晚上另外攝取蛋白質 52g；未提供品牌、來源、熱量或碳水，因此僅記錄蛋白質，其餘不猜。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 248,
-      "date": "2026-09-12",
-      "meal": "午餐",
-      "food": "IKEA 瑞典雞肉丸 8 顆 + 馬鈴薯泥",
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 249,
+      "row": 250,
       "date": "2026-09-12",
       "meal": "晚餐",
-      "food": "雞肉飯 1 碗",
+      "food": "晚間額外蛋白質 52g",
       "status": "written"
     }
   ],
