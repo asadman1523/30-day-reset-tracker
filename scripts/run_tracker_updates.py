@@ -109,6 +109,85 @@ def verify_food(ws, result):
     }
 
 
+def apply_daily_checkin(ws, item):
+    header_row, mapping = tracker.locate_daily_headers(ws)
+    row = tracker.find_daily_row(ws, header_row, mapping, item["date"])
+    created = False
+
+    if not row:
+        row = ws.max_row + 1
+        tracker.copy_row_style(ws, max(header_row + 1, ws.max_row), row)
+        ws.cell(row, mapping["date"]).value = tracker.datetime.strptime(item["date"], "%Y-%m-%d").date()
+        created = True
+
+    changed_fields = []
+    for field in (
+        "zero_bet",
+        "viewed_odds",
+        "urge",
+        "trigger",
+        "alternative",
+        "workout_done",
+        "walk_minutes",
+        "sleep_hours",
+    ):
+        if field not in item:
+            continue
+        col = mapping.get(field)
+        if not col:
+            raise RuntimeError(f"每日檢核找不到欄位 {field}")
+        if not tracker.scalar_equal(ws.cell(row, col).value, item[field]):
+            ws.cell(row, col).value = item[field]
+            changed_fields.append(field)
+
+    return {
+        "status": "written" if created else ("updated" if changed_fields else "already_present"),
+        "row": row,
+        "fields": changed_fields,
+        "created": created,
+        "item": item,
+    }
+
+
+def verify_daily_checkin(ws, result):
+    item = result["item"]
+    header_row, mapping = tracker.locate_daily_headers(ws)
+    row = result.get("row")
+    if not row or row <= header_row or row > ws.max_row:
+        row = tracker.find_daily_row(ws, header_row, mapping, item["date"])
+    if not row:
+        raise RuntimeError(f"驗證失敗：找不到每日檢核日期 {item['date']}")
+    if tracker.date_key(ws.cell(row, mapping["date"]).value) != item["date"]:
+        raise RuntimeError("驗證失敗：每日檢核日期不一致")
+
+    for field in (
+        "zero_bet",
+        "viewed_odds",
+        "urge",
+        "trigger",
+        "alternative",
+        "workout_done",
+        "walk_minutes",
+        "sleep_hours",
+    ):
+        if field not in item:
+            continue
+        col = mapping.get(field)
+        if not col:
+            raise RuntimeError(f"驗證失敗：每日檢核找不到欄位 {field}")
+        actual = ws.cell(row, col).value
+        if not tracker.scalar_equal(actual, item[field]):
+            raise RuntimeError(f"驗證失敗：{field} 預期 {item[field]}，實際 {actual}")
+
+    return {
+        "verified": True,
+        "row": row,
+        "date": item["date"],
+        "status": result.get("status"),
+        "created": result.get("created", False),
+    }
+
+
 def _load_processed_ids():
     if not PROCESSED_IDS.exists():
         return []
@@ -153,6 +232,8 @@ def main():
 
         tracker.apply_food = apply_food
         tracker.verify_food = verify_food
+        tracker.apply_daily_checkin = apply_daily_checkin
+        tracker.verify_daily_checkin = verify_daily_checkin
         tracker.main()
 
         new_ids = [
