@@ -1,3 +1,10 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "operation_id": "2026-09-11-walk-20min-v2",
+      "type": "daily_checkin",
+      "date": "2026-09-11",
+      "walk_minutes": 20
+    }
+  ]
 }
