@@ -1,12 +1,6 @@
 {
   "updates": [
     {
-      "operation_id": "2026-09-11-walk-20min-2229",
-      "type": "daily_checkin",
-      "date": "2026-09-11",
-      "walk_minutes": 20
-    },
-    {
       "type": "food",
       "operation_id": "2026-09-12-breakfast-sweet-potato-v1",
       "date": "2026-09-12",
