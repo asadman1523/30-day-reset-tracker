@@ -4,7 +4,30 @@
     "carbs_column": 8,
     "cardio_sheet_created": false
   },
-  "results": [],
-  "verification": [],
+  "results": [
+    {
+      "status": "written",
+      "row": 39,
+      "fields": [
+        "walk_minutes"
+      ],
+      "created": true,
+      "item": {
+        "operation_id": "2026-09-11-walk-20min-v2",
+        "type": "daily_checkin",
+        "date": "2026-09-11",
+        "walk_minutes": 20
+      }
+    }
+  ],
+  "verification": [
+    {
+      "verified": true,
+      "row": 39,
+      "date": "2026-09-11",
+      "status": "written",
+      "created": true
+    }
+  ],
   "deduplicated_operation_ids": []
 }
