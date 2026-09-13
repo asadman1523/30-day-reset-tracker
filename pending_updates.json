@@ -1,3 +1,20 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "operation_id": "2026-09-13-dinner-pizzahut-beef-scallop-2slices-2211",
+      "type": "food",
+      "date": "2026-09-13",
+      "meal": "晚餐",
+      "food": "Pizza Hut 極炙厚牛干貝海陸披薩 2 片",
+      "source": "使用者回報＋Pizza Hut 台灣官方現售品項確認",
+      "note": "Pizza Hut 台灣官方目前現售『極炙厚牛干貝海陸』，配料含炭火風燒牛肉、干貝、櫛瓜、番茄、洋蔥、莫札瑞拉起司、BBQ醬、炭火燒肉醬與明太子醬。使用者回報吃 2 片；未提供餅皮，官方頁面亦未提供可直接核對的完整營養標示，因此蛋白質、碳水與熱量留空，不自行猜測。"
+    },
+    {
+      "operation_id": "2026-09-13-daily-no-workout-no-walk-2211",
+      "type": "daily_checkin",
+      "date": "2026-09-13",
+      "workout_done": "否",
+      "walk_minutes": 0
+    }
+  ]
 }
