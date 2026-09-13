@@ -1,3 +1,38 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "operation_id": "2026-09-13-breakfast-none-1531",
+      "type": "food",
+      "date": "2026-09-13",
+      "meal": "早餐",
+      "food": "未進食",
+      "source": "使用者回報",
+      "protein": 0,
+      "carbs": 0,
+      "calories": 0,
+      "note": "使用者明確回報早上沒有吃東西。"
+    },
+    {
+      "operation_id": "2026-09-13-lunch-double-filet-large-fries-1531",
+      "type": "food",
+      "date": "2026-09-13",
+      "meal": "午餐",
+      "food": "麥當勞 雙層麥香魚 1 個 + 大薯 1 份",
+      "source": "使用者回報＋麥當勞台灣現售品項確認＋透明估算",
+      "protein": 30.6,
+      "carbs": 106.3,
+      "calories": 958,
+      "note": "麥當勞台灣官網目前可確認雙層麥香魚與大薯為現售品項。雙層麥香魚完整營養數字官網動態頁未直接顯示，本筆沿用公開歷史同品項資料約 485 kcal、蛋白質 23.2g、碳水 43.3g；大薯採近期整理約 473 kcal、蛋白質 7.4g、碳水 63g。合計約 958 kcal、蛋白質 30.6g、碳水 106.3g；實際配方或份量若有更新會有誤差。"
+    },
+    {
+      "operation_id": "2026-09-13-lunch-extra-protein52-1531",
+      "type": "food",
+      "date": "2026-09-13",
+      "meal": "午餐",
+      "food": "額外蛋白質 52g",
+      "source": "使用者回報",
+      "protein": 52,
+      "note": "使用者回報午餐另外攝取蛋白質 52g；未提供來源、品牌、熱量或碳水，因此僅記錄蛋白質，其餘不猜。"
+    }
+  ]
 }
