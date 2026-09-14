@@ -1,16 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "workout_set",
-      "operation_id": "2026-09-14-leg-curl-s3-v1",
-      "date": "2026-09-14",
-      "workout_name": "重訓",
-      "exercise": "腿後勾",
-      "set": 3,
-      "weight": 47,
-      "reps": 12,
-      "dbr": 1,
-      "note": "重量未重複提供，沿用上一組 47 kg。"
-    }
-  ]
+  "updates": []
 }
