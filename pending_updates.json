@@ -1,3 +1,16 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-14-drax-plate-leg-press-s2-v1",
+      "date": "2026-09-14",
+      "workout_name": "重訓",
+      "exercise": "DRAX 槓片式腿推機",
+      "set": 2,
+      "weight": 40,
+      "reps": 15,
+      "dbr": 3,
+      "note": "重量未重複提供，沿用上一組 40 kg。"
+    }
+  ]
 }
