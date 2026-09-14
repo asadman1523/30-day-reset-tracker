@@ -7,52 +7,27 @@
   "results": [
     {
       "status": "written",
-      "row": 212,
+      "row": 214,
       "item": {
         "type": "workout_set",
-        "operation_id": "2026-09-14-gymleco-chest-press-s1-v1",
+        "operation_id": "2026-09-14-gymleco-chest-press-s3-v1",
         "date": "2026-09-14",
         "workout_name": "重訓",
         "exercise": "Gymleco Active Line 321 Chest Press",
-        "set": 1,
-        "weight": 25,
+        "set": 3,
+        "weight": 30,
         "reps": 15,
-        "dbr": 1,
-        "note": "使用者確認插銷位於 25 kg；照片確認機型為 Gymleco Active Line 321 Chest Press。"
-      }
-    },
-    {
-      "status": "written",
-      "row": 213,
-      "item": {
-        "type": "workout_set",
-        "operation_id": "2026-09-14-gymleco-chest-press-s2-v1",
-        "date": "2026-09-14",
-        "workout_name": "重訓",
-        "exercise": "Gymleco Active Line 321 Chest Press",
-        "set": 2,
-        "weight": 25,
-        "reps": 15,
-        "dbr": 1,
-        "note": "重量未重複提供，沿用上一組 25 kg。"
+        "dbr": 1
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 212,
+      "row": 214,
       "date": "2026-09-14",
       "exercise": "Gymleco Active Line 321 Chest Press",
-      "set": 1,
-      "status": "written"
-    },
-    {
-      "verified": true,
-      "row": 213,
-      "date": "2026-09-14",
-      "exercise": "Gymleco Active Line 321 Chest Press",
-      "set": 2,
+      "set": 3,
       "status": "written"
     }
   ],
