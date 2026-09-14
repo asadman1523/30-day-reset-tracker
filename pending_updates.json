@@ -1,16 +1,3 @@
 {
-  "updates": [
-    {
-      "type": "workout_set",
-      "operation_id": "2026-09-14-drax-plate-leg-press-s3-v1",
-      "date": "2026-09-14",
-      "workout_name": "重訓",
-      "exercise": "DRAX 槓片式腿推機",
-      "set": 3,
-      "weight": 40,
-      "reps": 15,
-      "dbr": 1,
-      "note": "重量未重複提供，沿用上一組 40 kg。照片中腳位為踏板中上區、約肩寬。"
-    }
-  ]
+  "updates": []
 }
