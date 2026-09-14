@@ -1,38 +1,3 @@
 {
-  "updates": [
-    {
-      "operation_id": "2026-09-14-breakfast-sweet-potato-chicken-breast-1629",
-      "type": "food",
-      "date": "2026-09-14",
-      "meal": "早餐",
-      "food": "地瓜 1 份 + 雞胸肉 1 份",
-      "source": "使用者回報＋既有固定估算",
-      "protein": 32,
-      "carbs": 35,
-      "calories": 285,
-      "note": "沿用追蹤表既有相同組合設定：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal。"
-    },
-    {
-      "operation_id": "2026-09-14-lunch-san-shang-ma-po-fish-1629",
-      "type": "food",
-      "date": "2026-09-14",
-      "meal": "午餐",
-      "food": "三商鮮五丼 麻婆魚排套餐",
-      "source": "使用者回報＋沿用既有同品項透明估算",
-      "protein": 30,
-      "carbs": 105,
-      "calories": 850,
-      "note": "沿用追蹤表 2026-08-18 相同品項估算：約蛋白質 30g、碳水 105g、850 kcal。店家未提供完整營養標示，實際熱量仍會受飯量、炸魚排吸油與麻婆醬份量影響。"
-    },
-    {
-      "operation_id": "2026-09-14-lunch-extra-protein-52g-1629",
-      "type": "food",
-      "date": "2026-09-14",
-      "meal": "午餐",
-      "food": "額外蛋白質 52g",
-      "source": "使用者回報",
-      "protein": 52,
-      "note": "使用者回報午餐另外攝取蛋白質 52g；未提供來源、品牌、熱量或碳水，因此僅記錄蛋白質，其餘不猜。"
-    }
-  ]
+  "updates": []
 }
