@@ -1,3 +1,15 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "type": "workout_set",
+      "operation_id": "2026-09-14-gymleco-chest-press-s3-v1",
+      "date": "2026-09-14",
+      "workout_name": "重訓",
+      "exercise": "Gymleco Active Line 321 Chest Press",
+      "set": 3,
+      "weight": 30,
+      "reps": 15,
+      "dbr": 1
+    }
+  ]
 }
