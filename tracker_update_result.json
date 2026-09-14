@@ -7,26 +7,26 @@
   "results": [
     {
       "status": "written",
-      "row": 259,
+      "row": 41,
+      "fields": [
+        "walk_minutes"
+      ],
+      "created": true,
       "item": {
-        "operation_id": "2026-09-14-dinner-saltwater-chicken-2210",
-        "type": "food",
+        "operation_id": "2026-09-14-walk-0min-2210",
+        "type": "daily_checkin",
         "date": "2026-09-14",
-        "meal": "晚餐",
-        "food": "鹽水雞：雞胸肉 1 塊 + 6 樣菜",
-        "source": "使用者回報",
-        "note": "使用者回報晚餐吃鹽水雞：雞胸肉 1 塊與 6 樣菜。未提供雞胸肉重量、6 樣菜的種類與份量，因此依規則不猜蛋白質、碳水或熱量，營養數值暫留空白。"
+        "walk_minutes": 0
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 259,
+      "row": 41,
       "date": "2026-09-14",
-      "meal": "晚餐",
-      "food": "鹽水雞：雞胸肉 1 塊 + 6 樣菜",
-      "status": "written"
+      "status": "written",
+      "created": true
     }
   ],
   "deduplicated_operation_ids": []
