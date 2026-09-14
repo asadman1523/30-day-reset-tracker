@@ -7,28 +7,28 @@
   "results": [
     {
       "status": "written",
-      "row": 204,
+      "row": 205,
       "item": {
         "type": "workout_set",
-        "operation_id": "2026-09-14-drax-plate-leg-press-s1-v1",
+        "operation_id": "2026-09-14-drax-plate-leg-press-s2-v1",
         "date": "2026-09-14",
         "workout_name": "重訓",
         "exercise": "DRAX 槓片式腿推機",
-        "set": 1,
+        "set": 2,
         "weight": 40,
         "reps": 15,
-        "dbr": 4,
-        "note": "使用者回報 40 kg × 15，DBR4；照片確認為 DRAX 槓片式腿推機。重量按使用者回報記錄，不另加機台／滑軌自重；此動作與既有『腿推舉』分開建立基準。"
+        "dbr": 3,
+        "note": "重量未重複提供，沿用上一組 40 kg。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 204,
+      "row": 205,
       "date": "2026-09-14",
       "exercise": "DRAX 槓片式腿推機",
-      "set": 1,
+      "set": 2,
       "status": "written"
     }
   ],
