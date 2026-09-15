@@ -7,26 +7,75 @@
   "results": [
     {
       "status": "written",
-      "row": 41,
-      "fields": [
-        "walk_minutes"
-      ],
-      "created": true,
+      "row": 260,
       "item": {
-        "operation_id": "2026-09-14-walk-0min-2210",
-        "type": "daily_checkin",
-        "date": "2026-09-14",
-        "walk_minutes": 0
+        "operation_id": "2026-09-15-breakfast-sweet-potato-chicken-2026",
+        "type": "food",
+        "date": "2026-09-15",
+        "meal": "早餐",
+        "food": "地瓜 1 份 + 雞胸肉 1 份",
+        "source": "使用者回報＋既有固定估算",
+        "protein": 32,
+        "carbs": 35,
+        "calories": 285,
+        "note": "沿用追蹤表既有相同組合設定：地瓜 1 份約蛋白質 2g、碳水 35g、125 kcal；雞胸肉 1 份約蛋白質 30g、160 kcal。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 261,
+      "item": {
+        "operation_id": "2026-09-15-lunch-extra-protein-52g-2026",
+        "type": "food",
+        "date": "2026-09-15",
+        "meal": "午餐",
+        "food": "額外蛋白質 52g",
+        "source": "使用者回報",
+        "protein": 52,
+        "note": "使用者回報中午攝取蛋白質 52g；未提供來源、品牌、熱量或碳水，因此僅記錄蛋白質，其餘不猜。"
+      }
+    },
+    {
+      "status": "written",
+      "row": 262,
+      "item": {
+        "operation_id": "2026-09-15-dinner-chicken-rice-photo-2026",
+        "type": "food",
+        "date": "2026-09-15",
+        "meal": "晚餐",
+        "food": "雞肉飯 1 碗 + 滷蛋 1 顆 + 豆製品配料",
+        "source": "使用者回報＋照片份量透明估算",
+        "protein": 45,
+        "carbs": 90,
+        "calories": 800,
+        "note": "依使用者照片可見：白飯、較多撕雞肉、滷蛋 1 顆，以及豆干／豆皮類豆製品配料。實際重量未量測，先透明估算整碗約蛋白質 45g、碳水 90g、800 kcal；主要誤差來自白飯份量、雞肉實際重量、豆製品種類與醬汁用量，熱量可能上下浮動約 150–200 kcal。"
       }
     }
   ],
   "verification": [
     {
       "verified": true,
-      "row": 41,
-      "date": "2026-09-14",
-      "status": "written",
-      "created": true
+      "row": 260,
+      "date": "2026-09-15",
+      "meal": "早餐",
+      "food": "地瓜 1 份 + 雞胸肉 1 份",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 261,
+      "date": "2026-09-15",
+      "meal": "午餐",
+      "food": "額外蛋白質 52g",
+      "status": "written"
+    },
+    {
+      "verified": true,
+      "row": 262,
+      "date": "2026-09-15",
+      "meal": "晚餐",
+      "food": "雞肉飯 1 碗 + 滷蛋 1 顆 + 豆製品配料",
+      "status": "written"
     }
   ],
   "deduplicated_operation_ids": []
