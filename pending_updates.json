@@ -1,3 +1,11 @@
 {
-  "updates": []
+  "updates": [
+    {
+      "operation_id": "2026-09-15-daily-workout-yes-walk0-2210",
+      "type": "daily_checkin",
+      "date": "2026-09-15",
+      "workout_done": "是",
+      "walk_minutes": 0
+    }
+  ]
 }
